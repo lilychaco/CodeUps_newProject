@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.header-menu {
+	display: none;
+	@include mq(md) {
+			display: block;
+	}
+}
+
+.header-menu__items {
+	display: flex;
+}
+
+.header-menu__item {
+	margin-left: rem(40);
+
+}
+.header-menu__item a{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	color:$white;
+}
+
+.header-menu__text--english {
+	font-size: rem(18);
+			font-family:  $third-font-family;
+			font-weight: regular;
+			line-height: 1;
+			letter-spacing: 0;
+}
+
+.header-menu__text--japanese {
+	font-size: rem(10);
+			font-family: $base-font-family;
+			font-weight: regular;
+			line-height: 1.5;
+			letter-spacing: 0;
+			// white-space: nowrap;
+}

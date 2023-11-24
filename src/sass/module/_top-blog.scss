@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.top-blog {
+
+}
+
+.top-blog__inner {
+	margin-inline:auto;
+	width:100%;
+	padding-left: rem(21);
+	padding-right: rem(21);
+}
+
+.blog-cards__item {
+		margin-top:rem(40);
+}

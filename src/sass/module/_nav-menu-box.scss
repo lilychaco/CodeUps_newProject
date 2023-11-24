@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.nav-menu-box-wrapper {
+	margin-inline:auto;
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"a b"
+	"c d";
+	@include mq(md) {
+			display:flex;
+	}
+}
+
+.nav-menu-box {
+    display: flex;
+    flex-direction: column;
+		color:$white;
+}
+.nav-menu-box h3 {
+	margin-top:rem(40);
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: bold;
+			line-height: 1.125;
+			letter-spacing: 0;
+}
+.nav-menu-box ul {
+	padding-left: rem(22);
+}
+.nav-menu-box li {
+	margin-top: rem(24);
+}
+
+.nav-menu-box li a{
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: regular;
+			line-height: 1.125;
+			letter-spacing: 0;
+}
+.nav-menu-box--01 {
+	grid-area: a;
+
+}
+
+.nav-menu-box--02 {
+	grid-area: c;
+	@include mq(md) {
+			margin-left: rem(120);
+	}
+}
+
+.nav-menu-box--03 {
+		grid-area: b;
+		@include mq(md) {
+			margin-left: rem(120);
+	}
+}
+
+.nav-menu-box--04 {
+		grid-area: d;
+		@include mq(md) {
+			margin-left: rem(120);
+	}
+}
+
+.nav-menu-box-layout {
+	margin-top:rem(40);
+}

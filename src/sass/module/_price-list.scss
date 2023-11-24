@@ -1,0 +1,26 @@
+@use "global" as *;
+
+.price-list {
+
+}
+
+.price-list__title {
+	border-bottom: 1px solid $greenaccent;
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $bold;
+			line-height: 1.5;
+			letter-spacing: 0;
+
+}
+
+.price-list__items {
+
+
+
+}
+
+.price-list__item {
+	margin-top: rem(8);
+
+}

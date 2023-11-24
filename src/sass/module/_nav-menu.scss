@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.nav-menu {
+		display: grid;
+	grid-template-areas:
+	"a b"
+	"c d";
+	@include mq(md) {
+		display: flex;
+    justify-content: space-around;
+	}
+}
