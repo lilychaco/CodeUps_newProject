@@ -1,8 +1,17 @@
 @use "global" as *;
 
 .campaign-cards {
+	// overflow: hidden; /* 内部幅を超える部分を隠す */
+  // white-space: nowrap; /* カードを横に並べる */
 
 }
 .campaign-cards__item {
 	width: rem(280);
+	margin-right: rem(24);
+
+	@include mq(md) {
+			width: rem(334);
+			height:rem(441);
+			margin-right: rem(40);
+	}
 }

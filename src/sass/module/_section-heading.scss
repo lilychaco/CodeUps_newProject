@@ -35,3 +35,20 @@
 		@include mq(md) {
 		}
 }
+
+.section-heading__title--top-blog {
+	@include mq(md) {
+			color:$white;
+	}
+}
+
+.section-heading__title--top-blog span {
+	@include mq(md) {
+		color:$greenpale
+	}
+}
+.section-heading__subtitle--top-blog {
+	@include mq(md) {
+			color:$white;
+	}
+}

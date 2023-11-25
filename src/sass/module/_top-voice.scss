@@ -5,19 +5,38 @@
 }
 
 .top-voice__inner {
-	 padding-left: rem(15);
-  padding-right: rem(15);
-
+	position: relative;
 }
-
+.top-voice__fish-image {
+	position: absolute;
+	top:rem(-120);
+	left: rem(-80);
+	aspect-ratio: 301 / 138;
+	max-width: rem(301);
+}
 .top-voice__heading {
 
 }
 
-.top-voice__cards-wrapper {
-
+.top-voice__cards {
+	margin-top: rem(40);
+	@include mq(md) {
+			margin-top: rem(30);
+	}
 }
 
-.top-voice__cards {
+.top-voice__button {
+	margin-top: rem(40);
+	@include mq(md) {
+			margin-top: rem(80);
+	}
+}
+
+.top-voice__seahorse-image {
+	position: absolute;
+	right:rem(25);
+	bottom:rem(-67);
+	aspect-ratio: 71 / 162;
+	max-width: rem(71);
 
 }
