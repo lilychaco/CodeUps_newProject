@@ -22,6 +22,12 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<!-- inview.jsを読み込む -->
+	<script src="./assets/js/jquery.inview.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 	 <!-- SwiperのCSS -->
     <link
       rel="stylesheet"
@@ -29,9 +35,6 @@
     />
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
   <header class="header">
@@ -155,6 +158,62 @@
 			</div>
   </div>
 
+	<section class="fv">
+      <div class="fv__slider-wrap">
+        <div class="fv__slider swiper js-fv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="fv__slider-img">
+                <picture>
+                  <source
+                    srcset="./assets/images/FV-pc1.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img src="./assets/images/FV-sp1.jpg" alt="ファーストビュー画像1" />
+                </picture>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="fv__slider-img">
+                <picture>
+                  <source
+                    srcset="./assets/images/FV-pc2.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img src="./assets/images/FV-sp2.jpg" alt="ファーストビュー画像2" />
+                </picture>
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="fv__slider-img">
+                <picture>
+                  <source
+                    srcset="./assets/images/FV-pc3.jpg"
+                    media="(min-width: 768px)"
+                  />
+                  <img src="./assets/images/FV-sp3.jpg" alt="ファーストビュー画像3" />
+                </picture>
+              </figure>
+            </div>
+          </div>
+        </div>
+			</div>
+
+      <div class="fv__copy">
+        <h2 class="fv__main-title">DIVING</h2>
+        <p class="fv__sub-title">into the ocean</p>
+      </div>
+		</section>
+
+
+
+
+
+
+
+
+
+
 
 <section class="top-campaign top-campaign-layout">
 	<div class="top-campaign__inner inner">
@@ -163,10 +222,13 @@
 				<h2 class="section-heading__title"><span>C</span>ampaign</h2>
 				<p class="section-heading__subtitle ">キャンペーン</p>
 		</div>
+		<!-- 前後の矢印 -->
+					<div class="swiper-button swiper-button-prev u-desktop">
+					</div>
+					<div class="swiper-button swiper-button-next u-desktop">
+					</div>
 
 		<div class="top-campaign__cards-wrapper swiper js-campaign-swiper">
-			<div class="swiper-pagination"></div>
-
 			<ul class="top-campaign__cards campaign-cards swiper-wrapper">
 					<li class="campaign-cards__item campaign-card swiper-slide">
 							<figure class="campaign-card__img">
@@ -344,7 +406,6 @@
 					<a href="#" class="button__link">View More</a>
 				</div>
 		</div>
-
 </div>
 </section>
 
@@ -386,7 +447,7 @@
 						<p class="section-heading__subtitle">ダイビング情報</p>
 				</div>
 		<div class="top-information__main">
-			<figure class="top-information__image">
+			<figure class="top-information__image colorbox">
 									<img src="./assets/images/ocean3.jpg" alt="" />
 			</figure>
 			<div class="top-information__body">
@@ -572,7 +633,7 @@
 							<p class="section-heading__subtitle section-heading__subtitle--top-price">料金一覧</p>
 			</div>
 			<div class="top-price__main">
-				<figure class="top-price__image">
+				<figure class="top-price__image colorbox">
 						<picture>
 								<source media="(min-width: 768px)" srcset="./assets/images/price-pc.jpg">
 								<img src="./assets/images/price-sp.jpg" alt="">
@@ -743,7 +804,7 @@
 </footer>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
