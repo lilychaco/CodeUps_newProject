@@ -1,0 +1,35 @@
+@use "global" as *;
+.swiper {
+
+}
+.swiper-button {
+	width: rem(80);
+	height:rem(80)
+}
+
+/* 前へ次への矢印カスタマイズ */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: rem(80);
+  margin: auto;
+  width: rem(80);
+}
+/* 前への矢印カスタマイズ  top-campaign__innerに、position:relative;当てている */
+.swiper-button-prev:after {
+  background-image: url(../images/pre-page.png);
+	position: absolute;
+	z-index: 2;
+	top:rem(-325);
+	left:rem(860);
+}
+/* 次への矢印カスタマイズ */
+.swiper-button-next:after {
+  background-image: url(../images/next-page.png);
+	position: absolute;
+	z-index: 2;
+	top:rem(-325);
+	right:rem(15);
+}
