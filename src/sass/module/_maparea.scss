@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.maparea {
+	text-align: center;
+	padding-left: rem(25);
+	padding-right: rem(25);
+
+}
+.maparea__top {
+	border-bottom: 1px solid $greenaccent;
+	padding-bottom: rem(6);
+}
+.maparea__logo {
+aspect-ratio: 174/65;
+width: rem(174);
+margin-inline:auto;
+
+@include mq(md) {
+		aspect-ratio: 200/75;
+		width: rem(200);
+}
+}
+
+.maparea__logo img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+.maparea__body {
+ margin-top: rem(16);
+ @include mq(md) {
+	 margin-top: rem(24);
+		 display: flex;
+		 gap:rem(21);
+ }
+}
+
+.maparea__address {
+	width: rem(146);
+	margin-inline:auto;
+	@include mq(md) {
+			text-align: left;
+	}
+
+}
+
+.maparea__map {
+	margin-inline:auto;
+	width: rem(295);
+	height:rem(160);
+	background-color: #D9D9D9;
+	margin-top: rem(16);
+	@include mq(md) {
+			margin-top: 0;
+			width: rem(273);
+	height:rem(148);
+	}
+}

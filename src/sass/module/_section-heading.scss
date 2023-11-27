@@ -52,3 +52,17 @@
 			color:$white;
 	}
 }
+.section-heading__title--top-contact {
+	font-size: rem(80);
+
+}
+
+.section-heading__text {
+	margin-top: rem(6);
+	font-size: rem(14);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.285;
+			letter-spacing: 0;
+	color:$greenaccent;
+}
