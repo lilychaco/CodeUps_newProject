@@ -67,7 +67,7 @@ jQuery(function ($) {
   });
 
   //要素の取得とスピードの設定
-  var box = $(".colorbox"),
+  let box = $(".colorbox"),
     speed = 700;
 
   //.colorboxの付いた全ての要素に対して下記の処理を行う
@@ -92,5 +92,18 @@ jQuery(function ($) {
         counter = 1;
       }
     });
+  });
+
+  const topBtn = $(".js-page-top-button");
+  // ボタンをクリックしたらスクロールして上に戻る
+  topBtn.click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000,
+      "easeOutCubic"
+    );
+    return false;
   });
 });

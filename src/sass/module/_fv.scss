@@ -58,3 +58,21 @@
   transform: translate(-50%, -50%);
 	}
 }
+.fv__main-title {
+	font-size: rem(40);
+			font-family: $forth-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+			padding-bottom: rem(10);
+			@include mq(md) {
+					font-size: rem(80);
+			}
+}
+.fv__sub-title {
+	font-size: rem(20);
+			font-family: $third-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+}

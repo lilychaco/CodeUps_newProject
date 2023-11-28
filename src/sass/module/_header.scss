@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
+	margin-inline:auto;
   height: rem(80);
   z-index: 1000;
 	background-color:rgba(13, 41, 54, 0.68);;
@@ -17,13 +18,12 @@
 .header__inner {
   margin-inline: auto;
   width: 100%;
-	padding: 0 rem(40);
   height: inherit;
 	display: flex;
   justify-content: space-between;
   align-items: center;
 	@include mq(md) {
-
+		padding: 0 rem(40);
 	}
 }
 .header__logo {

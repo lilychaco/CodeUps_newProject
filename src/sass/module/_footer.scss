@@ -5,6 +5,7 @@
 	padding-bottom: rem(56);
 	background-color: $greenaccent;
 	margin-top: rem(100);
+	position: relative;
 	@include mq(md) {
 			margin-top: rem(160);
 	}
@@ -21,12 +22,10 @@ main {
 	}
 }
 
-
 .footer__logo {
 	text-align: left;
 	width: rem(120);
 	@include mq(md) {
-
 	}
 }
 
@@ -56,5 +55,4 @@ main {
 			font-weight: regular;
 			line-height: 1.5;
 			letter-spacing: 0;
-
 }

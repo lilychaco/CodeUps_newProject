@@ -21,13 +21,18 @@
 	<!-- フォント -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&family=Gotu&family=Lato&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
 	<!-- inview.jsを読み込む -->
 	<script src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
+	 <!-- jquery UI のCSS -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 	 <!-- SwiperのCSS -->
     <link
       rel="stylesheet"
@@ -38,7 +43,7 @@
 </head>
 <body>
   <header class="header">
-		<div class="header__inner">
+		<div class="header__inner inner">
 		<h1 class="header__logo">
 					<a href="#">
           <picture>
@@ -200,8 +205,8 @@
 			</div>
 
       <div class="fv__copy">
-        <h2 class="fv__main-title">DIVING</h2>
-        <p class="fv__sub-title">into the ocean</p>
+        <h2 class="fv__main-title">D&ensp;I&ensp;V&ensp;I&ensp;N&ensp;G</h2>
+        <p class="fv__sub-title">into&nbsp;the&nbsp;ocean</p>
       </div>
 		</section>
 
@@ -763,14 +768,6 @@
 	</div>
 </section>
 
-
-
-
-
-
-
-
-
   <footer class="footer">
 		<div class="footer__inner inner">
 			<div class="footer__top">
@@ -832,10 +829,19 @@
 						<a href="#"><h3 class="starfish-icon">お問い合わせ</h3></a>
         </div>
 			</div>
+			<div class="footer__copyright">
+			Copyright © 2021-2023 CodeUps LLC. All Rights Reserved.
+			</div>
 		</div>
-		<div class="footer__copyright">
-			Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.
-		</div>
+
+
+          <div class="footer__button page-top-button js-page-top-button">
+            <div class="page-top-button__img">
+							<picture>
+								<img src="./assets/images/totop-button.png" alt="">
+						</picture>
+						</div>
+          </div>
 </footer>
 
 
