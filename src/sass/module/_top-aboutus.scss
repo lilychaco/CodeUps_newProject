@@ -1,18 +1,13 @@
 @use "global" as *;
 
 .top-aboutus {
-
 }
 
 .top-aboutus__inner {
 	position: relative;
-
-
-
 }
 
 .top-aboutus__heading {
-
 }
 .top-aboutus__container {
 	width:100%;
@@ -62,10 +57,11 @@
 			font-weight: $regular;
 			line-height: 1;
 			letter-spacing: 0;
-	color:$greenaccent;
+			color:$greenaccent;
 
 	@include mq(md) {
 			font-size: rem(80);
+			line-height: 1.25;
 			color:$white;
 	}
 }
