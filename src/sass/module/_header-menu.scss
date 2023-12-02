@@ -21,7 +21,11 @@
 	text-align: center;
 	color:$white;
 }
-
+.header-menu__item a:hover {
+	@include mq(md) {
+			border-bottom: 1px solid $white;
+	}
+}
 .header-menu__text--english {
 	font-size: rem(18);
 			font-family:  $third-font-family;
