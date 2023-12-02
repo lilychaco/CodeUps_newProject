@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.top-contact {
+
+
+}
+
+
+
+.top-contact__inner {
+	@include mq(md) {
+		padding-top: rem(80);
+		padding-bottom: rem(80);
+		padding-left: rem(50);
+		padding-right: rem(112);
+		box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);;
+	}
+
+}
+.top-contact__container {
+	@include mq(md) {
+			display: flex;
+			gap:rem(81);
+
+	}
+}
+
+.top-contact__maparea {
+	@include mq(md) {
+	padding-right: rem(82);
+	border-right: 1px solid $greenaccent;
+	}
+}
+
+
+
+.top-contact__cta {
+	margin-top: rem(32);
+	padding-left: rem(15);
+	padding-right: rem(15);
+
+	@include mq(md) {
+			margin-top: rem(20);
+			padding-left: rem(81);
+			padding-right: rem(112);
+	}
+}
+
+.top-contact__button {
+	margin-top:rem(40)
+}

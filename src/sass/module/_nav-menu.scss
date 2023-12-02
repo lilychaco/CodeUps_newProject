@@ -1,0 +1,104 @@
+@use "global" as *;
+
+.nav-menu {
+	margin-inline:auto;
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"a b"
+	"c d";
+	@include mq(md) {
+			display:flex;
+	}
+}
+.nav-menu--footer {
+
+}
+.nav-menu__box {
+    display: flex;
+    flex-direction: column;
+		color:$white;
+
+}
+
+.nav-menu__box--01 {
+	grid-area: a;
+	padding-top: rem(24);
+	padding-bottom: rem(16);
+}
+
+.nav-menu__box--02 {
+	grid-area: c;
+	padding-top: rem(20);
+		padding-bottom: rem(16);
+
+	@include mq(md) {
+			margin-left: rem(120);
+	}
+}
+
+.nav-menu__box--03 {
+		grid-area: b;
+		padding-top: rem(24);
+			padding-bottom: rem(16);
+
+		@include mq(md) {
+			margin-left: rem(120);
+	}
+}
+
+.nav-menu__box--04 {
+		grid-area: d;
+		padding-top: rem(20);
+			padding-bottom: rem(16);
+		@include mq(md) {
+			margin-left: rem(120);
+	}
+}
+.nav-menu__box--05 {
+			grid-area: b;
+		padding-top: rem(24);
+			padding-bottom: rem(16);
+			padding-left: rem(12);
+
+		@include mq(md) {
+			margin-left: rem(120);
+}}
+.nav-menu__box--06 {
+			grid-area: d;
+		padding-top: rem(22);
+			padding-bottom: rem(16);
+			padding-left: rem(12);
+
+		@include mq(md) {
+			margin-left: rem(120);
+}}
+
+.nav-menu__item:not(:first-child) {
+	margin-top: rem(40);
+}
+.nav-menu__item h3 {
+		font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: bold;
+			line-height: 1.1;
+			letter-spacing: 0;
+}
+.nav-menu__item ul{
+	padding-left: rem(22);
+}
+.nav-menu__item li {
+	margin-top: rem(20);
+}
+.nav-menu__item li a {
+		font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: regular;
+			line-height: 1.125;
+			letter-spacing: 0;
+}
+
+.nav-menu__item:not(:first-child).nav-menu__item--01 {
+	margin-top: rem(36);
+}

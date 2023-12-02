@@ -1,0 +1,71 @@
+@use "global" as *;
+
+.section-heading {
+	text-align: center;
+	position: relative;
+}
+
+.section-heading__title {
+		text-align: center;
+		color:$font-color;
+		font-size: rem(32);
+				font-family: $third-font-family;
+				font-weight: regular;
+				line-height: 1.25;
+				letter-spacing: 0;
+				color:red;
+
+		@include mq(md) {
+		font-size: rem(40);
+		line-height:1;
+		}
+}
+.section-heading__title span {
+	color:$greenaccent;
+}
+.section-heading__subtitle {
+		margin-top: rem(4);
+		font-size: rem(12);
+		font-weight: $regular;
+		font-family: $base-font-family;
+		line-height: 1.5;
+		letter-spacing: 0;
+		color:$greenaccent;
+		color:orange;
+		@include mq(md) {
+			margin-top: rem(8);
+		}
+}
+
+.section-heading__title--top-blog {
+	@include mq(md) {
+			color:$white;
+	}
+}
+
+.section-heading__title--top-blog span {
+	@include mq(md) {
+		color:$greenpale
+	}
+}
+.section-heading__subtitle--top-blog {
+	@include mq(md) {
+			color:$white;
+	}
+}
+.section-heading__title--top-contact {
+	font-size: rem(80);
+
+}
+.section-heading__subtitle--top-contact {
+	margin-top:rem(-16);
+}
+.section-heading__text {
+	margin-top: rem(6);
+	font-size: rem(14);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.285;
+			letter-spacing: 0;
+	color:$greenaccent;
+}
