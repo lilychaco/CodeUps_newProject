@@ -6,8 +6,8 @@
   grid-template-columns: 1fr;
 
 	@include mq(md) {
-		grid-template-columns: repeat(auto-fill, 330px); /* カラムの幅を330pxに固定 */
+		grid-template-columns: repeat(auto-fill, 333px); 
   justify-content: center; /* 中央揃え */
-	grid-gap: rem(40);//PC版でチェックすること
+	grid-gap: rem(40);
 	}
 }

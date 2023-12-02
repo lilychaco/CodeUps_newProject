@@ -40,6 +40,7 @@
 .section-heading__title--top-blog {
 	@include mq(md) {
 			color:$white;
+			color:red;
 	}
 }
 
