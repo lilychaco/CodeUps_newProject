@@ -13,7 +13,6 @@
 				font-weight: regular;
 				line-height: 1.25;
 				letter-spacing: 0;
-				color:red;
 
 		@include mq(md) {
 		font-size: rem(40);
@@ -31,7 +30,6 @@
 		line-height: 1.5;
 		letter-spacing: 0;
 		color:$greenaccent;
-		color:orange;
 		@include mq(md) {
 			margin-top: rem(8);
 		}
@@ -40,7 +38,6 @@
 .section-heading__title--top-blog {
 	@include mq(md) {
 			color:$white;
-			color:red;
 	}
 }
 
@@ -54,12 +51,15 @@
 			color:$white;
 	}
 }
-.section-heading__title--top-contact {
+.section-heading__title.section-heading__title--top-contact {
 	font-size: rem(80);
-
 }
-.section-heading__subtitle--top-contact {
+.section-heading__subtitle.section-heading__subtitle--top-contact {
 	margin-top:rem(-16);
+	@include mq(md) {
+			line-height: 1;
+			margin-top:rem(-4);
+	}
 }
 .section-heading__text {
 	margin-top: rem(6);
@@ -69,4 +69,7 @@
 			line-height: 1.285;
 			letter-spacing: 0;
 	color:$greenaccent;
+	@include mq(md) {
+			margin-top: rem(14);
+	}
 }

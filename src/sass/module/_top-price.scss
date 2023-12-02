@@ -13,7 +13,7 @@
 
 	@include mq(md) {
 			padding-top: rem(100);
-			padding-bottom: rem(100);
+			padding-bottom: rem(102);
 	}
 }
 
@@ -21,7 +21,7 @@
 		margin-top: rem(28);
     display: flex;
     flex-direction: column;
-    gap: 40px; /* rem(40) の代わりに 40px を使用 */
+    gap: 40px;
     @include mq(md) {
 				margin-top: rem(40);
         flex-direction: row-reverse;
@@ -33,7 +33,7 @@
 
 .top-price__lists {
     @include mq(md) {
-        flex: 1; /* カードの幅を均等にする */
+        flex: 1;
     }
 }
 
@@ -72,5 +72,4 @@
 	left: rem(-56);
 	aspect-ratio: 437 / 201;
 	max-width: rem(437);
-	background-color: pink;
 }
