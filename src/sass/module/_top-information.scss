@@ -56,11 +56,11 @@
 			line-height: 1.2;
 			letter-spacing: 0;
 	color:$font-color;
-
-	padding-bottom: rem(3);
+	padding-bottom: rem(6);
 	border-bottom: 1px solid $greenaccent;
 	@include mq(md) {
 				font-size: rem(24);
+				padding-bottom: rem(3);
 	}
 }
 .top-information__text {

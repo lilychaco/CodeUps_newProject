@@ -45,26 +45,26 @@ jQuery(function ($) {
   });
 
   //campaignのスライダー用
-  // let campaignSlider = new Swiper(".js-campaign-swiper", {
-  //   loop: true,
-  //   autoplay: {
-  //     delay: 2000,
-  //     disableOnInteraction: false,
-  //   },
-  //   speed: 2000,
-  //   slidesPerView: "auto", // スライドの数を自動調整
-  //   // 前後の矢印
-  //   navigation: {
-  //     nextEl: ".swiper-button-next",
-  //     prevEl: ".swiper-button-prev",
-  //   },
-  //   breakpoints: {
-  //     769: {
-  //       // 769px以上のデバイスでの設定
-  //       slidesPerView: "auto", // PCでは3枚半表示
-  //     },
-  //   },
-  // });
+  let campaignSlider = new Swiper(".js-campaign-swiper", {
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    slidesPerView: "auto", // スライドの数を自動調整
+    // 前後の矢印
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      769: {
+        // 769px以上のデバイスでの設定
+        slidesPerView: "auto", // PCでは3枚半表示
+      },
+    },
+  });
 
 	//画像に色背景がついてから、写真が出てくる
   //要素の取得とスピードの設定
