@@ -41,7 +41,7 @@
 .header-menu__text--english {
 	font-size: rem(18);
 			font-family:  $third-font-family;
-			font-weight: regular;
+			font-weight: $regular;
 			line-height: 1;
 			letter-spacing: 0;
 }
@@ -52,7 +52,7 @@
 .header-menu__text--japanese {
 	font-size: rem(10);
 			font-family: $base-font-family;
-			font-weight: regular;
+			font-weight: $regular;
 			line-height: 1.5;
 			letter-spacing: 0;
 			@include mq(md) {
