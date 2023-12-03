@@ -2,7 +2,6 @@
 
 .hamburger {
 position: fixed;
-
 right: rem(15);
 width: 32px;
 height: 24px;
@@ -11,7 +10,7 @@ box-shadow: 0 0 2rem transparent;
 outline: none;
 -webkit-transition: all .3s ease-in-out;
 				transition: all .3s ease-in-out;
-				@include mq(md) {
+	@include mq(md) {
 						display: none;
 				}
 }
