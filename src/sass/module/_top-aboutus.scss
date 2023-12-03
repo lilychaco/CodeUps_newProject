@@ -65,7 +65,9 @@
 			color:$white;
 	}
 }
-
+.top-aboutus__title span {
+	text-transform: uppercase;
+}
 .top-aboutus__body {
 	margin-top: rem(16);
 	@include mq(md) {
@@ -82,8 +84,9 @@
 			letter-spacing: 0;
 	@include mq(md) {
 			color:$white;
+			max-height: rem(350);
+			overflow: auto;
 	}
-
 }
 
 .top-aboutus__button {

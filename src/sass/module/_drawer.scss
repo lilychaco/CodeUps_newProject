@@ -24,7 +24,6 @@
 
 }
 
-
 .is-drawerActive {
   overflow: hidden;
 }
@@ -34,7 +33,14 @@
   transition: 0.3s;
 	overflow: auto;
 }
-
+.is-drawerActive .header {
+	background-color: $greenaccent;
+}
 .drawer__nav-menu {
+	margin-inline: auto;
+  width: 100%;
+	min-height: rem(444);
+	padding-top: rem(40);
+	padding-bottom: rem(40);
 
 }

@@ -3,23 +3,35 @@
 .header-menu {
 	display: none;
 	@include mq(md) {
-			display: block;
+		display: block;
 	}
 }
 
 .header-menu__items {
+	@include mq(md) {
+			width: 100%;
+	height: inherit;
 	display: flex;
+	justify-content: flex-end;
+	}
 }
 
 .header-menu__item {
+	width: 100%;
+	height: inherit;
 	margin-left: rem(40);
-
 }
 .header-menu__item a{
+	width: 100%;
+	height: inherit;
 	display:flex;
 	flex-direction: column;
 	text-align: center;
 	color:$white;
+	white-space: nowrap;
+	display: inline-block;
+	padding-top: rem(26);
+	padding-bottom: rem(10);
 }
 .header-menu__item a:hover {
 	@include mq(md) {
@@ -33,6 +45,9 @@
 			line-height: 1;
 			letter-spacing: 0;
 }
+.header-menu__text--english span {
+	text-transform: uppercase;
+}
 
 .header-menu__text--japanese {
 	font-size: rem(10);
@@ -41,6 +56,6 @@
 			line-height: 1.5;
 			letter-spacing: 0;
 			@include mq(md) {
-					margin-top: rem(2);
+					margin-top: rem(4);
 			}
 }

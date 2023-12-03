@@ -6,18 +6,16 @@ jQuery(function ($) {
   $("#js-hamburger").click(function () {
     //toggleClassでclassをつけたり外したりする
     $("body").toggleClass("is-drawerActive");
-    //attr()でaria-expandedがfalseの場合、thisはクリックした要素そのもの
-    if ($(this).attr("aria-expanded") == "false") {
-      $(this).attr("aria-expanded", true);
-      //jQueryでcss操作、アニメーションにはdisplayではなく、visibilityを使う
-      $("#js-global-menu").css("visibility", "visible");
-      $("#js-global-menu").attr("aria-hidden", "false");
-    } else {
-      $(this).attr("aria-expanded", false);
-      $("#js-global-menu").css("visibility", "hidden");
-      $("#js-global-menu").attr("aria-hidden", "true");
-    }
-  });
+
+    // aria-expandedの状態を切り替える
+    let isExpanded = $(this).attr("aria-expanded") === "true";
+		$(this).attr("aria-expanded", !isExpanded);
+
+		  // メニューの可視性を切り替える
+  let visibility = !isExpanded ? "visible" : "hidden";
+  $("#js-global-menu").css("visibility", visibility);
+  $("#js-global-menu").attr("aria-hidden", isExpanded);
+});
 
   $("#js-global-menu a").click(function () {
     //ドロワーのリンクがクリックされたら

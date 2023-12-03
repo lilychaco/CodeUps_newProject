@@ -40,3 +40,15 @@
     }
   }
 }
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+  @include mq("md") {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

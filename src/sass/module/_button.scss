@@ -29,7 +29,9 @@
 	cursor: pointer;
 	transition: ease .2s;
 }
-
+.button__link span {
+	text-transform: uppercase;
+}
 .button__link::after {
 	content:"";
 	position: absolute;
