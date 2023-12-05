@@ -67,9 +67,19 @@
 }
 
 .top-price__fish-image {
-	position: absolute;
-	bottom:rem(58);
-	left: rem(-56);
-	aspect-ratio: 437 / 201;
-	max-width: rem(437);
+	display: none;
+	@include mq(md) {
+		display: block;
+		position: absolute;
+		bottom:rem(58);
+		left: calc(50% - min(48vw, 38.75rem));
+		aspect-ratio: 437 / 201;
+		width: rem(437);
+	}
+}
+
+.top-price__fish-image img {
+	width:100%;
+	height:100%;
+	object-fit: cover;
 }

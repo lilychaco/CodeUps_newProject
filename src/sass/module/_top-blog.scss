@@ -29,13 +29,16 @@
 	}
 }
 .top-blog__fish-image {
-	@include mq(md) {
-			position: absolute;
+display: none;
+@include mq(md) {
+	display: block;
+	position: absolute;
+	z-index:100;
 	top:rem(22);
-	left: rem(-56);
+	left: calc(50% - min(48vw, 38.75rem));
 	aspect-ratio: 437 / 201;
 	max-width: rem(437);
-	}
+}
 }
 .top-blog__fish-image img {
 	width: 100%;

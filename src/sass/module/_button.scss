@@ -28,6 +28,8 @@
 	letter-spacing: 0;
 	cursor: pointer;
 	transition: ease .2s;
+	box-sizing: border-box; /* ボックスサイジングを追加 */
+  border: 1px solid transparent; /* ホバー前のボーダーを透明に設定 */
 }
 .button__link span {
 	text-transform: uppercase;
