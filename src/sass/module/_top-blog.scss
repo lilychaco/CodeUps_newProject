@@ -10,7 +10,7 @@
 		position: absolute; /* 絶対位置指定 */
     top: 0; /* 上端から0pxの位置に配置 */
 		background-image: url('../images/blog-mv-pc.jpg'); /* 画像のパスを指定 */
-    width: 100vw;   /* 横幅をブラウザのビューポート幅に設定 */
+    width: 100%;   /* 横幅をブラウザのビューポート幅に設定 */
     height: rem(500);  /* 高さを500ピクセルに設定 */
     background-size: cover; /* 背景画像を要素のサイズに合わせる */
     background-position: center; /* 画像を中央に配置 */
