@@ -20,10 +20,11 @@ display: none;
 }}
 .top-voice__heading {
 
+
 }
 
 .top-voice__cards {
-	margin-top: rem(44);
+	margin-top: rem(42);
 	@include mq(md) {
 			margin-top: rem(30);
 	}

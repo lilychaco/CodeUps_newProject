@@ -1,12 +1,12 @@
 @use "global" as *;
 
 .top-campaign {
-
+		overflow: hidden;
 }
 
 .top-campaign__inner {
+	width: 100%;
 	position: relative;
-
 }
 
 .top-campaign__heading {
@@ -15,21 +15,20 @@
 
 
 .top-campaign__cards-wrapper {
-	width: 100%;
+	width: 100vw;
 	margin-top: rem(28);
-	@include mq(md) {
-			margin-top: rem(40);
-	}
+
+@include mq(md) {
+		margin-top: rem(40);
+		margin-right: calc(50% - 50vw);
+		padding-bottom: rem(4);
+}
 }
 
 //swiper-wrapperの範囲を指定
 .top-campaign__cards {
-	width: 100%;
-	height:rem(366);
-
-	@include mq(md) {
-			height:rem(452);
-	}
+	width: 100vw;
+	height:auto;
 }
 .top-campaign__button {
 	margin-top: rem(40);

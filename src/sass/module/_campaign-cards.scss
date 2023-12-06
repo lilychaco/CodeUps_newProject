@@ -9,7 +9,7 @@
 
 	@include mq(md) {
 			width: rem(334);
-			height:rem(441);
+			min-height:rem(441);
 			margin-right: rem(40);
 	}
 }

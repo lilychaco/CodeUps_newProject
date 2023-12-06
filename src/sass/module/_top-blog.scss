@@ -21,7 +21,7 @@
 .top-blog__inner {
 	padding-left: rem(21);
 	padding-right: rem(21);
-	padding-top: rem(84);
+	padding-top: rem(80);
 	position: relative; /* 相対位置指定 */
   z-index: 2; /* 背景画像より上に表示 */
 	@include mq(md) {

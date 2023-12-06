@@ -14,40 +14,49 @@
 	margin-inline:auto;
 	margin-top: rem(28);
 	@include mq(md) {
-		margin-top: rem(40);
-		position: relative;
+		margin-top: rem(42);
 		z-index: 1;
+	}
+}
+.top-aboutus__main-wrapper {
+	@include mq(md) {
+		margin-inline:auto;
+		width:100%;
+		padding-top: rem(202);
+		padding-bottom: rem(217);
+		padding-left: rem(198);
+		padding-right: rem(36);
+		background-image:url(../images/aboutus-ocean1.jpg), url(../images/aboutus-ocean2.jpg);
+		background-repeat: no-repeat, no-repeat;
+		background-size: 37%, 81.5%;
+		background-position: left top, rem(200) rem(80);
 	}
 }
 .top-aboutus__image {
 	aspect-ratio: 345/212;
 	@include mq(md) {
-			width: 100%;
-			/* PC向けの背景画像スタイル */
-				max-width: rem(1080);
-        // position: relative;
-        // z-index: 1;
+			display:none;
 	}
 }
 .top-aboutus__image img {
 	width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
+	aspect-ratio: 345/212;
+	@include mq(md) {
+			display:none;
+	}
 }
 .top-aboutus__main {
 	margin-top: rem(40);
-
 	@include mq(md) {
-		width: 78%;
+		margin-top: rem(40);
+		width: 100%;
 			max-width: rem(840);
 			margin-top: 0;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			gap:rem(40);
-			position: absolute;
-        top: rem(200);
-        left: 18.4%;
-        z-index: 2;
 	}
 }
 
