@@ -3,18 +3,16 @@
 .top-price {
 		background-color: $greenpale;
 		z-index:-100;
-
-}
-.top-price__inner {
-	padding-top: rem(80);
-	padding-bottom: rem(82);
-	position: relative;
-	z-index:1;
-
-	@include mq(md) {
+		padding-top: rem(80);
+		padding-bottom: rem(82);
+			@include mq(md) {
 			padding-top: rem(100);
 			padding-bottom: rem(102);
 	}
+}
+.top-price__inner {
+	position: relative;
+	z-index:1;
 }
 
 .top-price__main {
@@ -74,7 +72,7 @@
 	@include mq(md) {
 		display: block;
 		position: absolute;
-		bottom:rem(58);
+		bottom:rem(60);
 		left: calc(50% - min(48vw, 38.75rem));
 		width: rem(437);
 	}

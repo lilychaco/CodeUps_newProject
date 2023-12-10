@@ -38,9 +38,15 @@ display: none;
 }
 
 .top-voice__seahorse-image {
-	position: absolute;
+	@include mq(md) {
+			position: absolute;
 	right:rem(25);
-	bottom:rem(-70);
-	aspect-ratio: 71 / 162;
+	bottom:rem(-68);
 	max-width: rem(71);
+	}
+}
+.top-voice__seahorse-image img {
+	width: 100%;
+	height:auto;
+	aspect-ratio: 71 / 162;
 }
