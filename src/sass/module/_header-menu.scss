@@ -13,17 +13,18 @@
 	height: inherit;
 	display: flex;
 	justify-content: flex-end;
+
 	}
 }
 
 .header-menu__item {
 	width: 100%;
 	height: inherit;
-	margin-left: rem(40);
 }
 .header-menu__item a{
 	width: 100%;
 	height: inherit;
+	padding-inline:rem(20);
 	text-align: center;
 	color:$white;
 	white-space: nowrap;

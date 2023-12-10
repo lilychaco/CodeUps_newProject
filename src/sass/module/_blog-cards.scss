@@ -6,7 +6,7 @@
   grid-template-columns: 1fr;
 
 	@include mq(md) {
-	grid-template-columns: repeat(auto-fill, 333px);
+	grid-template-columns: repeat(3, 1fr);
   justify-content: center; /* 中央揃え */
 	grid-gap: rem(40);
 	}

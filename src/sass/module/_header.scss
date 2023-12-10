@@ -26,7 +26,8 @@
 	padding: 0 rem(15);
 
 	@include mq(md) {
-		padding: 0 rem(40);
+		padding-right:rem(20);
+		padding-left: rem(40);
 	}
 }
 .header__logo {

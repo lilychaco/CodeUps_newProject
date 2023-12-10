@@ -1,34 +1,42 @@
 
 jQuery(function ($) {
-  // この中であればWordpressでも「$」が使用可能になる
+	// この中であればWordpressでも「$」が使用可能になる
 
-  //ハンバーガーボタンクリックで、ドロワーメニューの開閉
-  $("#js-hamburger").click(function () {
-    //toggleClassでclassをつけたり外したりする
-    $("body").toggleClass("is-drawerActive");
+	//ハンバーガーボタンクリックで、ドロワーメニューの開閉
+	$("#js-hamburger").click(function () {
+		//toggleClassでclassをつけたり外したりする
+		$("body").toggleClass("is-drawerActive");
 
-    // aria-expandedの状態を切り替える
-    let isExpanded = $(this).attr("aria-expanded") === "true";
+		// aria-expandedの状態を切り替える
+		let isExpanded = $(this).attr("aria-expanded") === "true";
 		$(this).attr("aria-expanded", !isExpanded);
 
-		  // メニューの可視性を切り替える
-  let visibility = !isExpanded ? "visible" : "hidden";
-  $("#js-global-menu").css("visibility", visibility);
-  $("#js-global-menu").attr("aria-hidden", isExpanded);
-});
+		// メニューの可視性を切り替える
+		let visibility = !isExpanded ? "visible" : "hidden";
+		$("#js-global-menu").css("visibility", visibility);
+		$("#js-global-menu").attr("aria-hidden", isExpanded);
+	});
 
-  $("#js-global-menu a").click(function () {
-    //ドロワーのリンクがクリックされたら
-    $("body").toggleClass("is-drawerActive");
-    $("#js-hamburger").attr("aria-expanded", false);
-    $("#js-global-menu").css("visibility", "hidden");
-    $("#js-global-menu").attr("aria-hidden", "true");
-    $("#js-drawer-background").removeClass("is-drawerActive"); //ドロワーからis-activeクラスを外す
-  });
+	$("#js-global-menu a").click(function () {
+		//ドロワーのリンクがクリックされたら
+		$("body").toggleClass("is-drawerActive");
+		$("#js-hamburger").attr("aria-expanded", false);
+		$("#js-global-menu").css("visibility", "hidden");
+		$("#js-global-menu").attr("aria-hidden", "true");
+		$("#js-drawer-background").removeClass("is-drawerActive"); //ドロワーからis-activeクラスを外す
+	});
 
-  //ブラウザの高さを取得して、高さを指定する
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
+	//ブラウザの高さを取得して、高さを指定する
+	function setVh() {
+		var vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty("--vh", `${vh}px`);
+	}
+
+	// ページ読み込み時とウィンドウサイズ変更時に実行
+	window.addEventListener("load", setVh);
+	window.addEventListener("resize", setVh);
+
+
 
   //FVのスライダー用
   let fvSlider = new Swiper(".js-fv-swiper", {
@@ -44,11 +52,11 @@ jQuery(function ($) {
 
   //campaignのスライダー用
   let campaignSlider = new Swiper(".js-campaign-swiper", {
-    loop: true,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
+    // loop: true,
+    // autoplay: {
+    //   delay: 2000,
+    //   disableOnInteraction: false,
+    // },
     speed: 2000,
     slidesPerView: "auto", // スライドの数を自動調整
     // 前後の矢印

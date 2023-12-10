@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.cards-wrapper {
+		max-width: $inner;
+		margin-inline:auto ;
+		background-color: lightblue;
+		margin-top:rem(20);
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap:rem(24);
+	}
+
+.cards__item {
+	width: rem(333);/* カード幅を均等に固定 */
+	background-color: lightgreen;
+	display: flex;
+	flex-direction: column;
+}
+
+.card__img img {
+    width: 100%;
+    height: auto; /* 画像のアスペクト比を保持 */
+		aspect-ratio: 333 /223;
+}
+
+.card__body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-grow: 1;
+	background-color: #fff;
+	}
+
+.card__title {
+	font-size: rem(32);
+	background-color: yellow;
+	word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card__text {
+  margin-top: auto; /* 上の要素との間隔を自動的に最大にし、下揃えの効果を高めます */
+	word-wrap: break-word;
+  overflow-wrap: break-word;
+	background-color: orange;
+}
