@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.price-lists {
-
-}
 /* 最初の要素のみに適用されるスタイル */
 .price-lists__item:first-child {
     margin-top: 0;
@@ -12,5 +9,3 @@
 .price-lists__item:not(:first-child) {
     margin-top: rem(40);
 }
-
-
