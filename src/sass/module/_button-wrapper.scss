@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .button-wrapper {
-	display: flex;
-    justify-content: center;
-    align-items: center;
+	text-align: center;
+	padding-bottom: rem(4);
 }

@@ -40,7 +40,6 @@
 }
 .campaign-card__top {
 	padding-bottom: rem(8);
-	background-color: lightgreen;
 	@include mq(md) {
 			padding-bottom: rem(6);
 	}
@@ -74,12 +73,8 @@
 }
 
 .campaign-card__text {
-	// margin-top: rem(8);
 	margin-top: auto;
 	text-align: center;
 	border-top: 1px solid $greenaccent;
-	@include mq(md) {
-			// margin-top: rem(16);
-			margin-top: auto;
-	}
+
 }
