@@ -18,11 +18,11 @@
 	width: 100vw;
 	height:100%;
 	margin-top: rem(28);
+	padding-bottom: rem(4);
 
 @include mq(md) {
 		margin-top: rem(40);
 		margin-right: calc(50% - 50vw);
-		padding-bottom: rem(4);
 }
 }
 
@@ -32,7 +32,7 @@
 	height:100%;
 }
 .top-campaign__button {
-	margin-top: rem(40);
+	margin-top: rem(32);
 	@include mq(md) {
 			margin-top: rem(72);
 	}
