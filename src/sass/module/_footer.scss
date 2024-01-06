@@ -46,6 +46,9 @@
 			font-weight: $regular;
 			line-height: 1.5;
 			letter-spacing: 0;
+			@include mq(md) {
+					margin-top: rem(80);
+			}
 }
 .footer__copyright span {
 	text-transform: uppercase;

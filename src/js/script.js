@@ -50,13 +50,13 @@ jQuery(function ($) {
     speed: 2000,
   });
 
-  //campaignのスライダー用
+	//campaignのスライダー用
   let campaignSlider = new Swiper(".js-campaign-swiper", {
-    // loop: true,
-    // autoplay: {
-    //   delay: 2000,
-    //   disableOnInteraction: false,
-    // },
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
     speed: 2000,
     slidesPerView: "auto", // スライドの数を自動調整
     // 前後の矢印
@@ -64,7 +64,7 @@ jQuery(function ($) {
       nextEl: ".custom-swiper-button-next",
       prevEl: ".custom-swiper-button-prev",
     },
-    // .
+
     breakpoints: {
       769: {
         // 769px以上のデバイスでの設定
@@ -72,6 +72,7 @@ jQuery(function ($) {
       },
     },
   });
+
 
 	//画像に色背景がついてから、写真が出てくる
   //要素の取得とスピードの設定
