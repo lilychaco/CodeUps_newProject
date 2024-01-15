@@ -23,10 +23,17 @@
 	}
 }
 
-.top-contact__maparea {
+.top-contact-maparea {
+	// background-color: orange;
+	text-align: center;
+	padding-left: rem(25);
+	padding-right: rem(25);
+	display:flex;
+	flex-direction:column;
 	@include mq(md) {
 	padding-right: rem(82);
 	border-right: 1px solid $greenaccent;
+	padding-left: 0;
 	}
 }
 
@@ -45,6 +52,8 @@
 
 .top-contact__button {
 	margin-top: rem(38);
+	text-align: center;
+	padding-bottom: rem(4);
 	@include mq(md) {
 			margin-top:rem(40)
 	}
@@ -76,5 +85,3 @@
 			aspect-ratio:301 / 138;
 	}
 }
-
-

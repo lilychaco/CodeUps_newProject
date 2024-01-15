@@ -112,6 +112,8 @@
 
 .top-aboutus__button {
 	margin-top: rem(50);
+	text-align: center;
+	padding-bottom: rem(4);
 
 	@include mq(md) {
 			margin-top: rem(40);

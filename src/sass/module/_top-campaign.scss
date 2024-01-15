@@ -33,6 +33,8 @@
 }
 .top-campaign__button {
 	margin-top: rem(32);
+	text-align: center;
+	padding-bottom: rem(4);
 	@include mq(md) {
 			margin-top: rem(72);
 	}

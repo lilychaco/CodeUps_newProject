@@ -12,4 +12,31 @@
 
 .price-list__item {
 	margin-top: rem(8);
+	display: flex;
+	justify-content: space-between;
+}
+
+.price-list__name {
+		font-size: rem(14);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.7;
+			letter-spacing: 0;
+			@include mq(md) {
+					font-size: rem(16);
+					line-height: 1.5;
+			}
+}
+
+.price-list__number{
+	font-size: rem(14);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.7;
+			letter-spacing: 0;
+			margin-left:rem(5);
+			@include mq(md) {
+					font-size: rem(16);
+					line-height: 1.5;
+			}
 }

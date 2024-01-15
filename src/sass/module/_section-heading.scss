@@ -19,7 +19,7 @@
 		line-height:1;
 		}
 }
-.section-heading__title span {
+.section-heading__title::first-letter {
 	color:$greenaccent;
 	text-transform: uppercase;
 }
@@ -42,7 +42,7 @@
 	}
 }
 
-.section-heading__title--top-blog span {
+.section-heading__title--top-blog::first-letter {
 	@include mq(md) {
 		color:$greenpale
 	}

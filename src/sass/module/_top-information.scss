@@ -75,6 +75,8 @@
 .top-information__button {
 	z-index: 100;
 	margin-top: rem(37);
+	text-align: center;
+	padding-bottom: rem(4);
 	@include mq(md) {
 		margin-top: rem(40);
 	}

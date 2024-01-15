@@ -9,8 +9,9 @@
 	}
 }
 
-.top-blog__background-image {
+.top-blog::before {
 	@include mq(md) {
+		content:"";
 		position: absolute; /* 絶対位置指定 */
     top: 0; /* 上端から0pxの位置に配置 */
 		background-image: url('../images/blog-mv-pc.jpg'); /* 画像のパスを指定 */
@@ -59,6 +60,8 @@ display: none;
 }
 .top-blog__button {
 	margin-top: rem(40);
+	text-align: center;
+	padding-bottom: rem(4);
 	@include mq(md) {
 		margin-top: rem(78);
 	}

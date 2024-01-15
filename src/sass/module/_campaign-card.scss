@@ -76,4 +76,50 @@
 	margin-top: auto;
 	text-align: center;
 	border-top: 1px solid $greenaccent;
+	padding-top:rem(8);
+	@include mq(md) {
+	padding-top:rem(16);
+}
+}
+.campaign-card__price-info {
+		font-size: rem(14);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.71;
+			letter-spacing: 0;
+			text-align: center;
+			@include mq(md) {
+					font-size: rem(16);
+					line-height: 1.5;
+					padding-right: rem(12);
+			}
+}
+
+.campaign-card__price-text {
+		margin-top: rem(8);
+	font-size: rem(32);
+			font-family:  $forth-font-family;
+			font-weight: $bold;
+			line-height: 1;
+			letter-spacing: 0;
+	color:$greenaccent;
+	@include mq(md) {
+		font-size: rem(40);
+		padding-left: rem(4);
+	}
+}
+.campaign-card__price-text span {
+		font-size: rem(20);
+			font-family: $forth-font-family;
+			font-weight: $bold;
+			line-height: 1;
+			letter-spacing: 0;
+			color:$font-color;
+			padding-right: rem(16);
+			text-decoration: line-through;
+			text-decoration-color: #C94800;
+			@include mq(md) {
+					font-size: rem(24);
+					padding-right: rem(26);
+			}
 }
