@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.archive-campaign-cards {
+	width:100%;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.archive-campaign-cards__item {
+	width: rem(280);
+	height:auto;
+	@include mq(md) {
+			width: rem(520);
+	}
+
+}
