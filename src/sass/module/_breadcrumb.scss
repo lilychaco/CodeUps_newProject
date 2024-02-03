@@ -5,5 +5,10 @@
 }
 
 .breadcrumb {
-
+	font-size: rem(14);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+			color:$font-color
 }

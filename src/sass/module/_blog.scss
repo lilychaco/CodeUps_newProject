@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.blog {
+	margin-inline:auto;
+	width:100%;
+	margin-top:rem(52);
+	@include mq(md) {
+		margin-top:rem(150);
+		display: grid;
+		grid-template-columns: 65.4% 27.2%;
+		gap: 7.4%;
+	}
+}
+
+.blog__main {
+	margin-inline:auto;
+	width:100%;
+}
+
+.blog__items {
+	margin-inline:auto;
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap:rem(40);
+	@include mq(md) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap:rem(40);
+	}
+}
+
+.blog__nav {
+	margin-top: rem(80);
+}
+
+.blog__side {
+	background-color: pink;
+	padding-left: rem(27);
+	padding-right: rem(27);
+	@include mq(md) {
+		width: rem(294);
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

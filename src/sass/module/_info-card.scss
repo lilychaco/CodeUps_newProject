@@ -1,13 +1,57 @@
 @use "global" as *;
 
-.info-card__body {
-	width: 100%;
-	height:100%;
-  padding-top: rem(24);
-  padding-left: rem(16);
-  padding-right: rem(16);
+.info-card__container {
+  margin-inline: auto;
+  width: 100%;
+  padding: rem(24);
+  border: 1px solid $greenaccent;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(8);
+  @include mq(md) {
+    grid-template-columns: 1fr 1fr;
+    gap: rem(48);
+  }
 }
 
-.info-card__button {
-	margin-top: rem(40);
+.info-card__body {
+	width: 100%;
+	@include mq(md) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.info-card__title {
+	width: 100%;;
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: 1;
+  letter-spacing: 0;
+  padding-bottom: rem(8);
+  border-bottom: 1px solid $greenaccent;
+}
+
+.info-card__text {
+  margin-top: rem(8);
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.info-card__img {
+
+}
+
+.info-card__img img {
+	aspect-ratio: 297 / 189;
+	object-fit: cover;
+	@include mq(md) {
+		aspect-ratio: 492 / 313;
+	}
+
 }

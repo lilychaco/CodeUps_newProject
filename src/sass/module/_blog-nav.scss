@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.blog-nav {
+  position: relative;
+  max-width: rem(444);
+  margin-inline: auto;
+}
+
+.blog-nav__pager {
+  display: flex;
+  justify-content: center;
+  gap: rem(12);
+}
+
+.blog-nav__page {
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $greenaccent;
+  color: $greenaccent;
+  z-index: 100;
+}
+.blog-nav__page.is-active {
+  background-color: $greenaccent;
+  color: $white;
+}
+.blog-nav__link {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-nav__arrows {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.blog-nav__arrow {
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $greenaccent;
+  color: $greenaccent;
+}
+.blog-nav__arrow a {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

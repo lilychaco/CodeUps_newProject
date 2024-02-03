@@ -1,25 +1,19 @@
 @use "global" as *;
-.archive-campaign-cards-wrapper {
-	background-color: pink;
-}
+
 .archive-campaign-cards {
 	width:100%;
-	@include mq(md) {
-			display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: rem(40);
-
+	@include mq(md) {
+	display: grid;
+  justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	}
 }
 
 .archive-campaign-cards__item {
 	width: rem(280);
-	max-width: rem(600);
 	height:auto;
-	@include mq(md) {
-
-	}
-
 }

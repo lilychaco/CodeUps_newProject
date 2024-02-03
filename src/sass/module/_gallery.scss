@@ -1,0 +1,49 @@
+@use "global" as *;
+.gallery {
+	margin-inline:auto;
+	width:100%;
+	margin-top: rem(40);
+	@include mq(md) {
+		margin-top: rem(120);
+	}
+}
+.gallery__content {
+margin-inline:auto;
+width:100%;
+margin-top:rem(40);
+display: flex;
+flex-direction: column;
+gap:rem(8);
+
+@include mq(md) {
+	margin-top:rem(80);
+	display: grid;
+  gap: rem(8);/* 画像間の余白 */
+  grid-auto-flow: dense; /* 隙間を埋めながら配置 */
+  grid-template-columns:  45.56% 7.41% 45.56%;/* カラム数を設定 */
+	grid-template-rows: repeat(4, 1fr);
+}
+}
+.gallery__item {
+	object-fit: cover;
+}
+.gallery__item:nth-child(6n+1),
+.gallery__item:nth-child(6n+6) {
+	aspect-ratio: 345 / 523;
+	@include mq(md) {
+	grid-column: span 1;
+	grid-row: span 2;
+	aspect-ratio: 492 / 746;
+	}
+}
+.gallery__item:nth-child(6n+2),
+.gallery__item:nth-child(6n+3),
+.gallery__item:nth-child(6n+4),
+.gallery__item:nth-child(6n+5){
+	aspect-ratio: 345 / 219;
+	@include mq(md) {
+		grid-column: span 2;
+		grid-row: span 1;
+		aspect-ratio: 580 / 369;
+	}
+}
