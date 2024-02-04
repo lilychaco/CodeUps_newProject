@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.popular-card {
+	padding: rem(16);
+	display: grid;
+	grid-template-columns: rem(121) rem(125);
+	gap:rem(16);
+	box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.25);
+	background-color: $white;
+}
+
+.popular-card__img {
+	width: 100%;
+
+}
+.popular-card__img img {
+	aspect-ratio: 121 / 90;
+	object-fit: cover;
+}
+
+.popular-card__body {
+
+}
+
+.popular-card__date {
+	font-size: rem(12);
+			font-family: $third-font-family;
+			font-weight: $regular;
+			line-height: 1.5;
+			letter-spacing: 0;
+
+}
+
+.popular-card__title {
+	margin-top:rem(4);
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $medium;
+			line-height: 1;
+			letter-spacing: 0;
+
+}

@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.top-blog {
+	position: relative; /* 相対位置指定 */
+  background-color: white; /* 白色背景 */
+	padding-top: rem(80);
+		@include mq(md) {
+			padding-top: rem(96);
+	}
+}
+
+.top-blog::before {
+	@include mq(md) {
+		content:"";
+		position: absolute; /* 絶対位置指定 */
+    top: 0; /* 上端から0pxの位置に配置 */
+		background-image: url('../images/blog-mv-pc.jpg'); /* 画像のパスを指定 */
+    width: 100%;   /* 横幅をブラウザのビューポート幅に設定 */
+    height: rem(500);  /* 高さを500ピクセルに設定 */
+    background-size: cover; /* 背景画像を要素のサイズに合わせる */
+    background-position: center; /* 画像を中央に配置 */
+		z-index: 1; /* z-indexで重ねる順序を指定 */
+	}
+}
+
+.top-blog__inner {
+	padding-left: rem(21);
+	padding-right: rem(21);
+	position: relative; /* 相対位置指定 */
+  z-index: 2; /* 背景画像より上に表示 */
+}
+
+.top-blog__fish-image {
+display: none;
+@include mq(md) {
+	display: block;
+	position: absolute;
+	z-index:100;
+	top:rem(-72
+	);
+	left: calc(50% - min(48vw, 38.75rem));
+	aspect-ratio: 437 / 201;
+	max-width: rem(437);
+}
+}
+.top-blog__fish-image img {
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+
+}
+.top-blog__cards {
+	margin-inline:auto;
+	width:100%;
+	margin-top: rem(26);
+
+	@include mq(md) {
+		margin-top: rem(80);
+	}
+}
+.top-blog__button {
+	margin-top: rem(40);
+	text-align: center;
+	padding-bottom: rem(4);
+	@include mq(md) {
+		margin-top: rem(78);
+	}
+}

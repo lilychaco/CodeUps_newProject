@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.top-price {
+		background-color: $greenpale;
+		z-index:-100;
+		padding-top: rem(80);
+		padding-bottom: rem(82);
+			@include mq(md) {
+			padding-top: rem(100);
+			padding-bottom: rem(102);
+	}
+}
+.top-price__inner {
+	position: relative;
+	z-index:1;
+}
+
+.top-price__main {
+		margin-top: rem(28);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @include mq(md) {
+				margin-top: rem(40);
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: flex-start;
+    }
+}
+
+.top-price__lists {
+    @include mq(md) {
+        flex: 1;
+    }
+}
+
+.top-price__image {
+	width:100%;
+
+	@include mq(md) {
+			max-width: rem(492);
+	}
+}
+.top-price__image img {
+	width: 100%;
+  height: auto;
+  object-fit: cover;
+	aspect-ratio: 345 / 227;
+	@include mq(md) {
+		aspect-ratio: 492 / 746;
+	}
+}
+.top-price__lists {
+
+	@include mq(md) {
+			max-width: rem(492);
+	}
+
+}
+.top-price__button {
+	z-index: 1000;
+	margin-top: rem(37);
+	text-align: center;
+	padding-bottom: rem(4);
+
+	@include mq(md) {
+			margin-top: rem(80);
+	}
+}
+
+.top-price__fish-image {
+	display: none;
+	@include mq(md) {
+		display: block;
+		position: absolute;
+		bottom:rem(-38);
+		left: calc(50% - min(48vw, 38.75rem));
+		width: rem(437);
+	}
+}
+
+.top-price__fish-image img {
+
+	@include mq() {
+	width:100%;
+	height:auto;
+	object-fit: cover;
+	aspect-ratio: 437 / 201;
+	}
+}
