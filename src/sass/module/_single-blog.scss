@@ -1,0 +1,126 @@
+@use "global" as *;
+
+.single-blog {
+	padding-right: rem(3);
+
+
+}
+
+.single-blog__post {
+	margin-inline:auto;
+	width:100%;
+
+}
+
+.single-blog__top {
+
+}
+
+.single-blog__date {
+	font-size: rem(14);
+			font-family: $third-font-family;
+			font-weight: $regular;
+			line-height: 1.36;
+			letter-spacing: 0;
+
+}
+
+.single-blog__title {
+	font-size: rem(24);
+			font-family: $base-font-family;
+			font-weight: $medium;
+			line-height: 1;
+			letter-spacing: 0;
+			margin-top:rem(8);
+			padding-bottom: rem(4);
+			border-bottom: 1px solid $greenaccent;
+			@include mq(md) {
+					font-size: rem(32);
+			}
+
+}
+.single-blog__content {
+	margin-inline:auto;
+	width:100%;
+	margin-top:rem(24);
+	text-align: left;
+	@include mq(md) {
+		margin-top:rem(40);
+	}
+}
+.single-blog__image {
+	width: 100%;
+}
+
+.single-blog__image:not(:first-of-type) {
+	margin-top: rem(24);
+	@include mq(md) {
+		margin-top: rem(40);
+}
+}
+
+.single-blog__image img {
+	aspect-ratio: 345 / 231;
+	object-fit: cover;
+	@include mq(md) {
+			aspect-ratio: 700 / 468;
+	}
+}
+.single-blog__text {
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.5;
+			letter-spacing: 0;
+			margin-top: rem(24);
+			@include mq(md) {
+					margin-top: rem(40);
+			}
+
+}
+
+.single-blog__lists {
+	margin-top: rem(24);
+	@include mq(md) {
+		margin-top: rem(40);
+	}
+}
+
+.single-blog__list {
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.5;
+			letter-spacing: 0;
+	position: relative;
+	padding-left: rem(21);
+
+}
+.single-blog__list:not(:first-child) {
+	margin-top: rem(4);
+}
+.single-blog__list::before {
+	content: "";
+	background-image: url(../images/icon-hitode.jpg);
+	width: rem(18);
+	height:rem(18);
+	position: absolute;
+	background-size: contain;
+	background-repeat:no-repeat;
+	top:0;
+	left: 0;
+	bottom:0;
+	margin:auto;
+}
+
+.single-blog__nav {
+	margin-top: rem(40);
+	@include mq(md) {
+		margin-top: rem(80);
+	}
+}
+.single-blog__nav .blog-nav__arrows {
+	display: flex;
+	justify-content: center;
+	gap:rem(82);
+}

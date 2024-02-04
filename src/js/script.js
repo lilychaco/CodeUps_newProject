@@ -133,15 +133,23 @@ jQuery(function ($) {
 //サイドバーのアーカイブ
 	$(document).ready(function () {
     // 年度タイトルをクリックしたときのイベント
-    $(".side-archive__year-toggle").click(function () {
+		$(".js-year-toggle").click(function () {
+      // この要素の兄弟要素である月リストの表示/非表示を切り替えます
+      var $monthList = $(this).next(".side-archive__month-list");
       // 他のすべての月リストを隠します
-      $(".side-archive__month-list").slideUp();
-      // この年度の月リストの表示/非表示を切り替えます
-      $(this).next(".side-archive__month-list").slideToggle();
+      $(".side-archive__month-list").not($monthList).slideUp();
+			//月リストの表示/非表示を切り替えます
+			$monthList.slideToggle();
 
-      // アクティブクラスを切り替えます
-      $(".side-archive__year").removeClass("active");
-      $(this).parent(".side-archive__year").addClass("active");
+			// 既にアクティブな状態であれば、クラスを削除し、それ以外の場合はアクティブクラスを追加
+        if ($(this).parent(".side-archive__year").hasClass("active")) {
+          // クリックされた要素が既にアクティブな場合、トグル動作後にクラスを削除
+          $(this).parent(".side-archive__year").removeClass("active");
+        } else {
+          // 他のアクティブクラスを削除し、現在の要素にアクティブクラスを追加
+          $(".side-archive__year").removeClass("active");
+          $(this).parent(".side-archive__year").addClass("active");
+        }
     });
   });
 
