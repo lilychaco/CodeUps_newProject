@@ -1,11 +1,18 @@
 @use "global" as *;
-
+.form {
+  margin-inline: auto;
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(700);
+  }
+}
 .form__row {
   border-bottom: 1px dotted $greenaccent;
   padding-bottom: rem(24);
 
   @include mq(md) {
-    display: flex;
+    display: grid;
+    grid-template-columns: rem(220) auto;
   }
 }
 .form__row:not(:first-child) {
@@ -37,14 +44,19 @@
   height: rem(40);
   border: 1px solid $greenaccent;
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }
 .form__row--item {
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }
 .form__radio {
   position: relative;
   display: block; /* 縦並びに */
-  margin: 0.5em 0; /* 前後のスペース */
   padding-left: 22px;
   cursor: pointer;
   user-select: none;
@@ -84,6 +96,9 @@
 
 .form__row--campaign {
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }
 .form__row--campaign select {
   width: 100%;
@@ -131,6 +146,9 @@
   min-height: rem(200);
   border: 1px solid $greenaccent;
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
 }
 
 .form__outside {
@@ -145,12 +163,17 @@
 
 .form__privacy-label {
   position: relative;
-  padding-left: rem(30);
-  display: flex;
-  align-items: center;
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.57;
+  letter-spacing: 0;
+  text-align: left;
+  @include mq(md) {
+    text-align: center;
+  }
 }
-
-.form__privacy-label span::before {
+.form__privacy-mark {
   display: inline-block;
   content: "";
   height: 22px;
@@ -159,17 +182,28 @@
   background: #fff;
   position: absolute;
   top: 0;
-  left: 0;
-  // transition: all .2s;
+  left: rem(-30);
 }
-.form__privacy-label span {
-  font-size: rem(14);
-  font-family: $base-font-family;
-  font-weight: $regular;
-  line-height: 1.57;
-  letter-spacing: 0;
-  text-align: left;
+
+.form__privacy-mark::after {
+  width: 8px;
+  height: 17px;
+  position: absolute;
+  top: 0;
+  left: 6px;
+  transform: translateY(50%);
+  border-right: 2px solid #c94800; /* チェックマークの色 */
+  border-bottom: 2px solid #c94800; /* チェックマークの色 */
+  content: "";
+  opacity: 1;
+  transform: rotate(45deg);
+  display: none;
 }
+
+.form__privacy-label input:checked + .form__privacy-mark::after {
+	display: block;
+}
+
 .form__btn {
   margin-top: rem(24);
 }
