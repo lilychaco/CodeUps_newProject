@@ -227,46 +227,65 @@
 									<input type="text" name="name" /></dd>
 							</dl>
 							<dl class="form__row">
-								<dt>メールアドレス</dt>
+								<dt>メールアドレス<span>必須</span></dt>
 								<dd>
 									<input type="email" name="email" />
 								</dd>
 							</dl>
 							<dl class="form__row">
-								<dt>電話番号</dt>
+								<dt>電話番号<span>必須</span></dt>
 								<dd>
 									<input type="phone" name="phone" />
 								</dd>
 							</dl>
 							<dl class="form__row">
-								<dt>お問い合わせ項目</dt>
-								<dd>
-									<input type="checkbox" name="phone" />
+								<dt>お問い合わせ項目<span>必須</span></dt>
+								<dd class="form__row--item">
+									<label class="form__radio" for="divingseminar">
+										<input type="radio" name="kinds" id="divingseminar">
+										<span class="form__radio-mark"></span>ダイビング講習について
+									</label>
+									<label class="form__radio" for="fundiving">
+										<input type="radio" name="kinds" id="fundiving">
+										<span class="form__radio-mark"></span>ファンダイビングについて
+									</label>
+									<label class="form__radio" for="testdiving">
+										<input type="radio" name="kinds" id="testdiving">
+										<span class="form__radio-mark"></span>体験ダイビングについて</label>
 								</dd>
 							</dl>
 							<dl class="form__row">
 								<dt>キャンペーン</dt>
-								<dd>
-									<select id="campaign" name="campaign">
-										<option value="lisence">ライセンス講習</option>
-										<option value="fandiving">ファンダイビング</option>
-										<option value="taikendiving">体験ダイビング</option>
-									</select>
+								<dd class="form__row--campaign">
+									<div class="form__row-select-wrapper">
+										<select id="campaign-select" name="campaign" class="form__row-select">
+											<option value="">キャンペーン内容を選択</option>
+											<option value="seminar">ライセンス講習</option>
+											<option value="fundiving">ファンダイビング</option>
+											<option value="testdiving">体験ダイビング</option>
+										</select>
+									</div>
 								</dd>
 							</dl>
 							<dl class="form__row form__row--message">
-								<dt>お問い合わせ内容</dt>
+								<dt>お問い合わせ内容<span>必須</span></dt>
 								<dd>
 									<textarea name="message" id=""></textarea>
 								</dd>
 							</dl>
 							<div class="form__outside">
-								<p class="form__text">
-									上記に入力された情報につきましては、当お問い合わせに対する返信以外には使用いたしません。<br class="u-desktop" /><a
-										href="#">プライバシーポリシー</a>に同意の上、内容を確認してください。
-								</p>
+								<label for="privacy" class="form__privacy-label">
+                      <input
+                        type="checkbox"
+                        id="form-privacy"
+                        value="個人情報保護方針に同意する"
+                      />
+                      <span>
+                        個人情報の取り扱いについて同意のうえ送信します。
+                      </span>
+                    </label>
 								<div class="form__btn">
-									<input type="submit" class="contact-btn" value="内容を確認する" />
+									<input type="submit" class="button" value="Send" />
 								</div>
 							</div>
 						</form>
@@ -276,7 +295,6 @@
 
 						</div>
       </div>
-
 		</div>
 
 

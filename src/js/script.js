@@ -161,5 +161,19 @@ jQuery(function ($) {
       $(this).toggleClass("is-open", 300);
     });
 
+	//
+
+  $('#campaign-select').change(function() {
+    var wrapper = $(this).closest('.form__row-select-wrapper');
+    if ($(this).val() === "") {
+      // デフォルトの「キャンペーン内容を選択」が選択されている場合は、三角を表示する
+      wrapper.removeClass('no-triangle');
+    } else {
+      // それ以外の項目が選択された場合は、三角を非表示にする
+      wrapper.addClass('no-triangle');
+    }
+  });
+
+
 
 });

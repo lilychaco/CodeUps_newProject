@@ -1,22 +1,175 @@
 @use "global" as *;
 
 .form__row {
+  border-bottom: 1px dotted $greenaccent;
+  padding-bottom: rem(24);
 
+  @include mq(md) {
+    display: flex;
+  }
+}
+.form__row:not(:first-child) {
+  padding-top: rem(24);
 }
 .form__row dt {
-	font-size: rem(16);
-			font-family: $base-font-family;
-			font-weight: $bold;
-			line-height: 1;
-			letter-spacing: 0;
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  line-height: 1.4;
+  letter-spacing: 0;
 }
 .form__row dt span {
-	width: rem(60);
-	height:rem(20);
-	font-size: rem(12);
-			font-family: $base-font-family;
-			font-weight: $regular;
-			line-height: 1;
-			letter-spacing: 0;
-			background-color: ;
+  display: inline-block;
+  text-align: center;
+  width: rem(60);
+  height: rem(20);
+  font-size: rem(12);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.67;
+  letter-spacing: 0.1em;
+  background-color: #c94800;
+  color: $white;
+  margin-left: rem(8);
+}
+.form__row dd input {
+  width: 100%;
+  height: rem(40);
+  border: 1px solid $greenaccent;
+  margin-top: rem(16);
+}
+.form__row--item {
+  margin-top: rem(16);
+}
+.form__radio {
+  position: relative;
+  display: block; /* 縦並びに */
+  margin: 0.5em 0; /* 前後のスペース */
+  padding-left: 22px;
+  cursor: pointer;
+  user-select: none;
+}
+.form__radio input {
+  display: none;
+}
+.form__radio-mark {
+  position: absolute;
+  top: 50%; /* 上からの位置 */
+  transform: translateY(-50%);
+  left: 0;
+  height: 14px; /* 大きさ */
+  width: 14px; /* 大きさ */
+  border: solid 2px $greenaccent; /* 線 */
+  box-sizing: border-box;
+}
+
+/* 選択時にチェックマーく */
+.form__radio-mark:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  top: 0;
+  bottom: 2px;
+  left: 3px;
+  right: 1px;
+  opacity: 0; /* 透明にしておく */
+  transform: rotate(45deg);
+  border-right: 2px solid #c94800; /* チェックマークの色 */
+  border-bottom: 2px solid #c94800; /* チェックマークの色 */
+}
+.form__radio input:checked + .form__radio-mark:after {
+  opacity: 1;
+}
+
+.form__row--campaign {
+  margin-top: rem(16);
+}
+.form__row--campaign select {
+  width: 100%;
+  height: rem(40);
+  border: 1px solid $greenaccent;
+  padding-left: rem(8);
+  font-size: rem(12);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.form__row-select {
+  appearance: none; /* ブラウザのデフォルトスタイルを無効化 */
+  -webkit-appearance: none; /* Chrome, Safari用 */
+  -moz-appearance: none; /* Firefox用 */
+  background-color: white;
+  border: 1px solid $greenaccent; /* 枠線 */
+}
+
+.form__row-select-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: rem(40);
+}
+.form__row-select-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 8px; /* 右端からの位置 */
+  top: 50%; /* 上端から中央に配置 */
+  transform: translateY(-50%); /* Y軸方向に中央揃え */
+  width: 12px;
+  height: calc(12px / 2 * tan(60deg));
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: $greenaccent;
+}
+.form__row-select-wrapper.no-triangle::after {
+  display: none;
+}
+.form__row--message dd {
+  width: 100%;
+  height: auto;
+  min-height: rem(200);
+  border: 1px solid $greenaccent;
+  margin-top: rem(16);
+}
+
+.form__outside {
+  margin-top: rem(40);
+  margin-inline: auto;
+  width: 100%;
+  padding-left: rem(30);
+  padding-right: rem(30);
+  min-width: rem(282);
+  text-align: center;
+}
+
+.form__privacy-label {
+  position: relative;
+  padding-left: rem(30);
+  display: flex;
+  align-items: center;
+}
+
+.form__privacy-label span::before {
+  display: inline-block;
+  content: "";
+  height: 22px;
+  width: 22px;
+  border: solid 1px $greenaccent;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  // transition: all .2s;
+}
+.form__privacy-label span {
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.57;
+  letter-spacing: 0;
+  text-align: left;
+}
+.form__btn {
+  margin-top: rem(24);
 }
