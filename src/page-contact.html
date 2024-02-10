@@ -65,49 +65,49 @@
         <nav class="header__nav header-menu">
           <ul class="header-menu__items">
             <li class="header-menu__item">
-              <a href="#campaign">
+              <a href="archive-campaign.html">
                 <p class="header-menu__text-english">campaign</p>
                 <p class="header-menu__text-japanese">キャンペーン</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#aboutus">
+              <a href="page-aboutus.html">
                 <p class="header-menu__text-english">about&nbsp;us</p>
                 <p class="header-menu__text-japanese">私たちについて</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#information">
+              <a href="page-information.html">
                 <p class="header-menu__text-english">information</p>
                 <p class="header-menu__text-japanese">ダイビング情報</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#blog">
+              <a href="archive-blog.html">
                 <p class="header-menu__text-english">blog</p>
                 <p class="header-menu__text-japanese">ブログ</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#voice">
+              <a href="archive-voice.html">
                 <p class="header-menu__text-english">voice</p>
                 <p class="header-menu__text-japanese">お客様の声</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#price">
+              <a href="page-price.html">
                 <p class="header-menu__text-english">price</p>
                 <p class="header-menu__text-japanese">料金一覧</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#faq">
+              <a href="page-faq.html">
                 <p class="header-menu__text-english">FAQ</p>
                 <p class="header-menu__text-japanese">よくある質問</p>
               </a>
             </li>
             <li class="header-menu__item">
-              <a href="#contact">
+              <a href="page-contact.html">
                 <p class="header-menu__text-english">contact</p>
                 <p class="header-menu__text-japanese">お問合せ</p>
               </a>
@@ -193,24 +193,89 @@
 			<figure class="mv__img">
                 <picture>
                   <source
-                    srcset="./assets/images/mv-service.jpg"
+                    srcset="./assets/images/mv-price.jpg"
                     media="(min-width: 768px)"
                   />
                   <img
-                    src="./assets/images/mv-service-sp.jpg"
+                    src="./assets/images/mv-price-sp.jpg"
                     alt="ファーストビュー画像"
                   />
                 </picture>
               </figure>
-
-        <h2 class="mv__title">service</h2>
+        <h2 class="mv__title">contact</h2>
 		</section>
+
 		<div class="inner">
-		<div class="breadcrumb-wrapper">
-      <div class="breadcrumb">
-        <a href="./index.html">TOP</a>><a href="#">キャンペーン</a>
+			<div class="breadcrumb-wrapper">
+				<div class="breadcrumb">
+					<a href="./index.html">TOP</a>><a href="#">お問い合わせ</a>
+				</div>
+			</div>
+
+			<div class="page-contact page-contact-layout">
+						<figure class="page-contact__fish-image">
+									<img src="./assets/images/container-fish.png" alt="魚のイラスト" />
+						</figure>
+
+						<div class="page-contact__content form-wrapper">
+
+
+						<form class="form" method="post">
+							<dl class="form__row">
+								<dt>お名前<span>必須</span></dt>
+								<dd>
+									<input type="text" name="name" /></dd>
+							</dl>
+							<dl class="form__row">
+								<dt>メールアドレス</dt>
+								<dd>
+									<input type="email" name="email" />
+								</dd>
+							</dl>
+							<dl class="form__row">
+								<dt>電話番号</dt>
+								<dd>
+									<input type="phone" name="phone" />
+								</dd>
+							</dl>
+							<dl class="form__row">
+								<dt>お問い合わせ項目</dt>
+								<dd>
+									<input type="checkbox" name="phone" />
+								</dd>
+							</dl>
+							<dl class="form__row">
+								<dt>キャンペーン</dt>
+								<dd>
+									<select id="campaign" name="campaign">
+										<option value="lisence">ライセンス講習</option>
+										<option value="fandiving">ファンダイビング</option>
+										<option value="taikendiving">体験ダイビング</option>
+									</select>
+								</dd>
+							</dl>
+							<dl class="form__row form__row--message">
+								<dt>お問い合わせ内容</dt>
+								<dd>
+									<textarea name="message" id=""></textarea>
+								</dd>
+							</dl>
+							<div class="form__outside">
+								<p class="form__text">
+									上記に入力された情報につきましては、当お問い合わせに対する返信以外には使用いたしません。<br class="u-desktop" /><a
+										href="#">プライバシーポリシー</a>に同意の上、内容を確認してください。
+								</p>
+								<div class="form__btn">
+									<input type="submit" class="contact-btn" value="内容を確認する" />
+								</div>
+							</div>
+						</form>
+
+
+
+
+						</div>
       </div>
-    </div>
 
 		</div>
 

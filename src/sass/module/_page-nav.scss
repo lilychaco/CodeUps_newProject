@@ -1,29 +1,29 @@
 @use "global" as *;
 
-.blog-nav {
+.page-nav {
   position: relative;
   max-width: rem(444);
   margin-inline: auto;
 }
 
-.blog-nav__pager {
+.page-nav__pager {
   display: flex;
   justify-content: center;
   gap: rem(12);
 }
 
-.blog-nav__page {
+.page-nav__page {
   width: rem(38);
   height: rem(38);
   border: 1px solid $greenaccent;
   color: $greenaccent;
   z-index: 100;
 }
-.blog-nav__page.is-active {
+.page-nav__page.is-active {
   background-color: $greenaccent;
   color: $white;
 }
-.blog-nav__link {
+.page-nav__link {
   width: 100%;
   height: inherit;
   display: flex;
@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-.blog-nav__arrows {
+.page-nav__arrows {
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -42,13 +42,13 @@
   right: 0;
 }
 
-.blog-nav__arrow {
+.page-nav__arrow {
   width: rem(38);
   height: rem(38);
   border: 1px solid $greenaccent;
   color: $greenaccent;
 }
-.blog-nav__arrow a {
+.page-nav__arrow a {
   width: 100%;
   height: inherit;
   display: flex;
@@ -56,7 +56,7 @@
   justify-content: center;
   align-items: center;
 }
-.blog-nav__arrow:hover {
+.page-nav__arrow:hover {
 	background-color: $greenaccent;
 	color:$white;
 }

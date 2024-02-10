@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.form__row {
+
+}
+.form__row dt {
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $bold;
+			line-height: 1;
+			letter-spacing: 0;
+}
+.form__row dt span {
+	width: rem(60);
+	height:rem(20);
+	font-size: rem(12);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+			background-color: ;
+}

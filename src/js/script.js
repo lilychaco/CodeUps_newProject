@@ -151,6 +151,15 @@ jQuery(function ($) {
           $(this).parent(".side-archive__year").addClass("active");
         }
     });
-  });
+	});
+
+	//アコーデイオン
+		$(".js-accordion-top").on("click", function () {
+      // クリックした次の要素(コンテンツ)を開閉
+      $(this).next().slideToggle(300);
+      // topにopenクラスを付け外ししてcheckboxを
+      $(this).toggleClass("is-open", 300);
+    });
+
 
 });
