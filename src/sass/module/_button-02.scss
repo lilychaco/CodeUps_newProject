@@ -18,7 +18,7 @@
   transition: ease 0.2s;
   box-sizing: border-box; /* ボックスサイジングを追加 */
   border: 1px solid transparent; /* ホバー前のボーダーを透明に設定 */
-  z-index: 1000;
+  z-index: 2;
 }
 .button-02::before {
   content: "";
@@ -29,6 +29,7 @@
   left: 4px;
   border: 1px solid $white;
   background-color: transparent;
+  z-index: -1;
 }
 
 .button-02 span {
@@ -51,7 +52,6 @@
   background-color: $greenaccent;
   border: 1px solid $white;
   color: $white;
-  opacity: 1;
   z-index: 1000;
 }
 
