@@ -1,0 +1,75 @@
+@use "global" as *;
+.page-404 {
+  background-color: $greenaccent;
+  padding-top: rem(80);
+  position: relative;
+  // z-index: -1;
+  @include mq(md) {
+    padding-top: rem(90);
+  }
+}
+.page-404__breadcrumb {
+  color: $white;
+}
+.page-404__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.page-404__content {
+  margin-inline: auto;
+  width: 100%;
+  margin-top: rem(52);
+  min-width: rem(202);
+  text-align: center;
+  padding-bottom: rem(40);
+
+  @include mq(md) {
+    padding-bottom: rem(148);
+    margin-top: rem(150);
+    max-width: rem(439);
+  }
+}
+.page-404__whale-image {
+  width: rem(345);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  @include mq(md) {
+    width: rem(698);
+    left: 0;
+    transform: none;
+  }
+}
+.page-404__whale-image img {
+  aspect-ratio: 345 / 345;
+  object-fit: cover;
+}
+.pave-404__title {
+  font-size: rem(80);
+  font-family: $forth-font-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.5em;
+  color: $white;
+  @include mq(md) {
+    font-size: rem(160);
+  }
+}
+.page-404__text {
+  margin-top: rem(24);
+  font-size: rem(16);
+  font-family: $forth-font-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: $white;
+}
+.page-404__button {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
+}

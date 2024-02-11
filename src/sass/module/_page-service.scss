@@ -1,19 +1,19 @@
 @use "global" as *;
 
-.page-privacy-layout {
+.page-service-layout {
 	margin-top:rem(52);
 	@include mq(md) {
 		margin-top:rem(150);
 	}
 }
 
-.page-privacy {
+.page-service {
 	margin-inline:auto;
 	width:100%;
 	max-width: rem(800);
 
 }
-.page-privacy__fish-image {
+.page-service__fish-image {
 		width: rem(120);
   position: absolute;
 	top:rem(-24);
@@ -26,7 +26,7 @@
   }
 
 }
-.page-privacy__fish-image img {
+.page-service__fish-image img {
 	width: 100%;
   height: auto;
   object-fit: cover;
@@ -36,7 +36,7 @@
   }
 
 }
-.page-privacy__title {
+.page-service__title {
 	font-size: rem(24);
 			font-family: $base-font-family;
 			font-weight: $medium;
@@ -47,7 +47,7 @@
 			}
 
 }
-.page-privacy__box {
+.page-service__box {
 	font-size: rem(16);
 			font-family: $base-font-family;
 			font-weight: $regular;
@@ -56,13 +56,13 @@
 	margin-top: rem(20);
 
 }
-.page-privacy__number-list {
+.page-service__number-list {
 	list-style-type: decimal;
 	margin-left: 20px;
 }
-.page-privacy__contact {
+.page-service__contact {
 	margin-top:rem(80);
 	@include mq(md) {
-			margin-top:rem(160);
+			margin-top:rem(100);
 	}
 }
