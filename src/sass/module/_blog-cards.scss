@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.blog-cards {
+	display: grid;
+  grid-gap: rem(36); /* カード間の間隔 */
+  grid-template-columns: 1fr;
+
+	@include mq(md) {
+	grid-template-columns: repeat(3, 1fr);
+  justify-content: center; /* 中央揃え */
+	grid-gap: rem(40);
+	}
+}

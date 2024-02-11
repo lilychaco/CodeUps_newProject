@@ -1,0 +1,36 @@
+@use "global" as *;
+.page-aboutus-layout {
+	margin-top:rem(52);
+	@include mq(md) {
+			margin-top: rem(230);
+	}
+
+}
+.page-aboutus {
+  margin-inline: auto;
+  width: 100%;
+  position: relative;
+
+}
+.page-aboutus__fish-image {
+  position: absolute;
+  top: rem(-24);
+  left: 0;
+	width: rem(120);
+	z-index: -1;
+  @include mq(md) {
+		width: rem(301);
+    top: rem(-150);
+    left: calc(50% - min(48vw, 38.75rem));
+  }
+}
+
+.page-aboutus__fish-image img {
+	width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 120 / 55;
+  @include mq(md) {
+        aspect-ratio: 301 / 138;
+	}
+}

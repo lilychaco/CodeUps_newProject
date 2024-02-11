@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.page-privacy-layout {
+	margin-top:rem(52);
+	@include mq(md) {
+		margin-top:rem(150);
+	}
+}
+
+.page-privacy {
+
+}
+.page-privacy__fish-image {
+		width: rem(120);
+  position: absolute;
+	top:rem(-24);
+	left:0;
+	z-index: -1;
+  @include mq(md) {
+		width: rem(301);
+    top: rem(-70);
+		left: calc(50% - min(48vw, 38.75rem));
+  }
+
+}
+.page-privacy__fish-image img {
+	width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 120 / 55;
+  @include mq(md) {
+    aspect-ratio: 301 / 138;
+  }
+
+}
+.page-privacy__title {
+	font-size: rem(24);
+			font-family: $base-font-family;
+			font-weight: $medium;
+			line-height: 1;
+			letter-spacing: 0;
+			@include mq(md) {
+					font-size: rem(32);
+			}
+
+}

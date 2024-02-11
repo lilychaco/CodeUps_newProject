@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.page-top-button {
+	position: absolute;
+	top:rem(-64);
+	right:rem(14);
+	cursor: pointer;
+
+	@include mq(md) {
+		top:rem(-100);
+		right:rem(20);
+	}
+
+}
+.page-top-button__img {
+	width: rem(50);
+
+	@include mq(md) {
+			width: rem(80);
+	}
+}
+.page-top-button__img img {
+	aspect-ratio: 48/48;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}

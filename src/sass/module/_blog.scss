@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.blog-wrapper-layout {
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+
+.blog-wrapper {
+  margin-inline: auto;
+  width: 100%;
+  position: relative;
+}
+.blog__fish-image {
+  width: rem(120);
+  position: absolute;
+  top: rem(-24);
+  left: 0;
+  z-index: -1;
+  @include mq(md) {
+    width: rem(301);
+    top: rem(-70);
+    left: calc(50% - min(48vw, 38.75rem));
+  }
+}
+.blog__fish-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 120 / 55;
+  @include mq(md) {
+    aspect-ratio: 301 / 138;
+  }
+}
+.blog {
+  margin-inline: auto;
+  width: 100%;
+  margin-top: rem(52);
+  @include mq(md) {
+    margin-top: rem(150);
+    display: grid;
+    grid-template-columns: 65.4% 27.2%;
+    gap: 7.4%;
+  }
+}
+
+.blog__main {
+  margin-inline: auto;
+  width: 100%;
+}
+.blog__main--single {
+  padding-right: rem(3);
+}
+.blog__items {
+  margin-inline: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: rem(40);
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(40);
+  }
+}
+
+.blog__nav {
+  margin-top: rem(80);
+}
+
+.blog__side {
+  padding-left: rem(27);
+  padding-right: rem(27);
+  @include mq(md) {
+    width: rem(294);
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.blog__contact {
+  margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(100);
+  }
+}

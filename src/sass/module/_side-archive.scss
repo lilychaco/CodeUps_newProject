@@ -1,0 +1,90 @@
+@use "global" as *;
+
+.side-archive {
+  margin-inline: auto;
+  width: 100%;
+	margin-top: rem(80);
+}
+
+.side-archive__heading {
+}
+
+.side-archive__contents {
+  margin-inline: auto;
+  width: 100%;
+  margin-top: rem(24);
+}
+
+.side-archive__year {
+}
+
+.side-archive__year-toggle {
+  cursor: pointer;
+  padding: 5px;
+  color:$greenaccent;
+  position: relative;
+  padding-left: rem(32);
+	font-size: rem(24);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+}
+.side-archive__year-toggle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  background: $greenaccent;
+  height: 20px;
+  width: calc(20px / 2 * tan(60deg));
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transition: transform 0.3s ease; /* アニメーション効果 */
+}
+.side-archive__year-toggle:not(:first-of-type) {
+	margin-top: rem(8);
+}
+/* アクティブな年度の三角を下向きにを表示 */
+.active > .side-archive__year-toggle::before {
+	transform: translateY(-40%) rotate(90deg);
+}
+
+.side-archive__month-list {
+  display: none; /* 初期状態では月を隠す */
+  padding-left: rem(24); /* インデントを調整 */
+}
+/* アクティブな年度の月を表示 */
+.active .side-archive__month-list {
+  display: block;
+}
+.side-archive__month {
+	font-size: rem(24);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+			color:$greenaccent;
+	padding-left: rem(32);
+	position: relative;
+	margin-top: rem(4);
+}
+.side-archive__month::before {
+	content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  background: $greenaccent;
+  height: 20px;
+  width: calc(20px / 2 * tan(60deg));
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transition: transform 0.3s ease; /* アニメーション効果 */
+}
+
+side-archive__link
+
+/* アクティブな年度の三角を下向きにを表示 */
+.active .side-archive__year-toggle::before {
+	transform: translateY(-40%) rotate(90deg);
+}

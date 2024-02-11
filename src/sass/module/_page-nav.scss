@@ -1,0 +1,62 @@
+@use "global" as *;
+
+.page-nav {
+  position: relative;
+  max-width: rem(444);
+  margin-inline: auto;
+}
+
+.page-nav__pager {
+  display: flex;
+  justify-content: center;
+  gap: rem(12);
+}
+
+.page-nav__page {
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $greenaccent;
+  color: $greenaccent;
+  z-index: 100;
+}
+.page-nav__page.is-active {
+  background-color: $greenaccent;
+  color: $white;
+}
+.page-nav__link {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-nav__arrows {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-nav__arrow {
+  width: rem(38);
+  height: rem(38);
+  border: 1px solid $greenaccent;
+  color: $greenaccent;
+}
+.page-nav__arrow a {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.page-nav__arrow:hover {
+	background-color: $greenaccent;
+	color:$white;
+}

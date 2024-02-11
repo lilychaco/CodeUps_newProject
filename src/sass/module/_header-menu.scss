@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.header-menu {
+	display: none;
+	@include mq(md) {
+		display: block;
+	}
+}
+
+.header-menu__items {
+	@include mq(md) {
+			width: 100%;
+	height: inherit;
+	display: flex;
+	justify-content: flex-end;
+	}
+}
+
+.header-menu__item {
+	width: 100%;
+	height: inherit;
+}
+.header-menu__item a{
+	width: 100%;
+	height: inherit;
+	padding-inline:rem(20);
+	text-align: center;
+	color:$white;
+	white-space: nowrap;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.header-menu__item a::after {
+	content:"";
+	position:absolute;
+	bottom:rem(20);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background:$white;
+		z-index: 1000;
+		transition: all .3s;
+    transform: scale(0, 1);
+		transform-origin: center top;
+}
+.header-menu__item a:hover::after {
+	transform: scale(1, 1);
+	opacity: 1;
+}
+
+.header-menu__text-english {
+	font-size: rem(18);
+			font-family:  $third-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+}
+.header-menu__text-english::first-letter {
+    text-transform: uppercase;
+}
+
+
+
+.header-menu__text-japanese {
+	font-size: rem(10);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.5;
+			letter-spacing: 0;
+			@include mq(md) {
+					margin-top: rem(4);
+			}
+}
