@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.starfish-icon {
+    position: relative;
+    padding-left: rem(22);/* Add space for the pseudo-element */
+    line-height: 1.5em; /* Adjust as necessary */
+}
+
+.starfish-icon::before {
+    content: '';
+    background-image: url('../images/hitode.png');
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+}
+

@@ -1,0 +1,92 @@
+@use "global" as *;
+
+.accordion-card {
+	margin-inline:auto;
+	width:100%;
+}
+.accordion-card__top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// gap:rem(20);
+	width:100%;
+	height:auto;
+	background-color: $greenaccent;
+	padding:rem(16);
+	@include mq(md) {
+			padding:rem(26) rem(40);
+	}
+}
+.accordion-card__top.is-open {
+
+
+}
+.accordion-card__title {
+	color:$white;
+	background-color: $greenaccent;
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1;
+			letter-spacing: 0;
+			@include mq(md) {
+				font-size: rem(20);
+			}
+}
+
+
+
+.accordion-card__icon {
+	width: rem(28);
+	height: rem(28);
+	min-width: rem(20); /* 最小横幅を20pxに設定 */
+  flex: 0 0 auto; /* 伸縮しないように設定 */
+	position: relative;
+}
+
+//checkマーク横棒
+.accordion-card__bar1 {
+	width: rem(28);
+  height: rem(1);
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+//checkマーク縦棒
+.accordion-card__bar2 {
+	width: rem(1);
+  height: rem(28);
+  background-color: $white;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  transition: all 0.3s ease 0s;
+}
+
+////アコーディオンメニューを開くとcheckboxがマイナスになる
+.accordion-card__top.is-open .accordion-card__bar2 {
+	transform: rotate(90deg);
+}
+
+
+//アコーディオンメニューを開く前は非表示にしていて、表示する時はjQueryを使って表示
+.accordion-card__body {
+	display: none;
+	padding:rem(24) rem(16);
+	background-color: $white;
+	border: 1px solid $greenaccent;
+	@include mq(md) {
+			margin-top: rem(16);
+	}
+}
+.accordion-card__content {
+	font-size: rem(16);
+			font-family: $base-font-family;
+			font-weight: $regular;
+			line-height: 1.2;
+			letter-spacing: 0;
+}

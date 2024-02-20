@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.top-contact-layout {
+	margin-top: rem(80);
+	@include mq(md) {
+			margin-top: rem(140);
+	}
+}
+
+.top-contact-layout.page-campaign-contact-layout {
+	margin-top: rem(106);
+}
+.top-contact-layout.page-aboutus-contact-layout {
+	margin-top: rem(106);
+}
