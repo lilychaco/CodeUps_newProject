@@ -13,7 +13,6 @@
 }
 .page-404__inner {
   position: relative;
-  z-index: 1;
 }
 
 .page-404__content {
@@ -36,7 +35,6 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -1;
   @include mq(md) {
     width: rem(698);
     left: 0;

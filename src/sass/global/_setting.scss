@@ -19,12 +19,7 @@ $forth-font-family: "Lato", serif;
 
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  font-family: $base-font-family;
-	background-color: #fff;
-	color:#0D2936;
 
-}
 
 // フォントウェイト
 $regular: 400;
@@ -42,3 +37,12 @@ $brown:#796A64;
 $font-color:#0D2936;
 $greenaccent: #408F95;
 $greenpale: #DDF0F1;
+
+
+body {
+  font-family: $base-font-family;
+	background-color: #fff;
+	color:$font-color;
+	color:red;
+
+}

@@ -1,76 +1,81 @@
 @use "global" as *;
 
 .section-heading {
-	text-align: center;
-	position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .section-heading__title {
-		text-align: center;
-		color:$font-color;
-		font-size: rem(32);
-				font-family: $third-font-family;
-				font-weight: $regular;
-				line-height: 1.25;
-				letter-spacing: 0;
+  text-align: center;
+  color: $font-color;
+  font-size: rem(32);
+  font-family: $third-font-family;
+  font-weight: $regular;
+  line-height: 1.25;
+  letter-spacing: 0;
 
-		@include mq(md) {
-		font-size: rem(40);
-		line-height:1;
-		}
+  @include mq(md) {
+    font-size: rem(40);
+    line-height: 1;
+  }
 }
 .section-heading__title::first-letter {
-	color:$greenaccent;
-	text-transform: uppercase;
+  color: $greenaccent;
+  text-transform: uppercase;
 }
 .section-heading__subtitle {
-		margin-top: rem(4);
-		font-size: rem(12);
-		font-weight: $regular;
-		font-family: $base-font-family;
-		line-height: 1.5;
-		letter-spacing: 0;
-		color:$greenaccent;
-		@include mq(md) {
-			margin-top: rem(8);
-		}
+  margin-top: rem(4);
+  font-size: rem(12);
+  font-weight: $regular;
+  font-family: $base-font-family;
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: $greenaccent;
+  @include mq(md) {
+    margin-top: rem(8);
+  }
 }
 
 .section-heading__title--top-blog {
-	@include mq(md) {
-			color:$white;
-	}
+  @include mq(md) {
+    color: $white;
+  }
 }
 
 .section-heading__title--top-blog::first-letter {
-	@include mq(md) {
-		color:$greenpale
-	}
+  @include mq(md) {
+    color: $greenpale;
+  }
 }
 .section-heading__subtitle--top-blog {
-	@include mq(md) {
-			color:$white;
-	}
+  @include mq(md) {
+    color: $white;
+  }
 }
-.section-heading__title.section-heading__title--top-contact {
-	font-size: rem(80);
+.section-heading__title.section-heading__title--contact {
+  font-size: rem(80);
+  line-height: 0.8;
+  letter-spacing: 0.05em;
+  @include mq(md) {
+    letter-spacing: 0;
+  }
 }
-.section-heading__subtitle.section-heading__subtitle--top-contact {
-	margin-top:rem(-16);
-	@include mq(md) {
-			line-height: 1;
-			margin-top:rem(-4);
-	}
+.section-heading__subtitle.section-heading__subtitle--contact {
+  margin-top: rem(12);
+  @include mq(md) {
+		margin-top: rem(8);
+    line-height: 1;
+  }
 }
 .section-heading__text {
-	margin-top: rem(6);
-	font-size: rem(14);
-			font-family: $base-font-family;
-			font-weight: $regular;
-			line-height: 1.285;
-			letter-spacing: 0;
-	color:$greenaccent;
-	@include mq(md) {
-			margin-top: rem(14);
-	}
+  margin-top: rem(6);
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.285;
+  letter-spacing: 0;
+  color: $greenaccent;
+  @include mq(md) {
+    margin-top: rem(14);
+  }
 }

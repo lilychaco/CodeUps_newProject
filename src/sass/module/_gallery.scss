@@ -7,6 +7,8 @@
 		margin-top: rem(120);
 	}
 }
+
+
 .gallery__content {
 margin-inline:auto;
 width:100%;
@@ -46,4 +48,10 @@ gap:rem(8);
 		grid-row: span 1;
 		aspect-ratio: 580 / 369;
 	}
+}
+.gallery__modal {
+
+}
+.gallery__modal-item  {
+
 }

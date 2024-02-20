@@ -1,8 +1,9 @@
 @use "global" as *;
 
 .price-list{
+	
 @include mq(md) {
-			display: grid;
+	display: grid;
 	grid-template-columns: 57% 71.43% ;
 	}
 }
