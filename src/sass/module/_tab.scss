@@ -1,6 +1,6 @@
 @use "global" as *;
 .tab-layout {
-	margin-top: rem(120);
+	margin-top: rem(121);
   @include mq(md) {
     margin-top: rem(150);
   }
@@ -65,7 +65,7 @@
   font-size: rem(14);
   font-family: $base-font-family;
   font-weight: $regular;
-  line-height: 1;
+  line-height: 1.4;
   letter-spacing: 0;
   @include mq(md) {
     position: relative;
@@ -75,7 +75,8 @@
 }
 
 .tab__text::before {
-  content: "";
+	@include mq(md) {
+		content: "";
   display: block;
   width: rem(64);
   height: rem(64);
@@ -87,16 +88,25 @@
   left: 0;
   bottom: 0;
   margin: auto;
+
+	}
+
 }
 .tab__text.tab__text--02::before {
-  background-image: url(../images/icon03.png);
+	@include mq(md) {
+		background-image: url(../images/icon03.png);
+	}
+
 }
 .tab__text.tab__text--03::before {
-  background-image: url(../images/icon04.png);
+	@include mq(md) {
+		background-image: url(../images/icon04.png);
+	}
 }
 
 .current .tab__text::before {
-  content: "";
+	@include mq(md) {
+		content: "";
   display: block;
   width: rem(64);
   height: rem(64);
@@ -108,6 +118,7 @@
   left: 0;
   bottom: 0;
   margin: auto;
+	}
 }
 
 .tab__contents {
