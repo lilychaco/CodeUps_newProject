@@ -19,14 +19,14 @@
 }
 
 .popular-card__body {
-
+	padding: 0;
 }
 
 .popular-card__date {
 	font-size: rem(12);
 			font-family: $third-font-family;
 			font-weight: $regular;
-			line-height: 1.5;
+			line-height: 1;
 			letter-spacing: 0;
 
 }
@@ -40,3 +40,5 @@
 			letter-spacing: 0;
 
 }
+
+

@@ -58,13 +58,17 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: rem(40);
+  padding-left: rem(6);
+  padding-right: rem(6);
   @include mq(md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem(40);
   }
 }
-
+.blog__item .blog-card__link {
+  // padding-top: rem(24);
+}
 .blog__nav {
   margin-top: rem(80);
 }
@@ -72,10 +76,12 @@
 .blog__side {
   padding-left: rem(27);
   padding-right: rem(27);
+  margin-top: rem(80);
   @include mq(md) {
     width: rem(294);
     padding-left: 0;
     padding-right: 0;
+		margin-top: 0;
   }
 }
 
