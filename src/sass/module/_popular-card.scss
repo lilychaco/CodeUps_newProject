@@ -26,13 +26,14 @@
 	font-size: rem(12);
 			font-family: $third-font-family;
 			font-weight: $regular;
-			line-height: 1;
+			line-height: 1.5;
 			letter-spacing: 0;
+
 
 }
 
 .popular-card__title {
-	margin-top:rem(4);
+	margin-top:rem(2);
 	font-size: rem(16);
 			font-family: $base-font-family;
 			font-weight: $medium;
@@ -40,5 +41,3 @@
 			letter-spacing: 0;
 
 }
-
-

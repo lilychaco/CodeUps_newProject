@@ -2,7 +2,6 @@
 
 .side-voice {
 	margin-top: rem(80);
-
 }
 
 .side-voice__heading {
@@ -17,7 +16,6 @@
 
 .side-voice__img {
 	width: 100%;
-
 }
 
 .side-voice__img img {
@@ -38,17 +36,11 @@
 	font-size: rem(24);
 			font-family: $base-font-family;
 			font-weight: $medium;
-			line-height: 1;
+			line-height: 1.5;
 			letter-spacing: 0;
-
 }
 
 .side-voice__button {
-	margin-top: rem(40);
+	margin-top: rem(42);
 	text-align: center;
-
-}
-
-.button {
-
 }

@@ -1,19 +1,19 @@
 @use "global" as *;
 
 .side-heading {
-width: 100%;
-height: rem(50);
-position: relative;
-padding-left: rem(74);
-border-left: 8px solid $greenaccent;
-display: flex;
-flex-direction: column;
-justify-content: center;
-font-size: rem(24);
-		font-family: $base-font-family;
-		font-weight: $regular;
-		line-height: 1;
-		letter-spacing: 0;
+  width: 100%;
+  height: rem(50);
+  position: relative;
+  padding-left: rem(74);
+  border-left: 8px solid $greenaccent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .side-heading::before {
@@ -21,12 +21,12 @@ font-size: rem(24);
   display: block;
   width: rem(50);
   height: rem(50);
-  background-image: url(../images/icon02.png);
+  background-image: url(../images/side_whale_icon1.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  left: rem(8);
+  left: rem(16);
   bottom: 0;
   margin: auto;
 }
