@@ -46,7 +46,6 @@
   width: rem(38);
   height: rem(38);
   border: 1px solid $greenaccent;
-  color: $greenaccent;
 }
 .page-nav__arrow a {
   width: 100%;
@@ -55,6 +54,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.page-nav__arrow img {
+  width: 8px;
+  aspect-ratio: 8 / 16;
+  object-fit: cover;
 }
 .page-nav__arrow:hover {
 	background-color: $greenaccent;
