@@ -1,13 +1,14 @@
 @use "global" as *;
 
 .side-campaign {
-	margin-top: rem(80);
+	margin-top: rem(84);
 	margin-inline:auto;
 	width:100%;
 
 }
 
 .side-campaign__heading {
+	color:red;
 
 }
 .side-campaign__cards {

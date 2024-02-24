@@ -3,7 +3,7 @@
 .side-archive {
   margin-inline: auto;
   width: 100%;
-	margin-top: rem(80);
+  margin-top: rem(80);
 }
 
 .side-archive__heading {
@@ -21,19 +21,19 @@
 .side-archive__year-toggle {
   cursor: pointer;
   padding: 5px;
-  color:$greenaccent;
+  color: $greenaccent;
   position: relative;
   padding-left: rem(32);
-	font-size: rem(24);
-			font-family: $base-font-family;
-			font-weight: $regular;
-			line-height: 1;
-			letter-spacing: 0;
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0;
 }
 .side-archive__year-toggle::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: rem(4);
   top: 50%;
   transform: translateY(-50%) rotate(0deg);
   background: $greenaccent;
@@ -43,11 +43,11 @@
   transition: transform 0.3s ease; /* アニメーション効果 */
 }
 .side-archive__year-toggle:not(:first-of-type) {
-	margin-top: rem(8);
+  margin-top: rem(8);
 }
 /* アクティブな年度の三角を下向きにを表示 */
 .active > .side-archive__year-toggle::before {
-	transform: translateY(-40%) rotate(90deg);
+  transform: translateY(-40%) rotate(90deg);
 }
 
 .side-archive__month-list {
@@ -59,20 +59,20 @@
   display: block;
 }
 .side-archive__month {
-	font-size: rem(24);
-			font-family: $base-font-family;
-			font-weight: $regular;
-			line-height: 1;
-			letter-spacing: 0;
-			color:$greenaccent;
-	padding-left: rem(32);
-	position: relative;
-	margin-top: rem(4);
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0;
+  color: $greenaccent;
+  padding-left: rem(32);
+  position: relative;
+  margin-top: rem(4);
 }
 .side-archive__month::before {
-	content: "";
+  content: "";
   position: absolute;
-  left: 0;
+  left: rem(4);
   top: 50%;
   transform: translateY(-50%) rotate(0deg);
   background: $greenaccent;
@@ -82,9 +82,15 @@
   transition: transform 0.3s ease; /* アニメーション効果 */
 }
 
-side-archive__link
+.side-archive__link {
+  font-size: rem(24);
+  font-family: $base-font-family;
+  font-weight: regular;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
 
 /* アクティブな年度の三角を下向きにを表示 */
 .active .side-archive__year-toggle::before {
-	transform: translateY(-40%) rotate(90deg);
+  transform: translateY(-40%) rotate(90deg);
 }
