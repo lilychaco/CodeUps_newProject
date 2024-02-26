@@ -12,7 +12,7 @@
 	width:100%;
 	height:auto;
 	background-color: $greenaccent;
-	padding:rem(16);
+	padding:rem(13) rem(15);
 	@include mq(md) {
 			padding:rem(26) rem(40);
 	}
@@ -87,6 +87,6 @@
 	font-size: rem(16);
 			font-family: $base-font-family;
 			font-weight: $regular;
-			line-height: 1.2;
+			line-height: 1.43;
 			letter-spacing: 0;
 }

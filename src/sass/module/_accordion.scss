@@ -6,7 +6,7 @@
   max-width: rem(700);
   display: flex;
   flex-direction: column;
-  gap: rem(44);
+  gap: rem(40);
   @include mq(md) {
     gap: rem(40);
   }
