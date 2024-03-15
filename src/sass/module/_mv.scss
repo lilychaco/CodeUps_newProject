@@ -30,6 +30,7 @@
   font-weight: $regular;
   line-height: 1;
   letter-spacing: 0;
+
   @include mq(md) {
     position: absolute;
     top: 61%;
