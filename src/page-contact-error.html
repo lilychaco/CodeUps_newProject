@@ -220,7 +220,7 @@
 		<div class="inner">
 			<div class="breadcrumb-wrapper">
 				<div class="breadcrumb">
-					<a href="./index.html">TOP</a>><a href="#">お問い合わせ</a>
+					<a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">お問い合わせ</a>&nbsp;&nbsp;>&nbsp;&nbsp;お問い合わせエラー
 				</div>
 			</div>
 
@@ -230,9 +230,10 @@
 						</figure>
 
 						<div class="page-contact__content form-wrapper">
-
-
 						<form class="form" method="post">
+							<div class="form__warning">
+								<p>※必須項目が入力されていません。<br>&nbsp;&nbsp;&nbsp;&nbsp;入力してください。</p>
+							</div>
 							<dl class="form__row">
 								<dt>お名前<span>必須</span></dt>
 								<dd>
@@ -251,7 +252,7 @@
 								</dd>
 							</dl>
 							<dl class="form__row">
-								<dt>お問い合わせ項目<span>必須</span></dt>
+								<dt>お問合せ項目<span>必須</span></dt>
 								<dd class="form__row--item">
 									<label class="form__radio" for="divingseminar">
 										<input type="radio" name="kinds" id="divingseminar">
@@ -268,7 +269,7 @@
 							</dl>
 							<dl class="form__row">
 								<dt>キャンペーン</dt>
-								<dd class="form__row--campaign">
+								<dd class="form__row--campaign form__row--campaign-error ">
 									<div class="form__row-select-wrapper">
 										<select id="campaign-select" name="campaign" class="form__row-select">
 											<option value="">キャンペーン内容を選択</option>
@@ -280,7 +281,7 @@
 								</dd>
 							</dl>
 							<dl class="form__row form__row--message">
-								<dt>お問い合わせ内容<span>必須</span></dt>
+								<dt>お問合せ内容<span>必須</span></dt>
 								<dd>
 									<textarea name="message" id=""></textarea>
 								</dd>
@@ -297,7 +298,7 @@
                         個人情報の取り扱いについて同意のうえ送信します。
                     </label>
 								<div class="form__btn">
-									<button type="submit" class="button">Send</button>
+									<button type="submit" class="button button--send">Send</button>
 								</div>
 							</div>
 						</form>
@@ -308,7 +309,7 @@
 
 
 
-    <footer class="footer footer-layout">
+    <footer class="footer footer-layou footer-layout--error">
       <div class="footer__inner inner">
         <div class="footer__top">
           <div class="footer__logo">

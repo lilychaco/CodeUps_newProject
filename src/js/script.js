@@ -188,5 +188,50 @@ jQuery(function ($) {
 		$(".js-modal").fadeOut();
 		// $("body,html").stop().animate({ scrollTop: winScrollTop }, 100);
     return false;
+	});
+
+	//問い合わせフォームの未入力時の対応
+$(document).ready(function () {
+  $("form").submit(function (e) {
+    var isFormValid = true;
+
+    // 必須フィールドをチェック
+    $(
+      'input[type="text"], input[type="email"], input[type="phone"], textarea'
+    ).each(function () {
+      if ($.trim($(this).val()).length == 0) {
+        $(this).addClass("input-error"); // エラークラスを追加
+        isFormValid = false;
+      } else {
+        $(this).removeClass("input-error"); // エラークラスを削除
+      }
+    });
+
+    // ラジオボタンのチェック
+    var radioGroups = $('input[type="radio"]')
+      .map(function () {
+        return $(this).attr("name");
+      })
+      .get();
+
+    $.each($.unique(radioGroups), function (i, name) {
+      if ($('input[name="' + name + '"]:checked').length == 0) {
+        isFormValid = false;
+        // ここでは、ラジオボタンの視覚的フィードバックを特に設定していませんが、必要に応じて追加できます
+      }
+    });
+
+    // チェックボックスの検証（例: プライバシーポリシー同意チェックボックス）
+    if (!$('input[type="checkbox"][name="privacy"]').is(":checked")) {
+      isFormValid = false;
+      // ここでも視覚的フィードバックを追加できます
+    }
+
+    if (!isFormValid) {
+      e.preventDefault(); // フォームの送信を阻止
+      window.location.href = "page-contact-error.html"; // エラーページへリダイレクト
+    }
   });
+});
+
 });

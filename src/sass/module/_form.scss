@@ -38,6 +38,8 @@
   background-color: #c94800;
   color: $white;
   margin-left: rem(8);
+	position: relative;
+  top: -2px;
 }
 .form__row dd input {
   width: 100%;
@@ -60,6 +62,7 @@
   padding-left: 22px;
   cursor: pointer;
   user-select: none;
+  line-height: 1.6;
 }
 .form__radio input {
   display: none;
@@ -96,6 +99,12 @@
 
 .form__row--campaign {
   margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+.form__row--campaign-error {
+  margin-top: rem(14);
   @include mq(md) {
     margin-top: 0;
   }
@@ -157,11 +166,12 @@
   width: 100%;
   padding-left: rem(30);
   padding-right: rem(30);
-  min-width: rem(282);
-  text-align: center;
+  // min-width: rem(282);
+  // text-align: center;
 }
 
 .form__privacy-label {
+  display: inline-block;
   position: relative;
   font-size: rem(14);
   font-family: $base-font-family;
@@ -169,6 +179,7 @@
   line-height: 1.57;
   letter-spacing: 0;
   text-align: left;
+  padding-left: rem(30);
   @include mq(md) {
     text-align: center;
   }
@@ -182,7 +193,7 @@
   background: #fff;
   position: absolute;
   top: 0;
-  left: rem(-30);
+  left: 0;
 }
 
 .form__privacy-mark::after {
@@ -201,9 +212,27 @@
 }
 
 .form__privacy-label input:checked + .form__privacy-mark::after {
-	display: block;
+  display: block;
 }
 
 .form__btn {
-  margin-top: rem(24);
+  text-align: center;
+  margin-top: rem(22);
+}
+.form__warning {
+	margin-inline: auto;
+  width: 100%;
+  padding-left: rem(60);
+	padding-bottom: rem(16);
+}
+.form__warning p{
+	color: #c94800;
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.input-error {
+  background-color: #ffcccc; /* 淡い赤色 */
 }
