@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .archive-campaign-layout {
-	margin-top: rem(56);
+	margin-top: rem(54);
 	@include mq(md) {
 			margin-top: rem(150);
 	}
@@ -45,4 +45,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+}
+.archive-campaign__nav {
+	margin-top: rem(82);
+	@include mq(md) {
+		margin-top: rem(76);
+	}
 }

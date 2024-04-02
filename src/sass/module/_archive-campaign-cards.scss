@@ -7,13 +7,19 @@
 	gap: rem(40);
 	@include mq(md) {
 	display: grid;
-  justify-content: center;
+  justify-content: space-between;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
+	column-gap:calc(calc(40/1080)*100);
+	row-gap:rem(78);
 	}
 }
 
 .archive-campaign-cards__item {
-	width: rem(280);
+	width: 100%;
+	max-width: rem(280);
 	height:auto;
+	@include mq(md) {
+			max-width: rem(520);
+	}
 }

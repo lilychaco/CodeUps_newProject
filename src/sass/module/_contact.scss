@@ -137,7 +137,7 @@
 
 .contact__cta {
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(18);
   }
 }
 
@@ -149,7 +149,7 @@
 
 .contact__fish-image {
   position: absolute;
-  top: rem(-28);
+  top: rem(-24);
   right: 0;
   width: rem(109);
 

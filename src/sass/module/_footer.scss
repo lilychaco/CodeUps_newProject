@@ -5,16 +5,27 @@
 	padding-bottom: rem(56);
 	background-color: $greenaccent;
 	position: relative;
+	@include mq(md) {
+			padding-top: rem(80);
+			padding-bottom: rem(80);
+	}
 }
 .footer__inner {
 	margin-inline:auto;
 	width:100%;
 }
-
+.footer__top {
+	@include mq(md) {
+			display: flex;
+			flex-direction: row;
+			gap:rem(40);
+	}
+}
 .footer__logo {
 	text-align: left;
 	width: rem(120);
 	@include mq(md) {
+		width: rem(200);
 	}
 }
 
@@ -28,10 +39,17 @@
 	margin-top: rem(16);
 	display: flex;
 	gap:rem(16);
+	@include mq(md) {
+		align-items: flex-end;
+
+	}
 }
 .footer__sns img {
 	display: inline-block;
 	width: rem(24);
+	@include mq(md) {
+			width: rem(32);
+	}
 }
 .footer__nav {
 	margin-top: rem(10);
@@ -47,7 +65,9 @@
 			line-height: 1.5;
 			letter-spacing: 0;
 			@include mq(md) {
-					margin-top: rem(80);
+				font-size: rem(14);
+				line-height: 1.285;
+					margin-top: rem(60);
 			}
 }
 .footer__copyright span {

@@ -63,7 +63,7 @@
 .section-heading__subtitle.section-heading__subtitle--contact {
   margin-top:rem(-4);
   @include mq(md) {
-    margin-top: rem(8);
+    margin-top: rem(-6);
     line-height: 1;
   }
 }

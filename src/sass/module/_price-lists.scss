@@ -1,10 +1,9 @@
 @use "global" as *;
 .price-lists {
-  margin-inline: auto;
   width: 100%;
 }
 .price-lists__item {
-  
+
   @include mq(md) {
     display: flex;
     flex-direction: column;

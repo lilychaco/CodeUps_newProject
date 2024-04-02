@@ -8,8 +8,12 @@
 	"a b"
 	"c d";
 	@include mq(md) {
+		margin: 0;
 			display:flex;
-			justify-content: flex-start;
+			justify-content: space-between;
+			gap:rem(120);
+			width:rem(1008);
+
 	}
 }
 
@@ -25,27 +29,35 @@
 	grid-area: a;
 	padding-top: rem(24);
 	padding-bottom: rem(16);
+		@include mq(md) {
+		padding-top: rem(24);
+	}
 }
+
 
 .nav-menu__box--02 {
 	grid-area: c;
 	padding-top: rem(20);
 	padding-bottom: rem(16);
 	@include mq(md) {
-			margin-left: rem(120);
+		padding-top: rem(24);
 	}
-}
+	}
+
 
 .nav-menu__box--03 {
 		grid-area: b;
 		padding-top: rem(24);
-			padding-bottom: rem(16);
+		padding-bottom: rem(16);
 }
 
 .nav-menu__box--04 {
 		grid-area: d;
 		padding-top: rem(20);
 			padding-bottom: rem(16);
+			@include mq(md) {
+		padding-top: rem(16);
+	}
 	}
 
 .nav-menu__box--05 {
@@ -55,18 +67,16 @@
 		@include mq(md) {
 			padding-top: rem(24);
 			padding-bottom: rem(16);
-			padding-left: rem(12);
-			margin-left: rem(120);
+			padding-left: 0;
 }}
 .nav-menu__box--06 {
 		padding-top: rem(20);
 			padding-bottom: rem(16);
 			padding-left: rem(10);
 		@include mq(md) {
-				padding-top: rem(22);
+				padding-top: rem(24);
 			padding-bottom: rem(16);
-			padding-left: rem(12);
-			margin-left: rem(120);
+			padding-left: 0;
 }}
 
 .nav-menu__item:not(:first-child) {

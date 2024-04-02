@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.contact-layout {
+	margin-top: rem(80);
+	@include mq(md) {
+			margin-top: rem(140);
+	}
+}
+
+.contact-layout--archive-campaign {
+	margin-top: rem(106);
+	@include mq(md) {
+		margin-top: rem(144);
+	}
+}
+.contact-layout.page-aboutus-contact-layout {
+	margin-top: rem(106);
+}
+.contact-layout.page-information-contact-layout {
+	margin-top: rem(106);
+}
+.contact-layout.page-voice-contact-layout {
+	margin-top: rem(109);
+}
+.contact-layout.page-price-contact-layout {
+	margin-top: rem(109);
+}
+.contact-layout.page-faq-contact-layout {
+	margin-top: rem(106);
+}
