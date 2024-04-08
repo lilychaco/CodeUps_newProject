@@ -67,9 +67,10 @@
 			@include mq(md) {
 				font-size: rem(14);
 				line-height: 1.285;
-					margin-top: rem(60);
+				margin-top: rem(60);
 			}
 }
+
 .footer__copyright span {
 	text-transform: uppercase;
 }

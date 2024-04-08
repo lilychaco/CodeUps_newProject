@@ -125,14 +125,15 @@
     margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: rem(40);
+    gap: calc(calc(40/840)*100%);
   }
 }
 .page-aboutus__body {
   margin-top: rem(16);
   @include mq(md) {
-    margin-top: 0;
-  }
+    margin-top: rem(26);
+	padding-left: rem(6);
+	}
 }
 .page-aboutus__text {
   font-size: rem(16);
@@ -140,6 +141,7 @@
   font-weight: $regular;
   line-height: 1.5;
   letter-spacing: 0;
+
   @include mq(md) {
     color: $white;
     max-height: rem(350);

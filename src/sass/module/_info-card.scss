@@ -41,6 +41,9 @@
   font-weight: $regular;
   line-height: 1.5;
   letter-spacing: 0;
+	@include mq(md) {
+
+	}
 }
 
 .info-card__img {

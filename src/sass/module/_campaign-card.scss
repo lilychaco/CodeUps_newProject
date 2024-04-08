@@ -39,15 +39,7 @@
     padding-right: rem(18);
   }
 }
-.campaign-card__body--side {
-  padding-left: rem(23);
-  padding-right: rem(23);
-	padding-bottom: rem(26);
-  @include mq(md) {
-    padding-top: rem(16);
-    padding-bottom: rem(24);
-  }
-}
+
 
 .campaign-card__top {
   padding-bottom: rem(8);
@@ -56,10 +48,7 @@
   }
 }
 
-.campaign-card__top--side {
-	padding-bottom: rem(4);
-  text-align: center;
-}
+
 .campaign-card__category {
   width: rem(108);
   height: rem(30);
@@ -135,16 +124,6 @@
   }
 }
 
-.campaign-card__price-text--archive span{
-	@include mq(md) {
-			color:red;
-	}
-}
-.campaign-card__price-text--side {
-  @include mq(md) {
-    font-size: rem(32);
-  }
-}
 
 .campaign-card__price-text span {
   font-size: rem(20);
@@ -162,11 +141,6 @@
   }
 }
 
-.campaign-card__price-text--side span {
-  @include mq(md) {
-    font-size: rem(20);
-  }
-}
 .campaign-card__subbody {
   display: none;
   @include mq(md) {

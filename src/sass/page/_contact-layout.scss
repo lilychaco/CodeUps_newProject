@@ -13,18 +13,21 @@
 		margin-top: rem(144);
 	}
 }
-.contact-layout.page-aboutus-contact-layout {
+.contact-layout--aboutus{
 	margin-top: rem(106);
 }
-.contact-layout.page-information-contact-layout {
-	margin-top: rem(106);
+.contact-layout--page-information {
+	margin-top: rem(108);
+		@include mq(md) {
+		margin-top: rem(142);
+	}
 }
-.contact-layout.page-voice-contact-layout {
+.contact-layout--page-voice {
 	margin-top: rem(109);
 }
-.contact-layout.page-price-contact-layout {
+.contact-layout--page-price {
 	margin-top: rem(109);
 }
-.contact-layout.page-faq-contact-layout {
+.contact-layout--page-faq{
 	margin-top: rem(106);
 }

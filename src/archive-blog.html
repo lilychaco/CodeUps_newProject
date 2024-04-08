@@ -223,17 +223,17 @@
     <div class="inner">
       <div class="breadcrumb-wrapper">
         <div class="breadcrumb">
-          <a href="./index.html">TOP</a>><a href="#">ブログ一覧</a>
+          <a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">ブログ一覧</a>
         </div>
       </div>
-      <div class="blog-wrapper blog-wrapper-layout">
-        <figure class="blog__fish-image">
+      <div class="archive-blog-wrapper blog-wrapper-layout">
+        <figure class="archive-blog__fish-image">
           <img src="./assets/images/container-fish.png" alt="魚のイラスト" />
         </figure>
-        <div class="blog">
-          <div class="blog__main">
-            <ul class="blog__items">
-              <li class="blog__item blog-card">
+        <div class="archive-blog">
+          <div class="archive-blog__main">
+            <ul class="archive-blog__items">
+              <li class="archive-blog__item blog-card">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img src="./assets/images/blog01.jpg" alt="サンゴの写真" />
@@ -252,7 +252,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card">
+              <li class="archive-blog__item blog-card">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img
@@ -274,7 +274,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card">
+              <li class="archive-blog__item blog-card">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img
@@ -296,7 +296,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card">
+              <li class="archive-blog__item blog-card">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img src="./assets/images/blog04.jpg" alt="魚の写真" />
@@ -315,7 +315,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card">
+              <li class="archive-blog__item blog-card">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img
@@ -359,7 +359,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card u-desktop">
+              <li class="archive-blog__item blog-card u-desktop">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img
@@ -381,7 +381,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card u-desktop">
+              <li class="archive-blog__item blog-card u-desktop">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img src="./assets/images/blog04.jpg" alt="魚の写真" />
@@ -400,7 +400,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card u-desktop">
+              <li class="archive-blog__item blog-card u-desktop">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img
@@ -422,7 +422,7 @@
                   </div>
                 </a>
               </li>
-              <li class="blog__item blog-card u-desktop">
+              <li class="archive-blog__item blog-card u-desktop">
                 <a href="single-blog.html" class="blog-card__link">
                   <figure class="blog-card__img">
                     <img
@@ -445,7 +445,7 @@
                 </a>
               </li>
             </ul>
-            <div class="blog__nav blog__nav--archive page-nav">
+            <div class="archive-blog__nav blog__nav--archive page-nav">
               <ul class="page-nav__pager">
                 <li class="page-nav__page is-active">
                   <a href="index.html" class="page-nav__link">1</a>
@@ -472,7 +472,7 @@
               </div>
             </div>
           </div>
-          <div class="blog__side">
+          <div class="archive-blog__side side">
             <section class="side-popular">
               <h3 class="side-popular__heading side-heading">人気記事</h3>
               <ul class="side-popular__cards">
@@ -530,54 +530,49 @@
             </section>
             <section class="side-campaign">
               <h3 class="side-campaign__heading side-heading">キャンペーン</h3>
-              <ul class="side-campaign__cards">
-                <li class="side-campaign__card campaign-card">
-                  <figure class="campaign-card__img campaign-card__img--side">
+              <ul class="side-campaign__items">
+                <li class="side-campaign__item">
+                  <figure class="side-campaign__img">
                     <img
                       src="./assets/images/campaign1.jpg"
                       alt="キャンペーンの画像"
                     />
                   </figure>
-                  <div class="campaign-card__body campaign-card__body--side">
-                    <div class="campaign-card__top campaign-card__top--side">
-                      <div class="campaign-card__title">ライセンス取得</div>
+                  <div class="side-campaign__body">
+                    <div class="side-campaign__top">
+                      <div class="side-campaign__title">ライセンス取得</div>
                     </div>
-                    <div class="campaign-card__text">
-                      <p
-                        class="campaign-card__price-info campaign-card__price-info--side"
-                      >
+                    <div class="side-campaign__text">
+                      <p class="side-campaign__price-info">
                         全部コミコミ(お一人様)
                       </p>
-                      <p
-                        class="campaign-card__price-text campaign-card__price-text--side"
-                      >
-                        <span>¥56,000</span>¥46,000
-                      </p>
+                      <div class="side-campaign__price">
+												<p class="side-campaign__price-before">¥56,000</p>
+												<p class="side-campaign__price-after">¥46,000</p>
+											</div>
                     </div>
                   </div>
                 </li>
-                <li class="side-campaign__card campaign-card">
-                  <figure class="campaign-card__img campaign-card__img--side">
+								<li class="side-campaign__item">
+                  <figure class="side-campaign__img">
                     <img
                       src="./assets/images/campaign2.jpg"
                       alt="キャンペーンの画像"
                     />
                   </figure>
-                  <div class="campaign-card__body campaign-card__body--side">
-                    <div class="campaign-card__top campaign-card__top--side">
-                      <div class="campaign-card__title">貸切体験ダイビング</div>
+                  <div class="side-campaign__body">
+                    <div class="side-campaign__top">
+                      <div class="side-campaign__title">貸切体験ダイビング</div>
                     </div>
-                    <div class="campaign-card__text">
-                      <div
-                        class="campaign-card__price-info campaign-card__price-info--side"
-                      >
+                    <div class="side-campaign__text">
+                    <p class="side-campaign__price-info">
                         全部コミコミ(お一人様)
-                      </div>
-                      <div
-                        class="campaign-card__price-text campaign-card__price-text--side"
-                      >
-                        <span>¥24,000</span>¥18,000
-                      </div>
+                      </p>
+                      
+											<div class="side-campaign__price">
+												<p class="side-campaign__price-before">¥24,000</p>
+												<p class="side-campaign__price-after">¥18,000</p>
+											</div>
                     </div>
                   </div>
                 </li>
@@ -630,7 +625,7 @@
       </div>
     </div>
     <!--inner終わり-->
-    <section class="contact-layout contact inner">
+    <section class="archive-blog__contact contact-layout contact inner">
       <div class="contact__inner">
         <div class="contact__container">
           <div class="contact-maparea">

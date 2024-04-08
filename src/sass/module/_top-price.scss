@@ -30,13 +30,13 @@
         flex-wrap: nowrap;
 				justify-content: space-between;
 				// align-items: flex-start;
-				gap:calc(calc(93 / 1077) * 100);
+				gap:calc(calc(93 / 1077) * 100%);
     }
 }
 
 .top-price__lists {
     @include mq(md) {
-        // flex: 1;
+    flex: 1;
 		max-width: rem(492);
     }
 }
