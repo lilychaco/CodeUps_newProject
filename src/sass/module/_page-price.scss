@@ -15,7 +15,7 @@
 .page-price__item:not(:first-child){
 	margin-top:rem(40);
 	@include mq(md) {
-			margin-top:rem(80);
+			margin-top:rem(78);
 	}
 }
 .page-price__fish-image {
