@@ -2,7 +2,7 @@
 .page-faq-layout {
 	margin-top:rem(54);
 	@include mq(md) {
-		margin-top:rem(150);
+		margin-top:rem(152);
 	}
 
 }
@@ -32,5 +32,4 @@
   @include mq(md) {
     aspect-ratio: 301 / 138;
   }
-
 }

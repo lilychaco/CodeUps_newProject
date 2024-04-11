@@ -11,7 +11,13 @@
 }
 .footer-layout--thanks {
   margin-top: rem(148);
+	@include mq(md) {
+			margin-top: rem(124);
+	}
 }
 .footer-layout--error {
   margin-top: rem(147);
+	@include mq(md) {
+			margin-top: rem(120);
+	}
 }

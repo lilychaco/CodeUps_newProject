@@ -8,16 +8,27 @@
 }
 .form__row {
   border-bottom: 1px dotted $greenaccent;
-  padding-bottom: rem(24);
+  padding-bottom: rem(22);
 
   @include mq(md) {
     display: grid;
     grid-template-columns: rem(220) auto;
+		padding-bottom: rem(40);
   }
 }
 .form__row:not(:first-child) {
   padding-top: rem(24);
+	@include mq(md) {
+		padding-top:rem(40);
+	}
 }
+.form__row--radio {
+	@include mq(md) {
+		padding-bottom: rem(38);
+	}
+}
+
+
 .form__row dt {
   font-size: rem(16);
   font-family: $base-font-family;
@@ -45,12 +56,12 @@
   width: 100%;
   height: rem(40);
   border: 1px solid $greenaccent;
-  margin-top: rem(16);
+  margin-top: rem(17);
   @include mq(md) {
     margin-top: 0;
   }
 }
-.form__row--item {
+.form__radio-wrapper {
   margin-top: rem(16);
   @include mq(md) {
     margin-top: 0;
@@ -62,7 +73,7 @@
   padding-left: 22px;
   cursor: pointer;
   user-select: none;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 .form__radio input {
   display: none;
@@ -77,7 +88,9 @@
   border: solid 2px $greenaccent; /* 線 */
   box-sizing: border-box;
 }
-
+.form__radio-mark--error {
+	border-radius: 50%;
+}
 /* 選択時にチェックマーく */
 .form__radio-mark:after {
   content: "";
@@ -97,58 +110,27 @@
   opacity: 1;
 }
 
-.form__row--campaign {
-  margin-top: rem(16);
-  @include mq(md) {
-    margin-top: 0;
-  }
-}
-.form__row--campaign-error {
-  margin-top: rem(14);
-  @include mq(md) {
-    margin-top: 0;
-  }
-}
-.form__row--campaign select {
-  width: 100%;
-  height: rem(40);
-  border: 1px solid $greenaccent;
-  padding-left: rem(8);
-  font-size: rem(12);
-  font-family: $base-font-family;
-  font-weight: $regular;
-  line-height: 1;
-  letter-spacing: 0;
-}
-
-.form__row-select {
-  appearance: none; /* ブラウザのデフォルトスタイルを無効化 */
-  -webkit-appearance: none; /* Chrome, Safari用 */
-  -moz-appearance: none; /* Firefox用 */
-  background-color: white;
-  border: 1px solid $greenaccent; /* 枠線 */
-}
-
-.form__row-select-wrapper {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  height: rem(40);
-}
-.form__row-select-wrapper::after {
-  content: "";
+.form__radio-mark--error::after {
+	content: "";
   position: absolute;
-  right: 8px; /* 右端からの位置 */
-  top: 50%; /* 上端から中央に配置 */
-  transform: translateY(-50%); /* Y軸方向に中央揃え */
-  width: 12px;
-  height: calc(12px / 2 * tan(60deg));
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  background: $greenaccent;
+  width: 8px;
+  height: 8px;
+  top: 50%; /* 上からの位置 */
+  transform: translateY(-50%);
+  left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50%;
+	opacity: 0; /* 透明にしておく */
+	background-color: #408F95;
+
 }
-.form__row-select-wrapper.no-triangle::after {
-  display: none;
+.form__radio input:checked + .form__radio-mark--error:after {
+  opacity: 1;
 }
+
+
+
+
 .form__row--message dd {
   width: 100%;
   height: auto;
@@ -166,8 +148,12 @@
   width: 100%;
   padding-left: rem(30);
   padding-right: rem(30);
-  // min-width: rem(282);
-  // text-align: center;
+
+	@include mq(md) {
+			text-align: center;
+			margin-top: rem(76);
+			padding-left: rem(30);
+	}
 }
 
 .form__privacy-label {
@@ -181,7 +167,7 @@
   text-align: left;
   padding-left: rem(30);
   @include mq(md) {
-    text-align: center;
+		padding-left: rem(40);
   }
 }
 .form__privacy-mark {
@@ -194,6 +180,7 @@
   position: absolute;
   top: 0;
   left: 0;
+	margin-right:40px;
 }
 
 .form__privacy-mark::after {
@@ -218,21 +205,91 @@
 .form__btn {
   text-align: center;
   margin-top: rem(22);
+	@include mq(md) {
+			margin-top:rem(40);
+	}
 }
 .form__warning {
 	margin-inline: auto;
   width: 100%;
   padding-left: rem(60);
 	padding-bottom: rem(16);
+
+	@include mq(md) {
+		text-align: center;
+		padding-left: 8px;
+		padding-bottom: 0;
+	}
 }
 .form__warning p{
 	color: #c94800;
   font-size: rem(14);
   font-family: $base-font-family;
   font-weight: $regular;
-  line-height: 1.5;
+  line-height: 1.4;
   letter-spacing: 0;
 }
 .input-error {
   background-color: #ffcccc; /* 淡い赤色 */
 }
+
+
+
+.form__select {
+	margin-top: rem(16);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+.form__select-items {
+	display: inline-block;
+  position: relative;
+  width: 100%;
+  height: rem(40);
+	@include mq(md) {
+			height: rem(30);
+	}
+}
+.form__select-items::after {
+  content: "";
+  position: absolute;
+  right: 8px; /* 右端からの位置 */
+  top: 50%; /* 上端から中央に配置 */
+  transform: translateY(-50%); /* Y軸方向に中央揃え */
+  width: 12px;
+  height: calc(12px / 2 * tan(60deg));
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: $greenaccent;
+}
+.form__select-items.no-triangle::after {
+  display: none;
+}
+
+.form__select-item {
+	appearance: none; /* ブラウザのデフォルトスタイルを無効化 */
+  -webkit-appearance: none; /* Chrome, Safari用 */
+  -moz-appearance: none; /* Firefox用 */
+  background-color: white;
+  border: 1px solid $greenaccent; /* 枠線 */
+	width: 100%;
+	height: inherit;
+  border: 1px solid $greenaccent;
+  padding-left: rem(8);
+  font-size: rem(12);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.form__row.form__row--select {
+	@include mq(md) {
+		padding-top:rem(34);
+	}
+}
+.form__row.form__row--select dt {
+	@include mq(md) {
+			margin-top:rem(4);
+	}
+}
+

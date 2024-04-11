@@ -81,6 +81,7 @@
 	border: 1px solid $greenaccent;
 	@include mq(md) {
 			margin-top: rem(16);
+			padding:rem(40);
 	}
 }
 .accordion-card__content {

@@ -31,4 +31,10 @@
 }
 .contact-layout--page-faq{
 	margin-top: rem(106);
+	@include mq(md) {
+	margin-top: rem(145);
+	}
+}
+.contact-layout--single-blog {
+	margin-top: rem(109);
 }

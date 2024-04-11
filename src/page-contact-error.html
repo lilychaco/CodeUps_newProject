@@ -224,7 +224,7 @@
 				</div>
 			</div>
 
-			<div class="page-contact page-contact-layout">
+			<div class="page-contact page-contact-layout page-contact-layout--error">
 						<figure class="page-contact__fish-image">
 									<img src="./assets/images/container-fish.png" alt="魚のイラスト" />
 						</figure>
@@ -232,7 +232,7 @@
 						<div class="page-contact__content form-wrapper">
 						<form class="form" method="post">
 							<div class="form__warning">
-								<p>※必須項目が入力されていません。<br>&nbsp;&nbsp;&nbsp;&nbsp;入力してください。</p>
+								<p>※必須項目が入力されていません。<br class="u-mobile">入力してください。</p>
 							</div>
 							<dl class="form__row">
 								<dt>お名前<span>必須</span></dt>
@@ -251,35 +251,46 @@
 									<input type="phone" name="phone" />
 								</dd>
 							</dl>
-							<dl class="form__row">
-								<dt>お問合せ項目<span>必須</span></dt>
-								<dd class="form__row--item">
-									<label class="form__radio" for="divingseminar">
-										<input type="radio" name="kinds" id="divingseminar">
-										<span class="form__radio-mark"></span>ダイビング講習について
-									</label>
-									<label class="form__radio" for="fundiving">
-										<input type="radio" name="kinds" id="fundiving">
-										<span class="form__radio-mark"></span>ファンダイビングについて
-									</label>
-									<label class="form__radio" for="testdiving">
-										<input type="radio" name="kinds" id="testdiving">
-										<span class="form__radio-mark"></span>体験ダイビングについて</label>
-								</dd>
-							</dl>
-							<dl class="form__row">
-								<dt>キャンペーン</dt>
-								<dd class="form__row--campaign form__row--campaign-error ">
-									<div class="form__row-select-wrapper">
-										<select id="campaign-select" name="campaign" class="form__row-select">
-											<option value="">キャンペーン内容を選択</option>
-											<option value="seminar">ライセンス講習</option>
-											<option value="fundiving">ファンダイビング</option>
-											<option value="testdiving">体験ダイビング</option>
-										</select>
+							<dl class="form__row form__row--radio">
+              <dt>お問合せ項目<span>必須</span></dt>
+              <dd class="form__radio-wrapper">
+                <label class="form__radio" for="divingseminar">
+                  <input type="radio" name="kinds" id="divingseminar" />
+                  <span class="form__radio-mark form__radio-mark--error"></span>ダイビング講習について
+                </label>
+                <label class="form__radio" for="fundiving">
+                  <input type="radio" name="kinds" id="fundiving" />
+                  <span class="form__radio-mark form__radio-mark--error"></span>ファンダイビングについて
+                </label>
+                <label class="form__radio" for="testdiving">
+                  <input type="radio" name="kinds" id="testdiving" />
+                  <span class="form__radio-mark form__radio-mark--error"></span
+                  >体験ダイビングについて</label
+                >
+								<label class="form__radio" for="testdiving">
+                  <input type="radio" name="kinds" id="testdiving" />
+                  <span class="form__radio-mark form__radio-mark--error"></span
+                  >スペシャルダイビングについて</label
+                >
+              </dd>
+            </dl>
+							 <dl class="form__row form__row--select">
+              <dt>キャンペーン</dt>
+              <dd class="form__select">
+								<div class="form__select-items">
+                  <select
+                    id="campaign-select"
+                    name="campaign"
+                    class="form__select-item"
+                  >
+                    <option value="">キャンペーン内容を選択</option>
+                    <option value="seminar">ライセンス講習</option>
+                    <option value="fundiving">ファンダイビング</option>
+                    <option value="testdiving">体験ダイビング</option>
+                  </select>
 									</div>
-								</dd>
-							</dl>
+              </dd>
+            </dl>
 							<dl class="form__row form__row--message">
 								<dt>お問合せ内容<span>必須</span></dt>
 								<dd>
@@ -417,7 +428,7 @@
         </div>
         <div class="footer__copyright">
           <span>c</span
-          >copyright&nbsp;©&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.
+          >opyright&nbsp;©&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.
         </div>
       </div>
 

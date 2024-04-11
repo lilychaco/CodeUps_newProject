@@ -139,6 +139,7 @@
 .single-blog__side {
 	padding-left: rem(27);
   padding-right: rem(27);
+	margin-top: rem(38);
 
   @include mq(md) {
     width: rem(294);
