@@ -3,7 +3,7 @@
 .page-service-layout {
 	margin-top:rem(60);
 	@include mq(md) {
-		margin-top:rem(150);
+		margin-top:rem(160);
 	}
 }
 
@@ -11,17 +11,17 @@
 	margin-inline:auto;
 	width:100%;
 	max-width: rem(800);
-
+	position: relative;
 }
 .page-service__fish-image {
 		width: rem(120);
   position: absolute;
-	top:rem(-24);
+	top:rem(-30);
 	left:0;
-	z-index: -1;
+	// z-index: -1;
   @include mq(md) {
 		width: rem(301);
-    top: rem(-70);
+    top: rem(-74);
 		left: calc(50% - min(48vw, 38.75rem));
   }
 

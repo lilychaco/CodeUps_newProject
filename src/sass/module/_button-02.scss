@@ -6,7 +6,7 @@
   vertical-align: bottom;
   display: inline-block;
   text-align: left;
-  padding: rem(18) 0 rem(14) rem(38);
+  padding: rem(16) 0 rem(14) rem(38);
   background-color: $white;
   color: $greenaccent;
   font-size: rem(14);
@@ -43,7 +43,7 @@
   height: 6px;
   border-bottom: 1px solid $greenaccent;
   border-right: 1px solid $greenaccent;
-  margin-left: rem(8);
+  margin-left: rem(14);
   z-index: 1000;
 }
 
@@ -56,4 +56,7 @@
 .button-02:hover::after {
   border-bottom: 1px solid $white;
   border-right: 1px solid $white;
+}
+.button-02::first-letter {
+  text-transform: uppercase;
 }

@@ -10,6 +10,9 @@
 			padding-bottom: rem(80);
 	}
 }
+.footer--404 {
+	padding-top: rem(52);
+}
 .footer__inner {
 	margin-inline:auto;
 	width:100%;
@@ -52,7 +55,7 @@
 	}
 }
 .footer__nav {
-	margin-top: rem(10);
+	margin-top: rem(36);
 }
 .footer__copyright {
 	margin-top: rem(22);
@@ -73,4 +76,8 @@
 
 .footer__copyright span {
 	text-transform: uppercase;
+}
+
+.footer__copyright--404 {
+	margin-top:rem(26);
 }
