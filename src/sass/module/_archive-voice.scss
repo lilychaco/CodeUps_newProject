@@ -39,7 +39,10 @@
 }
 
 .archive-voice__nav {
-  margin-top: rem(74);
+  margin-top: rem(81);
+	 @include mq(md) {
+    margin-top: rem(74);
+  }
 }
 .archive-voice__contact {
   margin-top: rem(80);

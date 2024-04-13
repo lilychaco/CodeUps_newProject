@@ -41,7 +41,6 @@
   margin-top: rem(8);
   padding-bottom: rem(10);
   border-bottom: 1px solid $greenaccent;
-  border-bottom: 1px solid red;
   @include mq(md) {
     font-size: rem(32);
   }

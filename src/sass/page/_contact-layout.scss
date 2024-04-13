@@ -24,6 +24,9 @@
 }
 .contact-layout--archive-voice {
 	margin-top: rem(108);
+	@include mq(md) {
+	margin-top: rem(144);
+	}
 }
 
 .contact-layout--page-price {
