@@ -4,6 +4,8 @@
 	width:100%;
 	display: grid;
 	grid-template-columns: 1fr;
+	justify-content: center;
+	place-items: center;
 	gap: rem(40);
 	@include mq(md) {
 	display: grid;
