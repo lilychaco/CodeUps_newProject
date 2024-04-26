@@ -1,54 +1,62 @@
 @use "global" as *;
 
-.contact-layout {
+.contact-wrapper {
 	margin-top: rem(80);
+	padding-bottom: rem(96);
 	@include mq(md) {
 			margin-top: rem(140);
+			padding-bottom: rem(160);
 	}
 }
 
-.contact-layout--archive-campaign {
+.contact-wrapper--archive-blog {
+	margin-top: rem(80);
+  @include mq(md) {
+    margin-top: rem(142);
+  }
+}
+.contact-wrapper--archive-campaign {
 	margin-top: rem(106);
 	@include mq(md) {
 		margin-top: rem(144);
 	}
 }
-.contact-layout--aboutus{
+.contact-wrapper--aboutus{
 	margin-top: rem(106);
 }
-.contact-layout--page-information {
+.contact-wrapper--page-information {
 	margin-top: rem(108);
 		@include mq(md) {
 		margin-top: rem(142);
 	}
 }
-.contact-layout--archive-voice {
+.contact-wrapper--archive-voice {
 	margin-top: rem(108);
 	@include mq(md) {
 	margin-top: rem(144);
 	}
 }
 
-.contact-layout--page-price {
+.contact-wrapper--page-price {
 	margin-top: rem(109);
 }
-.contact-layout--page-faq{
+.contact-wrapper--page-faq{
 	margin-top: rem(106);
 	@include mq(md) {
 	margin-top: rem(145);
 	}
 }
-.contact-layout--single-blog {
+.contact-wrapper--single-blog {
 	margin-top: rem(109);
 }
-.contact-layout--page-privacy {
+.contact-wrapper--page-privacy {
 	margin-top: rem(108);
 	@include mq(md) {
 			margin-top: rem(144);
 	}
 }
 
-.contact-layout--page-service {
+.contact-wrapper--page-service {
 	margin-top: rem(108);
 	@include mq(md) {
 			margin-top: rem(144);
