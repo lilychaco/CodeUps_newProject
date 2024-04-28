@@ -1,13 +1,16 @@
 @use "global" as *;
 
-.footer-layout {
+.footer-layout-01 {
   margin-top: rem(96);
   @include mq(md) {
     margin-top: rem(160);
   }
 }
-.footer-layout--contact {
-  margin-top: rem(146);
+.footer-layout-02 {
+  margin-top: rem(144);
+		@include mq(md) {
+			margin-top: rem(160);
+	}
 }
 .footer-layout--thanks {
   margin-top: rem(148);

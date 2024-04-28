@@ -2,10 +2,8 @@
 
 .contact-wrapper {
 	margin-top: rem(80);
-	padding-bottom: rem(96);
 	@include mq(md) {
 			margin-top: rem(140);
-			padding-bottom: rem(160);
 	}
 }
 
