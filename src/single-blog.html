@@ -217,12 +217,13 @@
 
         <h2 class="mv__title">blog</h2>
 		</section>
-		<div class="inner">
-			<div class="breadcrumb-wrapper">
-				<div class="breadcrumb">
-					<a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">ブログ詳細</a>
-				</div>
+		<div class="breadcrumb-wrapper">
+			<div class="breadcrumb-wrapper__inner inner">
+        <div class="breadcrumb">
+          <a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">キャンペーン</a>
+        </div>
 			</div>
+    </div>
 			<div class="single-blog">
 				<div class="single-blog__main">
 						<div class="single-blog__post">
@@ -393,10 +394,11 @@
 			</div><!--blog終わり-->
 			</div>
 
-    <section class="contact contact-layout inner contact-layout--single-blog">
+<div class="contact-wrapper">
+    <section class="contact inner" id="contact">
       <div class="contact__inner">
         <div class="contact__container">
-          <div class="contact-maparea">
+          <div class="contact__item contact-maparea">
             <div class="contact-maparea__top">
               <div class="contact-maparea__logo">
                 <a href="#">
@@ -435,31 +437,34 @@
               </div>
             </div>
           </div>
-          <div class="contact__cta">
-            <div class="contact__heading section-heading">
-              <h3
-                class="section-heading__title section-heading__title--contact"
-              >
-                Contact
-              </h3>
-              <h2
-                class="section-heading__subtitle section-heading__subtitle--contact"
-              >
-                お問い合せ
-              </h2>
-              <p class="section-heading__text">ご予約・お問い合わせはコチラ</p>
-            </div>
-            <div class="contact__button">
-              <a href="./page-contact.html" class="button">Contact us</a>
-            </div>
-          </div>
-        </div>
-
-        <figure class="contact__fish-image">
-          <img src="./assets/images/contact-fish.png" alt="魚のイラスト" />
-        </figure>
+					<div class="contact__item contact-verticalline"></div>
+					<div class="contact__item contact__cta">
+							<div class="contact__heading section-heading">
+								<h3
+									class="section-heading__title section-heading__title--contact"
+								>
+								Contact
+								</h3>
+								<h2
+									class="section-heading__subtitle section-heading__subtitle--contact u-desktop"
+								>
+									お問い合わせ
+								</h2>
+								<h2
+									class="section-heading__subtitle section-heading__subtitle--contact u-mobile"
+								>
+									お問合せ
+								</h2>
+								<p class="section-heading__text">ご予約・お問い合わせはコチラ</p>
+							</div>
+							<div class="contact__button">
+								<a href="./page-contact.html" class="button">Contact us</a>
+							</div>
+					</div>
+				</div>
       </div>
     </section>
+</div>
 
 
     <footer class="footer footer-layout-01">

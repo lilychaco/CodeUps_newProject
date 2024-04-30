@@ -217,12 +217,13 @@
 
         <h2 class="mv__title">voice</h2>
 		</section>
-		<div class="inner">
-			<div class="breadcrumb-wrapper">
-				<div class="breadcrumb">
-					<a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">お客様の声</a>
-				</div>
+		<div class="breadcrumb-wrapper">
+			<div class="breadcrumb-wrapper__inner inner">
+        <div class="breadcrumb">
+          <a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">キャンペーン</a>
+        </div>
 			</div>
+    </div>
 			<div class="archive-voice-wrapper archive-voice-wrapper-layout">
 							<figure class="archive-voice__fish-image">
 								<img src="./assets/images/container-fish.png" alt="魚のイラスト" />
@@ -413,10 +414,11 @@
 			</div>
 			</div>
 		</div>
-		<section class="contact contact-layout contact-layout--archive-voice inner">
+<div class="contact-wrapper">
+    <section class="contact inner" id="contact">
       <div class="contact__inner">
         <div class="contact__container">
-          <div class="contact-maparea">
+          <div class="contact__item contact-maparea">
             <div class="contact-maparea__top">
               <div class="contact-maparea__logo">
                 <a href="#">
@@ -455,17 +457,23 @@
               </div>
             </div>
           </div>
-					<div class="contact__cta">
+					<div class="contact__item contact-verticalline"></div>
+					<div class="contact__item contact__cta">
 							<div class="contact__heading section-heading">
 								<h3
 									class="section-heading__title section-heading__title--contact"
 								>
-									Contact
+								Contact
 								</h3>
 								<h2
-									class="section-heading__subtitle section-heading__subtitle--contact"
+									class="section-heading__subtitle section-heading__subtitle--contact u-desktop"
 								>
-									お問い合せ
+									お問い合わせ
+								</h2>
+								<h2
+									class="section-heading__subtitle section-heading__subtitle--contact u-mobile"
+								>
+									お問合せ
 								</h2>
 								<p class="section-heading__text">ご予約・お問い合わせはコチラ</p>
 							</div>
@@ -474,12 +482,9 @@
 							</div>
 					</div>
 				</div>
-
-        <figure class="contact__fish-image">
-          <img src="./assets/images/contact-fish.png" alt="魚のイラスト" />
-        </figure>
       </div>
     </section>
+</div>
 
 
     <footer class="footer footer-layout-01">
