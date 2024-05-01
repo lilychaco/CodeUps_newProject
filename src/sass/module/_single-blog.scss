@@ -1,9 +1,19 @@
 @use "global" as *;
+
 .single-blog {
+
+}
+.single-blog-layout {
+	margin-top: rem(52);
+		@include mq(md) {
+			margin-top: rem(150);
+		}
+
+}
+
+.single-blog__container {
 	width: 100%;
-  margin-top: rem(52);
   @include mq(md) {
-    margin-top: rem(150);
     display: grid;
     grid-template-columns: 65.4% 27.2%;
     gap: 7.4%;

@@ -11,6 +11,14 @@
   width: 100%;
   position: relative;
 }
+.page-contact__inner {
+
+	@include mq(md) {
+		max-width: rem(750);
+
+	}
+}
+
 .page-contact-layout--error {
 	@include mq(md) {
     margin-top: rem(152);
@@ -38,3 +46,6 @@
     aspect-ratio: 301 / 138;
   }
 }
+.page-contact__content {
+	background-color: orange;
+	}

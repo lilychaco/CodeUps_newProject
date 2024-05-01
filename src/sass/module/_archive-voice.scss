@@ -1,16 +1,20 @@
 @use "global" as *;
 
-.archive-voice-wrapper-layout {
+.archive-voice-layout {
   margin-top: rem(52);
   @include mq(md) {
     margin-top: rem(150);
   }
 }
-.archive-voice-wrapper {
+.archive-voice {
   margin-inline: auto;
   width: 100%;
   position: relative;
 }
+.archive-voice__inner {
+	background-color: lemonchiffon;
+		}
+
 .archive-voice__fish-image {
   width: rem(120);
   position: absolute;

@@ -2,9 +2,7 @@
 .form {
   margin-inline: auto;
   width: 100%;
-  @include mq(md) {
-    max-width: rem(700);
-  }
+
 }
 .form__row {
   border-bottom: 1px dotted $greenaccent;
@@ -212,26 +210,7 @@
 			margin-top:rem(40);
 	}
 }
-.form__warning {
-	margin-inline: auto;
-  width: 100%;
-  padding-left: rem(60);
-	padding-bottom: rem(16);
 
-	@include mq(md) {
-		text-align: center;
-		padding-left: 8px;
-		padding-bottom: 0;
-	}
-}
-.form__warning p{
-	color: #c94800;
-  font-size: rem(14);
-  font-family: $base-font-family;
-  font-weight: $regular;
-  line-height: 1.4;
-  letter-spacing: 0;
-}
 .input-error {
   background-color: #ffcccc; /* 淡い赤色 */
 }

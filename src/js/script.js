@@ -47,8 +47,8 @@ jQuery(function ($) {
 
     // アコーディオンの動作
     $(".js-accordion-top").click(function () {
-      $(this).next().slideToggle(300);
-      $(this).toggleClass("is-open");
+      $(this).next().slideToggle(-300);
+      $(this).toggleClass("is-close");
     });
 
     // モーダルの開閉

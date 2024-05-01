@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.archive-blog-wrapper-layout {
+.archive-blog-layout {
   margin-top: rem(52);
   @include mq(md) {
     margin-top: rem(150);
   }
 }
 
-.archive-blog-wrapper {
+.archive-blog {
   margin-inline: auto;
   width: 100%;
   position: relative;
@@ -33,7 +33,7 @@
     aspect-ratio: 301 / 138;
   }
 }
-.archive-blog {
+.archive-blog__container {
   margin-inline: auto;
   width: 100%;
   margin-top: rem(52);
@@ -94,4 +94,3 @@
     margin-top: 0;
   }
 }
-
