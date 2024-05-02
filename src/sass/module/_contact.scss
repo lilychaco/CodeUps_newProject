@@ -22,7 +22,9 @@
 }
 
 .contact__inner::after {
-  content: '';
+	display:none;
+	@include mq(md) {
+	content: '';
   display: block;
   width: rem(301); /* Width of the image */
 	height:rem(138);
@@ -32,6 +34,8 @@
   top: -40px;
   right: calc(50% - min(48vw, 41.875rem));
 	z-index: 100;
+	}
+
 }
 
 .contact__container {
@@ -152,9 +156,13 @@
 }
 
 .contact-verticalline {
+	display: none;
+	@include mq(md) {
 	width: 1px;
   height: 255px;
   background-color: $greenaccent;
+	}
+
 }
 .contact__cta {
 
@@ -165,5 +173,3 @@
   text-align: center;
   padding-bottom: rem(8);
 }
-
-
