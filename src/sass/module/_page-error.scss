@@ -12,10 +12,8 @@
   position: relative;
 }
 .page-error__inner {
-
 	@include mq(md) {
 		max-width: rem(750);
-
 	}
 }
 
@@ -40,4 +38,7 @@
   font-weight: $regular;
   line-height: 1.4;
   letter-spacing: 0;
+}
+.page-error__content {
+	margin-top:rem(40);
 }

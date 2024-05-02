@@ -5,26 +5,7 @@
 	width:100%;
 	position: relative;
 }
-.tab__fish-image {
-  width: rem(120);
-	position: absolute;
-	top:rem(-93);
-	left:0;
-  @include mq(md) {
-    width: rem(301);
-		top:rem(-70);
-		left: calc(50% - min(48vw, 38.75rem));
-  }
-}
-.tab__fish-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 120 / 55;
-  @include mq(md) {
-    aspect-ratio: 301 / 138;
-  }
-}
+
 .tab__list {
   display: flex;
   flex-wrap: wrap;

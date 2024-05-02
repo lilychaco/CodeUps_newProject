@@ -166,29 +166,4 @@
   padding-bottom: rem(8);
 }
 
-.contact__fish-image {
-  position: absolute;
-  top: rem(-24);
-  right: 0;
-  width: rem(109);
 
-  @include mq(md) {
-    position: absolute;
-    top: rem(-36);
-    right: calc(50% - min(48vw, 41.875rem));
-    width: rem(301);
-  }
-}
-
-.contact__fish-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 109 / 50;
-  @include mq(md) {
-    aspect-ratio: 301 / 138;
-  }
-}
-.contact__fish-image--service {
-	top: rem(-28);
-}

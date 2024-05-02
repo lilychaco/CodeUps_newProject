@@ -19,17 +19,25 @@
     padding-top: rem(16);
   }
 }
-.blog-card__link:hover {
-  opacity: 0.8;
-}
+
 .blog-card__img {
   width: 100%;
+  cursor: pointer;
+  max-width: rem(301);
+	overflow: hidden;
+	min-height: rem(201);
 }
+
 .blog-card__img img {
   width: 100%;
   height: auto;
   aspect-ratio: 301 /201;
-  object-fit: cover;
+	transition: transform .6s ease; /* アニメーションを滑らかに */
+  transform-origin: center; /* 拡大の基点を中心に */
+  transform: scale(1); /* 初期状態でのサイズを指定 */
+}
+.blog-card__img:hover img {
+  transform: scale(1.1); /* 拡大 */
 }
 
 .blog-card__body {

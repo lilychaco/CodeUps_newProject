@@ -23,6 +23,11 @@
   background-color: $greenaccent;
   color: $white;
 }
+.page-nav__page:hover {
+	background-color: $greenaccent;
+  color: $white;
+}
+
 .page-nav__link {
   width: 100%;
   height: inherit;
@@ -54,13 +59,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+	color:$greenaccent;
 }
 .page-nav__arrow img {
   width: 8px;
   aspect-ratio: 8 / 16;
   object-fit: cover;
 }
-.page-nav__arrow:hover {
+.page-nav__arrow a:hover {
 	background-color: $greenaccent;
 	color:$white;
 }
