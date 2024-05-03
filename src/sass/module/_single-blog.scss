@@ -55,6 +55,20 @@
     font-size: rem(32);
   }
 }
+.single-blog__eyecatch {
+	width: 100%;
+	margin-top: rem(24);
+	@include mq(md) {
+    margin-top: rem(40);
+  }
+}
+.single-blog__eyecatch img {
+	aspect-ratio: 345 / 231;
+  object-fit: cover;
+  @include mq(md) {
+    aspect-ratio: 700 / 468;
+  }
+}
 .single-blog__content {
   margin-inline: auto;
   width: 100%;
@@ -64,19 +78,13 @@
     margin-top: rem(40);
   }
 }
+
 .single-blog__image {
   width: 100%;
-  margin-top: rem(24);
-}
-
-.single-blog__image:not(:first-of-type) {
-  margin-top: rem(24);
-  @include mq(md) {
+	margin-top: rem(24);
+	@include mq(md) {
     margin-top: rem(40);
   }
-}
-.single-blog__image.single-blog__image--second {
-  margin-top: rem(28);
 }
 
 .single-blog__image img {

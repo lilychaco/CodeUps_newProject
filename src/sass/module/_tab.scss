@@ -23,6 +23,7 @@
   text-align: center;
   width: rem(102);
   height: rem(60);
+	cursor: pointer;
 
   @include mq(md) {
     width: rem(300);
@@ -34,6 +35,10 @@
 
 .tab__menu.current {
   color: $white;
+  background: $greenaccent;
+}
+.tab__menu:hover {
+	color: $white;
   background: $greenaccent;
 }
 
@@ -72,7 +77,6 @@
 	@include mq(md) {
 		background-image: url(../images/icon03.png);
 	}
-
 }
 .tab__text.tab__text--03::before {
 	@include mq(md) {
@@ -97,6 +101,26 @@
 	}
 }
 
+.current .tab__text.tab__text--02::before {
+	@include mq(md) {
+		background-image: url(../images/icon03R.png);
+	}
+}
+.current .tab__text.tab__text--03::before {
+	@include mq(md) {
+		background-image: url(../images/icon04R.png);
+	}
+}
+.tab__menu:hover .tab__text.tab__text--02::before {
+	@include mq(md) {
+		background-image: url(../images/icon03R.png);
+	}
+}
+.tab__menu:hover .tab__text.tab__text--03::before{
+	@include mq(md) {
+		background-image: url(../images/icon04R.png);
+	}
+}
 .tab__contents {
   width: 100%;
   margin-top: rem(16);

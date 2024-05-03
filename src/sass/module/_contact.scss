@@ -158,6 +158,7 @@
 .contact-verticalline {
 	display: none;
 	@include mq(md) {
+	display: block;
 	width: 1px;
   height: 255px;
   background-color: $greenaccent;

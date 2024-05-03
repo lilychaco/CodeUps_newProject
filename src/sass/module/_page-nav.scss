@@ -3,7 +3,6 @@
 .page-nav {
   margin-inline: auto;
 	text-align: center;
-	background-color: lemonchiffon;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -42,7 +41,13 @@
   justify-content: center;
   align-items: center;
 }
-
+.page-nav__arrows {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap:rem(82);
+}
 .page-nav__arrow {
   width: rem(38);
   height: rem(38);

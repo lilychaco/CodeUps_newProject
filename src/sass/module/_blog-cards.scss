@@ -11,3 +11,8 @@
 	grid-gap: rem(40);
 	}
 }
+.blog-cards.blog-cards--2col {
+	@include mq(md) {
+	grid-template-columns: 1fr 1fr;
+}
+}

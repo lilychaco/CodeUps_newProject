@@ -28,31 +28,16 @@
 .archive-blog__main {
   margin-inline: auto;
   width: 100%;
+	padding-left: rem(6);
+  padding-right: rem(6);
 	@include mq(md) {
 		max-width: rem(706);
 		flex:1;
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
-.archive-blog__items {
-  margin-inline: auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: rem(36);
-  padding-left: rem(6);
-  padding-right: rem(6);
-  @include mq(md) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: calc(calc(40/706)*100%);
-		row-gap: rem(80);
-		padding-left: 0;
-		padding-right: 0;
-  }
-}
-.archive-blog__item {
-	}
 
 .archive-blog__nav {
   margin-top: rem(78);
