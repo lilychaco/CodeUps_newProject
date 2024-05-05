@@ -72,22 +72,18 @@
   }
 }
 
-.single-blog__image {
+.single-blog__content img{
   width: 100%;
 	margin-top: rem(24);
+	aspect-ratio: 345 / 231;
+  object-fit: cover;
 	@include mq(md) {
     margin-top: rem(40);
+		aspect-ratio: 700 / 468;
   }
 }
 
-.single-blog__image img {
-  aspect-ratio: 345 / 231;
-  object-fit: cover;
-  @include mq(md) {
-    aspect-ratio: 700 / 468;
-  }
-}
-.single-blog__text {
+.single-blog__content p {
   font-size: rem(16);
   font-family: $base-font-family;
   font-weight: $regular;
@@ -99,14 +95,14 @@
   }
 }
 
-.single-blog__lists {
+.single-blog__content ul{
   margin-top: rem(24);
   @include mq(md) {
     margin-top: rem(40);
   }
 }
 
-.single-blog__list {
+.single-blog__content ul li{
   font-size: rem(16);
   font-family: $base-font-family;
   font-weight: $regular;
@@ -115,10 +111,10 @@
   position: relative;
   padding-left: rem(26);
 }
-.single-blog__list:not(:first-child) {
+.single-blog__content ul li:not(:first-child) {
   margin-top: rem(4);
 }
-.single-blog__list::before {
+.single-blog__content ul li::before {
   content: "";
   background-image: url(../images/icon-hitode.jpg);
   width: rem(18);
@@ -126,9 +122,8 @@
   position: absolute;
   background-size: contain;
   background-repeat: no-repeat;
-  top: 0;
+  top: rem(4);
   left: 0;
-  bottom: 0;
   margin: auto;
 }
 .single-blog__nav {
@@ -157,5 +152,4 @@
     padding-right: 0;
     margin-top: 0;
   }
-
 }

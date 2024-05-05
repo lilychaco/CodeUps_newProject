@@ -6,10 +6,8 @@
   position: relative;
 }
 .page-contact__inner {
-
 	@include mq(md) {
 		max-width: rem(750);
-
 	}
 }
 

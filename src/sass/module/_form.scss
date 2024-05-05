@@ -2,7 +2,6 @@
 .form {
   margin-inline: auto;
   width: 100%;
-
 }
 .form__row {
   border-bottom: 1px dotted $greenaccent;
@@ -125,8 +124,6 @@
 .form__checkbox input:checked + .form__radio-mark--error:after {
   opacity: 1;
 }
-
-
 
 
 .form__row--message dd {
