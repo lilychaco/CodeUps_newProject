@@ -1,13 +1,11 @@
 @use "global" as *;
 
 .page-price-list {
+	margin-inline: auto;
+  width: 100%;
   @include mq(md) {
-    margin-inline: auto;
-    width: 100%;
-    max-width: rem(700);
     display: grid;
     grid-template-columns: 28.6% 71.4%;
-
   }
 }
 
@@ -55,7 +53,6 @@
   width: 100%;
 }
 
-
 .page-price-list__item {
   margin-top: 0;
   display: grid;
@@ -63,17 +60,16 @@
   height: auto;
   min-height: rem(60);
 	border-top:1px solid $greenaccent;
-  border-bottom: 1px solid $greenaccent;
   border-left: 1px solid $greenaccent;
   border-right: 1px solid $greenaccent;
 	@include mq(md) {
 			grid-template-columns: 67.7% 32.3%;
+			border-left: none;
 	}
 }
-.page-price-list__item:first-child {
-	@include mq(md) {
-		border-top:1px solid $greenaccent;
-	}
+
+.page-price-list__item:last-child {
+	border-bottom: 1px solid $greenaccent;
 }
 .page-price-list__name {
   text-align: center;
@@ -86,6 +82,7 @@
   font-family: $base-font-family;
   font-weight: $regular;
   @include mq(md) {
+		text-align: left;
     justify-content: flex-start;
     padding-left: rem(16);
   }

@@ -1,42 +1,19 @@
 @use "global" as *;
 
-.page-price-layout {
-	margin-top:rem(54);
-	@include mq(md) {
-		margin-top:rem(150);
-	}
-}
 .page-price {
 	margin-inline:auto;
 	width:100%;
-	position: relative;
-
+}
+.page-price__inner {
+	margin-inline:auto;
+	width:100%;
+	@include mq(md) {
+	max-width: rem(700);
+		}
 }
 .page-price__item:not(:first-child){
 	margin-top:rem(40);
 	@include mq(md) {
 			margin-top:rem(78);
 	}
-}
-.page-price__fish-image {
-	width: rem(120);
-  position: absolute;
-	top:rem(-24);
-	left:0;
-	z-index: -1;
-  @include mq(md) {
-		width: rem(301);
-    top: rem(-70);
-		left: calc(50% - min(48vw, 38.75rem));
-  }
-}
-
-.page-price__fish-image img {
-	width: 100%;
-  height: auto;
-  object-fit: cover;
-  aspect-ratio: 120 / 55;
-  @include mq(md) {
-    aspect-ratio: 301 / 138;
-  }
 }

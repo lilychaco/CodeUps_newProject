@@ -10,9 +10,11 @@
   width: 100%;
 }
 .mv__img img {
+	height:rem(460);
   aspect-ratio: 375 / 460;
   object-fit: cover;
   @include mq(md) {
+		height:rem(548);
     aspect-ratio: 1440 / 548;
   }
 }

@@ -36,8 +36,7 @@ display: none;
 	display: block;
 	position: absolute;
 	z-index:100;
-	top:rem(-72
-	);
+	top:rem(-72);
 	left: calc(50% - min(48vw, 38.75rem));
 	max-width: rem(437);
 }
@@ -46,7 +45,6 @@ display: none;
 	width: 100%;
 	aspect-ratio: 437 / 201;
 	object-fit: cover;
-
 }
 .top-blog__cards {
 	margin-inline:auto;

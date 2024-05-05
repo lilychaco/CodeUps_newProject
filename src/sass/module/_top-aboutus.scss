@@ -137,7 +137,7 @@
 
 .top-aboutus__sango-image img {
 	@include mq(md) {
-		 object-fit: cover;
+		object-fit: cover;
 		aspect-ratio: 194 / 181;
 	}
 }

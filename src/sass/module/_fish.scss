@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.fish {
+	position: relative;
+}
+.fish::after {
+	content: '';
+  display: block;
+	position: absolute;
+	background-image: url('../images/container-fish.png');
+  background-size: cover;
+	z-index: -1;
+	width: rem(120); /* Width of the image */
+	height:rem(55);
+	top:rem(-24);
+	left:0;
+	z-index: -1;
+
+	@include mq(md) {
+	width: rem(301); /* Width of the image */
+	height:rem(138);
+	top: rem(-70);
+  left: calc(50% - min(48vw, 38.75rem));
+	}
+}
+.fish-02 {
+	position: relative;
+}
+.fish-02::after {
+	content: '';
+  display: block;
+	position: absolute;
+	background-image: url('../images/container-fish.png');
+  background-size: cover;
+	z-index: -1;
+	width: rem(120); /* Width of the image */
+	height:rem(55);
+	top:rem(-93);
+	left:0;
+
+	@include mq(md) {
+	width: rem(301); /* Width of the image */
+	height:rem(138);
+	top: rem(-70);
+  left: calc(50% - min(48vw, 38.75rem));
+	}
+}
+.fish-03 {
+	position: relative;
+}
+.fish-03 {
+	content: '';
+  display: block;
+	position: absolute;
+	background-image: url('../images/container-fish.png');
+  background-size: cover;
+	z-index: -1;
+	width: rem(120); /* Width of the image */
+	height:rem(55);
+	top:rem(-24);
+	left:0;
+	@include mq(md) {
+
+	}
+}

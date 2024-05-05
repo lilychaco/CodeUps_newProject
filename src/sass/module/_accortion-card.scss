@@ -8,19 +8,16 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	// gap:rem(20);
 	width:100%;
 	height:auto;
 	background-color: $greenaccent;
 	padding:rem(13) rem(15);
+	cursor: pointer;
 	@include mq(md) {
 			padding:rem(26) rem(40);
 	}
 }
-.accordion-card__top.is-open {
 
-
-}
 .accordion-card__title {
 	color:$white;
 	background-color: $greenaccent;
@@ -57,6 +54,7 @@
 
 //checkマーク縦棒
 .accordion-card__bar2 {
+	display:none;
 	width: rem(1);
   height: rem(28);
   background-color: $white;
@@ -67,15 +65,14 @@
   transition: all 0.3s ease 0s;
 }
 
-////アコーディオンメニューを開くとcheckboxがマイナスになる
-.accordion-card__top.is-open .accordion-card__bar2 {
-	transform: rotate(90deg);
+////アコーディオンメニューを閉じるとcheckboxがプラスになる
+.accordion-card__top.is-close .accordion-card__bar2 {
+	display: block;
 }
 
 
-//アコーディオンメニューを開く前は非表示にしていて、表示する時はjQueryを使って表示
+//アコーディオンメニューを表示にしていて、非表示する時はjQueryを使って
 .accordion-card__body {
-	display: none;
 	padding:rem(24) rem(16);
 	background-color: $white;
 	border: 1px solid $greenaccent;

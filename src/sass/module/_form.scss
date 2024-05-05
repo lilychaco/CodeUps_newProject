@@ -2,9 +2,6 @@
 .form {
   margin-inline: auto;
   width: 100%;
-  @include mq(md) {
-    max-width: rem(700);
-  }
 }
 .form__row {
   border-bottom: 1px dotted $greenaccent;
@@ -22,7 +19,7 @@
 		padding-top:rem(40);
 	}
 }
-.form__row--radio {
+.form__row--checkbox {
 	@include mq(md) {
 		padding-bottom: rem(38);
 	}
@@ -61,13 +58,13 @@
     margin-top: 0;
   }
 }
-.form__radio-wrapper {
+.form__checkbox-wrapper {
   margin-top: rem(16);
   @include mq(md) {
     margin-top: 0;
   }
 }
-.form__radio {
+.form__checkbox {
   position: relative;
   display: block; /* 縦並びに */
   padding-left: 22px;
@@ -75,10 +72,10 @@
   user-select: none;
   line-height: 1.7;
 }
-.form__radio input {
+.form__checkbox input {
   display: none;
 }
-.form__radio-mark {
+.form__checkbox-mark {
   position: absolute;
   top: 50%; /* 上からの位置 */
   transform: translateY(-50%);
@@ -88,11 +85,11 @@
   border: solid 2px $greenaccent; /* 線 */
   box-sizing: border-box;
 }
-.form__radio-mark--error {
+.form__checkbox-mark--error {
 	border-radius: 50%;
 }
 /* 選択時にチェックマーく */
-.form__radio-mark:after {
+.form__checkbox-mark:after {
   content: "";
   position: absolute;
   width: 4px;
@@ -106,11 +103,11 @@
   border-right: 2px solid #c94800; /* チェックマークの色 */
   border-bottom: 2px solid #c94800; /* チェックマークの色 */
 }
-.form__radio input:checked + .form__radio-mark:after {
+.form__checkbox input:checked + .form__checkbox-mark:after {
   opacity: 1;
 }
 
-.form__radio-mark--error::after {
+.form__checkbox-mark--error::after {
 	content: "";
   position: absolute;
   width: 8px;
@@ -124,11 +121,9 @@
 	background-color: #408F95;
 
 }
-.form__radio input:checked + .form__radio-mark--error:after {
+.form__checkbox input:checked + .form__radio-mark--error:after {
   opacity: 1;
 }
-
-
 
 
 .form__row--message dd {
@@ -144,6 +139,7 @@
 	width: 100%;
 	height: 100%;
 	resize: vertical;
+	padding: rem(8);
 }
 .form__outside {
   margin-top: rem(40);
@@ -212,26 +208,7 @@
 			margin-top:rem(40);
 	}
 }
-.form__warning {
-	margin-inline: auto;
-  width: 100%;
-  padding-left: rem(60);
-	padding-bottom: rem(16);
 
-	@include mq(md) {
-		text-align: center;
-		padding-left: 8px;
-		padding-bottom: 0;
-	}
-}
-.form__warning p{
-	color: #c94800;
-  font-size: rem(14);
-  font-family: $base-font-family;
-  font-weight: $regular;
-  line-height: 1.4;
-  letter-spacing: 0;
-}
 .input-error {
   background-color: #ffcccc; /* 淡い赤色 */
 }

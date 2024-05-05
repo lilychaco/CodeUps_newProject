@@ -216,19 +216,18 @@
               </figure>
         <h2 class="mv__title">about us</h2>
 		</section>
-		<div class="inner">
-				<div class="breadcrumb-wrapper">
-					<div class="breadcrumb">
-						<a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">私たちについて</a>
-					</div>
-				</div>
+		<div class="breadcrumb-wrapper">
+			<div class="breadcrumb-wrapper__inner inner">
+        <div class="breadcrumb">
+          <a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="#">キャンペーン</a>
+        </div>
+			</div>
+    </div>
 
-				<div class="page-aboutus page-aboutus-layout">
-					<figure class="page-aboutus__fish-image">
-							<img src="./assets/images/container-fish.png" alt="魚のイラスト" />
-        			</figure>
+		<div class="page-aboutus layout__page-aboutus">
+			<div class="page-aboutus__inner inner">
 					<div class="page-aboutus__container">
-							<div class="page-aboutus__sp-image u-mobile">
+							<div class="page-aboutus__sp-image u-mobile fish">
 								<img
 									src="./assets/images/page-aboutus-ocean2.jpg"
 									alt="私たちについての画像"
@@ -238,21 +237,22 @@
 										the&nbsp;<span>o</span>cean
 									</div>
 							</div>
-							<div class="page-aboutus__pc-image u-desktop">
-								<img
-									src="./assets/images/aboutus-ocean2.jpg"
-									alt="私たちについての画像"
-								/>
+							<div class="page-aboutus__pc-image u-desktop fish">
 								<img
 									src="./assets/images/aboutus-ocean1.jpg"
 									alt="私たちについての画像"
 								/>
+								<img
+									src="./assets/images/aboutus-ocean2.jpg"
+									alt="私たちについての画像"
+								/>
+
 							</div>
 							<div class="page-aboutus__main-wrapper">
 							<div class="page-aboutus__main">
 								<div class="page-aboutus__title u-desktop">
 									<span>d</span>ive&nbsp;into<br />
-									the&nbsp;<span>o</span>
+									the&nbsp;<span>o</span>cean
 									</div>
 									<div class="page-aboutus__body">
 										<div class="page-aboutus__text">
@@ -262,18 +262,97 @@
 									</div>
 								</div>
 							</div>
-						</div>
-				</div>
-
-				<section class="gallery">
-					<div class="gallery__heading section-heading">
-							<h3 class="section-heading__title">gallery</h3>
-							<h2 class="section-heading__subtitle">フォト</h2>
 					</div>
+			</div>
+		</div>
 
-					<div class="gallery__content">
-						<a class="gallery__item js-modal-open" href="" data-target="modal01">
-							<picture>
+		<section class="gallery layout__gallery">
+				<div class="gallery__inner inner">
+						<div class="gallery__heading section-heading">
+								<h3 class="section-heading__title">gallery</h3>
+								<h2 class="section-heading__subtitle">フォト</h2>
+						</div>
+						<div class="gallery__content">
+							<a class="gallery__item js-modal-open" href="" data-target="modal01">
+								<picture>
+													<source
+														srcset="./assets/images/gallery1.jpg"
+														media="(min-width: 768px)"
+													/>
+													<img
+														src="./assets/images/gallery1-sp.jpg"
+														alt="海の中の写真"
+													/>
+									</picture>
+							</a>
+							<a class="gallery__item js-modal-open" href="" data-target="modal02">
+								<picture>
+													<source
+														srcset="./assets/images/gallery2.jpg"
+														media="(min-width: 768px)"
+													/>
+													<img
+														src="./assets/images/gallery2-sp.jpg"
+														alt="海の中の写真"
+													/>
+									</picture>
+							</a>
+							<a class="gallery__item js-modal-open" href="" data-target="modal03">
+								<picture>
+													<source
+														srcset="./assets/images/gallery3.jpg"
+														media="(min-width: 768px)"
+													/>
+													<img
+														src="./assets/images/gallery3-sp.jpg"
+														alt="海の中の写真"
+													/>
+									</picture>
+							</a>
+							<a class="gallery__item js-modal-open" href="" data-target="modal04">
+								<picture>
+													<sourc4
+														srcset="./assets/images/gallery4.jpg"
+														media="(min-width: 768px)"
+													/>
+													<img
+														src="./assets/images/gallery4-sp.jpg"
+														alt="海の中の写真"
+													/>
+									</picture>
+							</a>
+							<a class="gallery__item js-modal-open" href="" data-target="modal05">
+								<picture>
+													<sourc4
+														srcset="./assets/images/gallery5.jpg"
+														media="(min-width: 768px)"
+													/>
+													<img
+														src="./assets/images/gallery5-sp.jpg"
+														alt="海の中の写真"
+													/>
+									</picture>
+							</a>
+							<a class="gallery__item js-modal-open" href="" data-target="modal06">
+								<picture>
+													<sourc4
+														srcset="./assets/images/gallery6.jpg"
+														media="(min-width: 768px)"
+													/>
+													<img
+														src="./assets/images/gallery6-sp.jpg"
+														alt="海の中の写真"
+													/>
+									</picture>
+							</a>
+
+
+						</div>
+						<div class="gallery__modal">
+							<div id="modal01" class="gallery__modal-item  modal js-modal">
+									<div class="modal__bg js-modal-close"></div>
+									<div class="modal__content">
+												<picture>
 												<source
 													srcset="./assets/images/gallery1.jpg"
 													media="(min-width: 768px)"
@@ -282,10 +361,14 @@
 													src="./assets/images/gallery1-sp.jpg"
 													alt="海の中の写真"
 												/>
-								</picture>
-						</a>
-						<a class="gallery__item js-modal-open" href="" data-target="modal02">
-							<picture>
+												</picture>
+									</div><!--modal__inner-->
+							</div><!--modal-->
+							<div id="modal02" class="gallery__modal-item modal js-modal">
+									<div class="modal__bg js-modal-close"></div>
+									<div class="modal__content">
+											<p>
+												<picture>
 												<source
 													srcset="./assets/images/gallery2.jpg"
 													media="(min-width: 768px)"
@@ -294,10 +377,15 @@
 													src="./assets/images/gallery2-sp.jpg"
 													alt="海の中の写真"
 												/>
-								</picture>
-						</a>
-						<a class="gallery__item js-modal-open" href="" data-target="modal03">
-							<picture>
+												</picture>
+											</p>
+									</div><!--modal__inner-->
+							</div><!--modal-->
+							<div id="modal03" class="gallery__modal-item modal js-modal">
+									<div class="modal__bg js-modal-close"></div>
+									<div class="modal__content">
+											<p>
+												<picture>
 												<source
 													srcset="./assets/images/gallery3.jpg"
 													media="(min-width: 768px)"
@@ -306,11 +394,16 @@
 													src="./assets/images/gallery3-sp.jpg"
 													alt="海の中の写真"
 												/>
-								</picture>
-						</a>
-						<a class="gallery__item js-modal-open" href="" data-target="modal04">
-							<picture>
-												<sourc4
+												</picture>
+											</p>
+									</div><!--modal__inner-->
+							</div><!--modal-->
+							<div id="modal04" class="gallery__modal-item modal js-modal">
+									<div class="modal__bg js-modal-close"></div>
+									<div class="modal__content">
+											<p>
+												<picture>
+												<source
 													srcset="./assets/images/gallery4.jpg"
 													media="(min-width: 768px)"
 												/>
@@ -318,11 +411,16 @@
 													src="./assets/images/gallery4-sp.jpg"
 													alt="海の中の写真"
 												/>
-								</picture>
-						</a>
-						<a class="gallery__item js-modal-open" href="" data-target="modal05">
-							<picture>
-												<sourc4
+												</picture>
+											</p>
+									</div><!--modal__inner-->
+							</div><!--modal-->
+							<div id="modal05" class="gallery__modal-item modal js-modal">
+									<div class="modal__bg js-modal-close"></div>
+									<div class="modal__content">
+											<p>
+												<picture>
+												<source
 													srcset="./assets/images/gallery5.jpg"
 													media="(min-width: 768px)"
 												/>
@@ -330,11 +428,16 @@
 													src="./assets/images/gallery5-sp.jpg"
 													alt="海の中の写真"
 												/>
-								</picture>
-						</a>
-						<a class="gallery__item js-modal-open" href="" data-target="modal06">
-							<picture>
-												<sourc4
+												</picture>
+											</p>
+									</div><!--modal__inner-->
+							</div><!--modal-->
+							<div id="modal06" class="gallery__modal-item modal js-modal">
+									<div class="modal__bg js-modal-close"></div>
+									<div class="modal__content">
+											<p>
+												<picture>
+												<source
 													srcset="./assets/images/gallery6.jpg"
 													media="(min-width: 768px)"
 												/>
@@ -342,119 +445,19 @@
 													src="./assets/images/gallery6-sp.jpg"
 													alt="海の中の写真"
 												/>
-								</picture>
-						</a>
-					</div>
-					<div class="gallery__modal">
-					<div id="modal01" class="gallery__modal-item  modal js-modal">
-								<div class="modal__bg js-modal-close"></div>
-								<div class="modal__content">
-											<picture>
-											<source
-												srcset="./assets/images/gallery1.jpg"
-												media="(min-width: 768px)"
-											/>
-											<img
-												src="./assets/images/gallery1-sp.jpg"
-												alt="海の中の写真"
-											/>
-											</picture>
-								</div><!--modal__inner-->
-					</div><!--modal-->
-					<div id="modal02" class="gallery__modal-item modal js-modal">
-								<div class="modal__bg js-modal-close"></div>
-								<div class="modal__content">
-										<p>
-											<picture>
-											<source
-												srcset="./assets/images/gallery2.jpg"
-												media="(min-width: 768px)"
-											/>
-											<img
-												src="./assets/images/gallery2-sp.jpg"
-												alt="海の中の写真"
-											/>
-											</picture>
-										</p>
-								</div><!--modal__inner-->
-					</div><!--modal-->
-					<div id="modal03" class="gallery__modal-item modal js-modal">
-								<div class="modal__bg js-modal-close"></div>
-								<div class="modal__content">
-										<p>
-											<picture>
-											<source
-												srcset="./assets/images/gallery3.jpg"
-												media="(min-width: 768px)"
-											/>
-											<img
-												src="./assets/images/gallery3-sp.jpg"
-												alt="海の中の写真"
-											/>
-											</picture>
-										</p>
-								</div><!--modal__inner-->
-					</div><!--modal-->
-					<div id="modal04" class="gallery__modal-item modal js-modal">
-								<div class="modal__bg js-modal-close"></div>
-								<div class="modal__content">
-										<p>
-											<picture>
-											<source
-												srcset="./assets/images/gallery4.jpg"
-												media="(min-width: 768px)"
-											/>
-											<img
-												src="./assets/images/gallery4-sp.jpg"
-												alt="海の中の写真"
-											/>
-											</picture>
-										</p>
-								</div><!--modal__inner-->
-					</div><!--modal-->
-					<div id="modal05" class="gallery__modal-item modal js-modal">
-								<div class="modal__bg js-modal-close"></div>
-								<div class="modal__content">
-										<p>
-											<picture>
-											<source
-												srcset="./assets/images/gallery5.jpg"
-												media="(min-width: 768px)"
-											/>
-											<img
-												src="./assets/images/gallery5-sp.jpg"
-												alt="海の中の写真"
-											/>
-											</picture>
-										</p>
-								</div><!--modal__inner-->
-					</div><!--modal-->
-					<div id="modal06" class="gallery__modal-item modal js-modal">
-								<div class="modal__bg js-modal-close"></div>
-								<div class="modal__content">
-										<p>
-											<picture>
-											<source
-												srcset="./assets/images/gallery6.jpg"
-												media="(min-width: 768px)"
-											/>
-											<img
-												src="./assets/images/gallery6-sp.jpg"
-												alt="海の中の写真"
-											/>
-											</picture>
-										</p>
-								</div><!--modal__inner-->
-					</div><!--modal-->
-					</div>
+												</picture>
+											</p>
+									</div><!--modal__inner-->
+							</div><!--modal-->
+						</div>
+				</div>
+		</section>
 
-				</section>
-		</div>
-
-		<section class="contact-layout contact-layout--aboutus contact inner" id="contact">
+		<div class="contact-wrapper">
+    <section class="contact inner" id="contact">
       <div class="contact__inner">
         <div class="contact__container">
-          <div class="contact-maparea">
+          <div class="contact__item contact-maparea">
             <div class="contact-maparea__top">
               <div class="contact-maparea__logo">
                 <a href="#">
@@ -493,17 +496,23 @@
               </div>
             </div>
           </div>
-					<div class="contact__cta">
+					<div class="contact__item contact-verticalline"></div>
+					<div class="contact__item contact__cta">
 							<div class="contact__heading section-heading">
 								<h3
 									class="section-heading__title section-heading__title--contact"
 								>
-									Contact
+								Contact
 								</h3>
 								<h2
-									class="section-heading__subtitle section-heading__subtitle--contact"
+									class="section-heading__subtitle section-heading__subtitle--contact u-desktop"
 								>
-									お問い合せ
+									お問い合わせ
+								</h2>
+								<h2
+									class="section-heading__subtitle section-heading__subtitle--contact u-mobile"
+								>
+									お問合せ
 								</h2>
 								<p class="section-heading__text">ご予約・お問い合わせはコチラ</p>
 							</div>
@@ -512,17 +521,14 @@
 							</div>
 					</div>
 				</div>
-
-        <figure class="contact__fish-image">
-          <img src="./assets/images/contact-fish.png" alt="魚のイラスト" />
-        </figure>
       </div>
     </section>
+		</div>
 
 
 
 
-    <footer class="footer footer-layout">
+		<footer class="footer footer-layout-01">
       <div class="footer__inner inner">
         <div class="footer__top">
           <div class="footer__logo">

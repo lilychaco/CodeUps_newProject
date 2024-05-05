@@ -1,14 +1,19 @@
 @use "global" as *;
 
 .page-nav {
-  position: relative;
-  max-width: rem(444);
   margin-inline: auto;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap:rem(40);
 }
 
 .page-nav__pager {
   display: flex;
   justify-content: center;
+	align-items: center;
   gap: rem(12);
 }
 
@@ -19,10 +24,15 @@
   color: $greenaccent;
   z-index: 100;
 }
-.page-nav__page.is-active {
+.page-nav__page.is-current {
   background-color: $greenaccent;
   color: $white;
 }
+.page-nav__page:hover {
+	background-color: $greenaccent;
+  color: $white;
+}
+
 .page-nav__link {
   width: 100%;
   height: inherit;
@@ -31,17 +41,13 @@
   justify-content: center;
   align-items: center;
 }
-
 .page-nav__arrows {
-  display: flex;
-  justify-content: space-between;
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap:rem(82);
 }
-
 .page-nav__arrow {
   width: rem(38);
   height: rem(38);
@@ -54,13 +60,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+	color:$greenaccent;
 }
-.page-nav__arrow img {
-  width: 8px;
-  aspect-ratio: 8 / 16;
-  object-fit: cover;
-}
-.page-nav__arrow:hover {
+
+.page-nav__arrow a:hover {
 	background-color: $greenaccent;
 	color:$white;
 }

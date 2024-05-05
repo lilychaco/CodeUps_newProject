@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.page-error-layout {
+  margin-top: rem(56);
+  @include mq(md) {
+    margin-top: rem(150);
+  }
+}
+.page-error {
+  margin-inline: auto;
+  width: 100%;
+  position: relative;
+}
+.page-error__inner {
+	@include mq(md) {
+		max-width: rem(750);
+	}
+}
+
+
+
+.page-error__warning {
+	margin-inline: auto;
+  width: 100%;
+  padding-left: rem(60);
+	padding-bottom: rem(16);
+
+	@include mq(md) {
+		text-align: center;
+		padding-left: 8px;
+		padding-bottom: rem(40);
+	}
+}
+.page-error__warning p{
+	color: #c94800;
+  font-size: rem(14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+.page-error__content {
+	margin-top:rem(40);
+}

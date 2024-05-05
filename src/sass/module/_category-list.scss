@@ -7,10 +7,11 @@
   grid-template-rows: 1fr 1fr;
   column-gap: rem(21);
   row-gap: rem(16);
-	  @include mq(md) {
+	@include mq(md) {
     display: flex;
     flex-direction: row;
-    gap: rem(32);
+		flex-wrap: wrap;
+    column-gap: rem(32);
   }
 }
 
@@ -28,7 +29,10 @@
 	background-color: $greenaccent;
 	color:$white;
 }
-
+.category-list__item:hover{
+	background-color: $greenaccent;
+	color:$white;
+}
 .category-list__link {
 	width: 100%;
 	height: 100%;

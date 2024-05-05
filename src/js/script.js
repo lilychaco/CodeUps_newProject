@@ -47,19 +47,26 @@ jQuery(function ($) {
 
     // アコーディオンの動作
     $(".js-accordion-top").click(function () {
-      $(this).next().slideToggle(300);
-      $(this).toggleClass("is-open");
+      $(this).next().slideToggle(-300);
+      $(this).toggleClass("is-close");
     });
 
     // モーダルの開閉
     $(".js-modal-open").click(function () {
       var target = $(this).data("target");
+      var innerWidth = $(".inner").width(); // .inner要素の現在の幅を取得
+      var modalWidth = innerWidth * 0.85; // 幅の85%を計算
+      $("#" + target)
+        .find(".modal__content")
+        .css("width", modalWidth + "px"); // 計算した幅をモーダルのコンテンツに設定
       $("#" + target).fadeIn();
+      $("body").css("overflow", "hidden"); // スクロール禁止
       return false;
     });
 
     $(".js-modal-close").click(function () {
       $(".js-modal").fadeOut();
+      $("body").css("overflow", "auto"); // スクロールを許可
       return false;
     });
 
