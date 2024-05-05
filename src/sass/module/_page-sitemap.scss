@@ -1,20 +1,7 @@
 @use "global" as *;
-.page-sitemap-layout {
-	margin-top:rem(52);
-	@include mq(md) {
-		margin-top:rem(150);
-	}
-}
 .page-sitemap {
 
 }
 .page-sitemap__nav .nav-menu__box {
 	color:$font-color;
-}
-
-.page-sitemap__contact {
-	margin-top:rem(80);
-	@include mq(md) {
-		margin-top:rem(100);
-	}
 }

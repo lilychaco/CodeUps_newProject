@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.page-contact-layout {
-  margin-top: rem(56);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
 .page-contact {
   margin-inline: auto;
   width: 100%;
@@ -17,12 +11,6 @@
 		max-width: rem(750);
 
 	}
-}
-
-.page-contact-layout--error {
-	@include mq(md) {
-    margin-top: rem(152);
-  }
 }
 
 .page-contact__content {

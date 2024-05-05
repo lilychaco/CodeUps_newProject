@@ -1,15 +1,9 @@
 @use "global" as *;
-.page-aboutus-layout {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
+
 .page-aboutus {
   margin-inline: auto;
   width: 100%;
 }
-
 
 .page-aboutus__container {
   width: 100%;

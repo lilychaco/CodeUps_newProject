@@ -1,13 +1,14 @@
 @use "global" as *;
-.page-faq-layout {
-	margin-top:rem(54);
-	@include mq(md) {
-		margin-top:rem(152);
-	}
 
-}
 .page-faq {
 	margin-inline:auto;
 	width:100%;
 	position: relative;
+}
+.page-faq__inner {
+		@include mq(md) {
+			margin-inline:auto;
+			width:100%;
+			max-width:rem(700);
+		}
 }

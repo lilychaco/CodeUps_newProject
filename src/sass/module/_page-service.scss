@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.page-service-layout {
-	margin-top:rem(60);
-	@include mq(md) {
-		margin-top:rem(160);
-	}
-}
-
 .page-service {
 	margin-inline:auto;
 	width:100%;

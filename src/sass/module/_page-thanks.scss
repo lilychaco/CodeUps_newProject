@@ -1,11 +1,5 @@
 @use "global" as *;
 
-.page-thanks-layout {
-	margin-top: rem(54);
-	@include mq(md) {
-			margin-top: rem(150);
-	}
-}
 .page-thanks {
 	margin-inline:auto;
 	width:100%;
