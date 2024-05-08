@@ -20,17 +20,7 @@
 .page-nav__page {
   width: rem(38);
   height: rem(38);
-  border: 1px solid $greenaccent;
-  color: $greenaccent;
   z-index: 100;
-}
-.page-nav__page.is-current {
-  background-color: $greenaccent;
-  color: $white;
-}
-.page-nav__page:hover {
-	background-color: $greenaccent;
-  color: $white;
 }
 
 .page-nav__link {
@@ -40,7 +30,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+	border: 1px solid $greenaccent;
+  color: $greenaccent;
+	transition: all 0.3s;
 }
+.page-nav__link.is-current {
+  background-color: $greenaccent;
+  color: $white;
+}
+.page-nav__link:hover {
+  background-color: $greenaccent;
+  color: $white;
+}
+
 .page-nav__arrows {
 	display: flex;
 	flex-direction: row;
@@ -61,6 +63,7 @@
   justify-content: center;
   align-items: center;
 	color:$greenaccent;
+	transition: all 0.3s;
 }
 
 .page-nav__arrow a:hover {
