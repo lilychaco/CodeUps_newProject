@@ -1,5 +1,11 @@
 @use "global" as *;
 
+.footer-layout {
+	margin-top:rem(100);
+	@include mq(md) {
+			margin-top: rem(160);
+}}
+
 .footer-layout-01 {
   margin-top: rem(96);
   @include mq(md) {

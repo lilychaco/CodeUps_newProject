@@ -1,22 +1,11 @@
 @use "global" as *;
 
 .single-blog {
-
-}
-
-.single-blog__container {
-	width: 100%;
-  @include mq(md) {
-    display: grid;
-    grid-template-columns: 65.4% 27.2%;
-    gap: 7.4%;
-  }
-}
-.single-blog__main {
-  padding-right: rem(3);
 	margin-inline: auto;
   width: 100%;
-	padding-bottom: rem(80);
+	@include mq(md) {
+			padding-right: rem(3);
+	}
 }
 
 .single-blog__post {
@@ -140,16 +129,4 @@
   display: flex;
   justify-content: center;
   gap: rem(82);
-}
-.single-blog__side {
-	padding-left: rem(27);
-  padding-right: rem(27);
-	margin-top: rem(38);
-
-  @include mq(md) {
-    width: rem(294);
-    padding-left: 0;
-    padding-right: 0;
-    margin-top: 0;
-  }
 }

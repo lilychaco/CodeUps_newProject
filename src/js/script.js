@@ -47,24 +47,27 @@ jQuery(function ($) {
 
 		// URLのハッシュに基づくタブのアクティベーション
 		function activateTabFromHash() {
-			let hash = window.location.hash;
-			// ハッシュが空の場合、デフォルトとして #license-training を設定
-			if (!hash) {
-				hash = "#license-training";
-				history.replaceState(null, null, hash); // URLを更新
+      let hash = window.location.hash;
+			// 現在のURLをチェックして、page-information.htmlのみで実行
+			if (window.location.pathname.includes('page-information.html')) {
+				// ハッシュが空の場合、デフォルトとして #license-training を設定
+				if (!hash) {
+					hash = "#license-training";
+					history.replaceState(null, null, hash); // URLを更新
+				}
 			}
-			const tabIndex = {
-				"#license-training": 0,
-				"#fun-diving": 1,
-				"#trial-diving": 2,
-			}[hash];
+      const tabIndex = {
+        "#license-training": 0,
+        "#fun-diving": 1,
+        "#trial-diving": 2,
+      }[hash];
 
-			if (typeof tabIndex !== "undefined") {
-				$(".current").removeClass("current");
-				$(".js-tab").eq(tabIndex).addClass("current");
-				$(".js-content").hide().eq(tabIndex).fadeIn(300);
-			}
-		}
+      if (typeof tabIndex !== "undefined") {
+        $(".current").removeClass("current");
+        $(".js-tab").eq(tabIndex).addClass("current");
+        $(".js-content").hide().eq(tabIndex).fadeIn(300);
+      }
+    }
 
 		// ハッシュ変更イベントリスナーを設定
 		$(window).on("hashchange", function () {

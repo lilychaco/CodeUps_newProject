@@ -1,58 +1,60 @@
 @use "global" as *;
 
-.blog-wrapper-layout {
-  margin-top: rem(52);
-  @include mq(md) {
-    margin-top: rem(150);
-  }
-}
-
-.blog-wrapper {
-  margin-inline: auto;
-  width: 100%;
-  position: relative;
-}
-
 .blog {
   margin-inline: auto;
   width: 100%;
-  margin-top: rem(52);
   @include mq(md) {
-    margin-top: rem(150);
+
+  }
+}
+.blog__container {
+	margin-inline: auto;
+  width: 100%;
+
+  @include mq(md) {
     display: grid;
     grid-template-columns: 65.4% 27.2%;
     gap: 7.4%;
-  }
-}
+}}
 
 .blog__main {
   margin-inline: auto;
   width: 100%;
+	padding-left: rem(6);
+  padding-right: rem(6);
+
+		@include mq(md) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
-.blog__main--single {
-  padding-right: rem(3);
-}
+
 .blog__items {
   margin-inline: auto;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   gap: rem(36);
-  padding-left: rem(6);
-  padding-right: rem(6);
+
   @include mq(md) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: rem(40);
   }
 }
-.blog__item .blog-card__link {
-  // padding-top: rem(24);
-}
+
+.blog__nav {
+  margin-top: rem(78);
+	@include mq(md) {
+			margin-top: rem(74);
+	}
+	}
 
 .blog__side {
-  padding-left: rem(27);
-  padding-right: rem(27);
+	margin-inline: auto;
+  width: 100%;
+  padding-left: rem(25);
+  padding-right: rem(25);
   margin-top: rem(80);
 
   @include mq(md) {
