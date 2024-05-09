@@ -35,10 +35,9 @@ jQuery(function ($) {
 		});
 
 
-
-
-		// タブメニューの初期設定
-		$(".js-content:first-of-type").show();
+	//インフォメーションページのタブの動きを制御
+	$(document).ready(function () {
+		// タブのクリックイベントをバインド
 		$(".js-tab").on("click", function () {
 			$(".current").removeClass("current");
 			$(this).addClass("current");
@@ -46,10 +45,41 @@ jQuery(function ($) {
 			$(".js-content").hide().eq(index).fadeIn(300);
 		});
 
+		// URLのハッシュに基づくタブのアクティベーション
+		function activateTabFromHash() {
+			let hash = window.location.hash;
+			// ハッシュが空の場合、デフォルトとして #license-training を設定
+			if (!hash) {
+				hash = "#license-training";
+				history.replaceState(null, null, hash); // URLを更新
+			}
+			const tabIndex = {
+				"#license-training": 0,
+				"#fun-diving": 1,
+				"#trial-diving": 2,
+			}[hash];
+
+			if (typeof tabIndex !== "undefined") {
+				$(".current").removeClass("current");
+				$(".js-tab").eq(tabIndex).addClass("current");
+				$(".js-content").hide().eq(tabIndex).fadeIn(300);
+			}
+		}
+
+		// ハッシュ変更イベントリスナーを設定
+		$(window).on("hashchange", function () {
+			activateTabFromHash();
+		});
+
+		// 初期タブの設定
+		activateTabFromHash();
+	});
 
 
 
-		// アーカイブメニューの動作
+
+
+	// アーカイブメニューの動作
 		$(".js-year-toggle").click(function () {
 			var $monthList = $(this).next(".side-archive__month-list");
 			$(".side-archive__month-list").not($monthList).slideUp();
@@ -185,7 +215,7 @@ jQuery(function ($) {
 
 
 
-		
+
 		//画像に色背景がついてから、写真が出てくる
 		//要素の取得とスピードの設定
 		var box = $(".colorbox"),

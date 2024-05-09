@@ -28,7 +28,10 @@
 
     <!-- JavaScript -->
     <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
-		<script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+    ></script>
     <script defer src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
     <!-- jquery UI のCSS -->
@@ -201,81 +204,91 @@
         </li>
       </ul>
     </div>
-		<section class="mv">
-			<figure class="mv__img">
-                <picture>
-                  <source
-                    srcset="./assets/images/mv-contact.jpg"
-                    media="(min-width: 768px)"
-                  />
-                  <img
-                    src="./assets/images/mv-contact-sp.jpg"
-                    alt="ファーストビュー画像"
-                  />
-                </picture>
-              </figure>
-        <h2 class="mv__title">contact</h2>
-		</section>
+    <section class="mv">
+      <figure class="mv__img">
+        <picture>
+          <source
+            srcset="./assets/images/mv-contact.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./assets/images/mv-contact-sp.jpg"
+            alt="ファーストビュー画像"
+          />
+        </picture>
+      </figure>
+      <h2 class="mv__title">contact</h2>
+    </section>
 
-		<div class="breadcrumb-wrapper">
-			<div class="breadcrumb-wrapper__inner inner">
+    <div class="breadcrumb-wrapper">
+      <div class="breadcrumb-wrapper__inner inner">
         <div class="breadcrumb">
-          <a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a href="./page-contact.html">お問い合わせ</a>&nbsp;&nbsp;>&nbsp;&nbsp;お問い合わせエラー
+          <a href="./index.html">TOP</a>&nbsp;&nbsp;>&nbsp;&nbsp;<a
+            href="./page-contact.html"
+            >お問い合わせ</a
+          >&nbsp;&nbsp;>&nbsp;&nbsp;お問い合わせエラー
         </div>
-			</div>
+      </div>
     </div>
 
-		<div class="page-error layout__page-error layout__page-contact--error">
-			<div class="page-error__inner inner">
-				<div class="page-error__warning fish">
-								<p>※必須項目が入力されていません。<br class="u-mobile">入力してください。</p>
-							</div>
-				<div class="page-error__content form-wrapper">
-						<form class="form" method="post">
-							<dl class="form__row">
-								<dt>お名前<span>必須</span></dt>
-								<dd>
-									<input type="text" name="name" /></dd>
-							</dl>
-							<dl class="form__row">
-								<dt>メールアドレス<span>必須</span></dt>
-								<dd>
-									<input type="email" name="email" />
-								</dd>
-							</dl>
-							<dl class="form__row">
-								<dt>電話番号<span>必須</span></dt>
-								<dd>
-									<input type="phone" name="phone" />
-								</dd>
-							</dl>
-							<dl class="form__row form__row--radio">
+    <div class="page-error layout__page-error layout__page-contact--error">
+      <div class="page-error__inner inner">
+        <div class="page-error__warning fish">
+          <p>
+            ※必須項目が入力されていません。<br
+              class="u-mobile"
+            />入力してください。
+          </p>
+        </div>
+        <div class="page-error__content form-wrapper">
+          <form class="form" method="post">
+            <dl class="form__row">
+              <dt>お名前<span>必須</span></dt>
+              <dd>
+                <input type="text" name="name" />
+              </dd>
+            </dl>
+            <dl class="form__row">
+              <dt>メールアドレス<span>必須</span></dt>
+              <dd>
+                <input type="email" name="email" />
+              </dd>
+            </dl>
+            <dl class="form__row">
+              <dt>電話番号<span>必須</span></dt>
+              <dd>
+                <input type="phone" name="phone" />
+              </dd>
+            </dl>
+            <dl class="form__row form__row--radio">
               <dt>お問合せ項目<span>必須</span></dt>
               <dd class="form__radio-wrapper">
                 <label class="form__radio" for="divingseminar">
                   <input type="radio" name="kinds" id="divingseminar" />
-                  <span class="form__radio-mark form__radio-mark--error"></span>ダイビング講習について
+                  <span class="form__radio-mark form__radio-mark--error"></span
+                  >ダイビング講習について
                 </label>
                 <label class="form__radio" for="fundiving">
                   <input type="radio" name="kinds" id="fundiving" />
-                  <span class="form__radio-mark form__radio-mark--error"></span>ファンダイビングについて
+                  <span class="form__radio-mark form__radio-mark--error"></span
+                  >ファンダイビングについて
                 </label>
                 <label class="form__radio" for="testdiving">
                   <input type="radio" name="kinds" id="testdiving" />
                   <span class="form__radio-mark form__radio-mark--error"></span
                   >体験ダイビングについて</label
                 >
-								<label class="form__radio" for="testdiving">
+                <label class="form__radio" for="testdiving">
                   <input type="radio" name="kinds" id="testdiving" />
                   <span class="form__radio-mark form__radio-mark--error"></span
                   >スペシャルダイビングについて</label
                 >
               </dd>
             </dl>
-							 <dl class="form__row form__row--select">
+            <dl class="form__row form__row--select">
               <dt>キャンペーン</dt>
               <dd class="form__select">
-								<div class="form__select-items">
+                <div class="form__select-items">
                   <select
                     id="campaign-select"
                     name="campaign"
@@ -286,36 +299,34 @@
                     <option value="fundiving">ファンダイビング</option>
                     <option value="testdiving">体験ダイビング</option>
                   </select>
-									</div>
+                </div>
               </dd>
             </dl>
-							<dl class="form__row form__row--message">
-								<dt>お問合せ内容<span>必須</span></dt>
-								<dd>
-									<textarea name="message" id=""></textarea>
-								</dd>
-							</dl>
-							<div class="form__outside">
-								<label for="form-privacy" class="form__privacy-label">
-                      <input
-                        type="checkbox"
-												name="privacy"
-                        id="form-privacy"
-                        value="個人情報保護方針に同意する"
-                      />
-                      <span class="form__privacy-mark"></span>
-                        個人情報の取り扱いについて同意のうえ送信します。
-                    </label>
-								<div class="form__btn">
-									<button type="submit" class="button button--send">Send</button>
-								</div>
-							</div>
-						</form>
-						</div>
-					</div>
+            <dl class="form__row form__row--message">
+              <dt>お問合せ内容<span>必須</span></dt>
+              <dd>
+                <textarea name="message" id=""></textarea>
+              </dd>
+            </dl>
+            <div class="form__outside">
+              <label for="form-privacy" class="form__privacy-label">
+                <input
+                  type="checkbox"
+                  name="privacy"
+                  id="form-privacy"
+                  value="個人情報保護方針に同意する"
+                />
+                <span class="form__privacy-mark"></span>
+                個人情報の取り扱いについて同意のうえ送信します。
+              </label>
+              <div class="form__btn">
+                <button type="submit" class="button button--send">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-
-
+    </div>
 
     <footer class="footer footer-layout-02">
       <div class="footer__inner inner">
@@ -370,9 +381,21 @@
                 ><p class="starfish-icon">ダイビング情報</p></a
               >
               <ul>
-                <li><a href="#">ライセンス講習</a></li>
-                <li><a href="#">体験ダイビング</a></li>
-                <li><a href="#">ファンダイビング</a></li>
+                <li>
+                  <a href="page-information.html#license-training"
+                    >ライセンス講習</a
+                  >
+                </li>
+                <li>
+                  <a href="page-information.html#trial-diving"
+                    >体験ダイビング</a
+                  >
+                </li>
+                <li>
+                  <a href="page-information.html#fun-diving"
+                    >ファンダイビング</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="nav-menu__item nav-menu__item--01">
@@ -394,9 +417,21 @@
                 ><p class="starfish-icon">料金一覧</p></a
               >
               <ul>
-                <li><a href="#">ライセンス講習</a></li>
-                <li><a href="#">体験ダイビング</a></li>
-                <li><a href="#">ファンダイビング</a></li>
+                <li>
+                  <a href="page-information.html#license-training"
+                    >ライセンス講習</a
+                  >
+                </li>
+                <li>
+                  <a href="page-information.html#trial-diving"
+                    >体験ダイビング</a
+                  >
+                </li>
+                <li>
+                  <a href="page-information.html#fun-diving"
+                    >ファンダイビング</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -416,10 +451,14 @@
               >
             </div>
             <div class="nav-menu__item">
-              <a href="page-service.html"><p class="starfish-icon">利用規約</p></a>
+              <a href="page-service.html"
+                ><p class="starfish-icon">利用規約</p></a
+              >
             </div>
             <div class="nav-menu__item">
-              <a href="page-contact.html"><p class="starfish-icon">お問い合わせ</p></a>
+              <a href="page-contact.html"
+                ><p class="starfish-icon">お問い合わせ</p></a
+              >
             </div>
           </div>
         </div>
