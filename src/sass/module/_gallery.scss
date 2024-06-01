@@ -67,6 +67,7 @@ gap:rem(8);
 	max-width: 100%;
 	height: 100%;
   background: rgba(0, 0, 0, 0.8);
+	z-index: 1000; /* 高いz-indexを設定 */
 }
 #grayDisplay img {
 	position: absolute;
@@ -79,4 +80,5 @@ gap:rem(8);
   max-height: 80%;
   height: 80%;
   object-fit: contain;
+	z-index: 1001; /* モーダルコンテンツのz-indexを設定 */
 }
