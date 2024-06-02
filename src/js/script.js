@@ -33,7 +33,7 @@ jQuery(function ($) {
       return false;
     });
 
-    //================================
+    // ==================================
     // インフォメーションページのタブの動きを制御
     // ==================================
     $(document).ready(function () {
@@ -41,27 +41,34 @@ jQuery(function ($) {
       $(".js-tab").on("click", function () {
         $(".current").removeClass("current");
         $(this).addClass("current");
-        const index = $(this).index();
+        var index = $(this).index();
         $(".js-content").hide().eq(index).fadeIn(300);
+
+        // クエリストリングを更新
+        var tabId = $(this).find("p").attr("id");
+        var url = new URL(window.location);
+        url.searchParams.set("tab", tabId);
+        history.replaceState(null, null, url);
       });
 
-      // URLのハッシュに基づくタブのアクティベーション
-      function activateTabFromHash() {
-        let hash = window.location.hash;
-        // 現在のURLをチェックして、page-information.htmlのみで実行
-        if (window.location.pathname.includes("page-information.html")) {
-          // ハッシュが空の場合、デフォルトとして #license-training を設定
-          if (!hash) {
-            hash = "#license-training";
-            history.replaceState(null, null, hash); // URLを更新
-          }
-        }
-        const tabIndex = {
-          "#license-training": 0,
-          "#fun-diving": 1,
-          "#trial-diving": 2,
-        }[hash];
+      // URLのクエリストリングに基づくタブのアクティベーション
+      function activateTabFromQuery() {
+        var urlParams = new URLSearchParams(window.location.search);
+        var tabId = urlParams.get("tab");
 
+        // クエリが空の場合、デフォルトとして license-training を設定
+        if (!tabId) {
+          tabId = "license-training";
+          var url = new URL(window.location);
+          url.searchParams.set("tab", tabId);
+          history.replaceState(null, null, url);
+        }
+
+        var tabIndex = {
+          "license-training": 0,
+          "fun-diving": 1,
+          "trial-diving": 2,
+        }[tabId];
         if (typeof tabIndex !== "undefined") {
           $(".current").removeClass("current");
           $(".js-tab").eq(tabIndex).addClass("current");
@@ -69,13 +76,13 @@ jQuery(function ($) {
         }
       }
 
-      // ハッシュ変更イベントリスナーを設定
-      $(window).on("hashchange", function () {
-        activateTabFromHash();
-      });
-
       // 初期タブの設定
-      activateTabFromHash();
+      activateTabFromQuery();
+
+      // popstateイベントリスナーを設定
+      window.addEventListener("popstate", function () {
+        activateTabFromQuery();
+      });
     });
 
     //================================
